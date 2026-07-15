@@ -19,3 +19,5 @@ build/
 # Local developer configuration overrides
 *.uid
 .godot/editor/editor_layout.cfg
+.godot/editor/editor_layout.cfg
+/.godot
