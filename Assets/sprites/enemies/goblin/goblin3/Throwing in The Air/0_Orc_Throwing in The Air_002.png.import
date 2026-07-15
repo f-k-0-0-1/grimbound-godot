@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://chpuo5s1olwlk"
-path="res://.godot/imported/0_Orc_Throwing in The Air_002.png-e04a3bc0d28dea0f8a6c44b37f4a70d0.ctex"
+path="res://.godot/imported/0_Orc_Throwing in The Air_002.png-a753ad85664f2dea7e41e160a52316ef.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/sprites/enemies/goblin/goblin3/Throwing in The Air/0_Orc_Throwing in The Air_002.png"
-dest_files=["res://.godot/imported/0_Orc_Throwing in The Air_002.png-e04a3bc0d28dea0f8a6c44b37f4a70d0.ctex"]
+source_file="res://assets/sprites/enemies/goblin/goblin3/Throwing in The Air/0_Orc_Throwing in The Air_002.png"
+dest_files=["res://.godot/imported/0_Orc_Throwing in The Air_002.png-a753ad85664f2dea7e41e160a52316ef.ctex"]
 
 [params]
 

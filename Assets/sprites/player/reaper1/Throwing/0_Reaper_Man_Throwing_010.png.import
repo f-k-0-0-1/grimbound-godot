@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bo67i75hw2vfu"
-path="res://.godot/imported/0_Reaper_Man_Throwing_010.png-b5c9e2efba5a388767961004b8045f03.ctex"
+path="res://.godot/imported/0_Reaper_Man_Throwing_010.png-7604d916defbfa3c05c570d5bbae8bb1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/sprites/player/reaper1/Throwing/0_Reaper_Man_Throwing_010.png"
-dest_files=["res://.godot/imported/0_Reaper_Man_Throwing_010.png-b5c9e2efba5a388767961004b8045f03.ctex"]
+source_file="res://assets/sprites/player/reaper1/Throwing/0_Reaper_Man_Throwing_010.png"
+dest_files=["res://.godot/imported/0_Reaper_Man_Throwing_010.png-7604d916defbfa3c05c570d5bbae8bb1.ctex"]
 
 [params]
 

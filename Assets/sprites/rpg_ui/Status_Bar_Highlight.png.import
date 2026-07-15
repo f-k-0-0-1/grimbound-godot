@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dm2rss64j8sd0"
-path="res://.godot/imported/Status_Bar_Highlight.png-0b0aec919c45b747570ad02c23a40599.ctex"
+path="res://.godot/imported/Status_Bar_Highlight.png-332b84da6120bfde72d67cb4b6ba8eff.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/sprites/rpg_ui/Status_Bar_Highlight.png"
-dest_files=["res://.godot/imported/Status_Bar_Highlight.png-0b0aec919c45b747570ad02c23a40599.ctex"]
+source_file="res://assets/sprites/rpg_ui/Status_Bar_Highlight.png"
+dest_files=["res://.godot/imported/Status_Bar_Highlight.png-332b84da6120bfde72d67cb4b6ba8eff.ctex"]
 
 [params]
 

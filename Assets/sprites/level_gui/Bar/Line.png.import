@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cxfbdq83q1ipq"
-path="res://.godot/imported/Line.png-516d5819462c03bf0416551e2d2c8d5f.ctex"
+path="res://.godot/imported/Line.png-e4872ea9f4eeed1d99fbcfefbcb75278.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/sprites/level_gui/Bar/Line.png"
-dest_files=["res://.godot/imported/Line.png-516d5819462c03bf0416551e2d2c8d5f.ctex"]
+source_file="res://assets/sprites/level_gui/Bar/Line.png"
+dest_files=["res://.godot/imported/Line.png-e4872ea9f4eeed1d99fbcfefbcb75278.ctex"]
 
 [params]
 

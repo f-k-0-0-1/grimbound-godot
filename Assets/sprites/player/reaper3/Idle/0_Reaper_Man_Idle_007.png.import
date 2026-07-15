@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://3ryi1av5egwd"
-path="res://.godot/imported/0_Reaper_Man_Idle_007.png-c9f5f56a6fc1077d7a0d12d3b8f25155.ctex"
+path="res://.godot/imported/0_Reaper_Man_Idle_007.png-26f58f49efe1a12a06433744bdcdd581.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/sprites/player/reaper3/Idle/0_Reaper_Man_Idle_007.png"
-dest_files=["res://.godot/imported/0_Reaper_Man_Idle_007.png-c9f5f56a6fc1077d7a0d12d3b8f25155.ctex"]
+source_file="res://assets/sprites/player/reaper3/Idle/0_Reaper_Man_Idle_007.png"
+dest_files=["res://.godot/imported/0_Reaper_Man_Idle_007.png-26f58f49efe1a12a06433744bdcdd581.ctex"]
 
 [params]
 

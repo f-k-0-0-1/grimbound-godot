@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://spvd61nyocri"
-path="res://.godot/imported/0_Reaper_Man_Kicking_009.png-76dc8a0a0790b9a4e12fa7f23a11021d.ctex"
+path="res://.godot/imported/0_Reaper_Man_Kicking_009.png-c16132c675ed1f8faa6085dc2f2210fb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/sprites/player/reaper3/Kicking/0_Reaper_Man_Kicking_009.png"
-dest_files=["res://.godot/imported/0_Reaper_Man_Kicking_009.png-76dc8a0a0790b9a4e12fa7f23a11021d.ctex"]
+source_file="res://assets/sprites/player/reaper3/Kicking/0_Reaper_Man_Kicking_009.png"
+dest_files=["res://.godot/imported/0_Reaper_Man_Kicking_009.png-c16132c675ed1f8faa6085dc2f2210fb.ctex"]
 
 [params]
 

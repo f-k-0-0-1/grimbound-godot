@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bj3r3kkg8c8ju"
-path="res://.godot/imported/0_Orc_Dying_005.png-4b48e86b1447500b22cd1ebe79776826.ctex"
+path="res://.godot/imported/0_Orc_Dying_005.png-5db3fa8dd08daae64d44e378e55fc635.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/sprites/enemies/goblin/goblin3/Dying/0_Orc_Dying_005.png"
-dest_files=["res://.godot/imported/0_Orc_Dying_005.png-4b48e86b1447500b22cd1ebe79776826.ctex"]
+source_file="res://assets/sprites/enemies/goblin/goblin3/Dying/0_Orc_Dying_005.png"
+dest_files=["res://.godot/imported/0_Orc_Dying_005.png-5db3fa8dd08daae64d44e378e55fc635.ctex"]
 
 [params]
 

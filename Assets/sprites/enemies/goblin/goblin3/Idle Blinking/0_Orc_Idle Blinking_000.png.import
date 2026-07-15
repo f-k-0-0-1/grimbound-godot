@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ciefjjyng4atn"
-path="res://.godot/imported/0_Orc_Idle Blinking_000.png-1697e1aefae37a8bea3063866f417b8d.ctex"
+path="res://.godot/imported/0_Orc_Idle Blinking_000.png-39cc31cfd3996a5465f698f23f72669e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/sprites/enemies/goblin/goblin3/Idle Blinking/0_Orc_Idle Blinking_000.png"
-dest_files=["res://.godot/imported/0_Orc_Idle Blinking_000.png-1697e1aefae37a8bea3063866f417b8d.ctex"]
+source_file="res://assets/sprites/enemies/goblin/goblin3/Idle Blinking/0_Orc_Idle Blinking_000.png"
+dest_files=["res://.godot/imported/0_Orc_Idle Blinking_000.png-39cc31cfd3996a5465f698f23f72669e.ctex"]
 
 [params]
 

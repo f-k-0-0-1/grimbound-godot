@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c86vyh5thm1y3"
-path="res://.godot/imported/0_Reaper_Man_Walking_019.png-cbf396d153b7306866d6715f514c344e.ctex"
+path="res://.godot/imported/0_Reaper_Man_Walking_019.png-46298eb0d14362ea99cca4eda44fe2ae.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/sprites/player/reaper3/Walking/0_Reaper_Man_Walking_019.png"
-dest_files=["res://.godot/imported/0_Reaper_Man_Walking_019.png-cbf396d153b7306866d6715f514c344e.ctex"]
+source_file="res://assets/sprites/player/reaper3/Walking/0_Reaper_Man_Walking_019.png"
+dest_files=["res://.godot/imported/0_Reaper_Man_Walking_019.png-46298eb0d14362ea99cca4eda44fe2ae.ctex"]
 
 [params]
 

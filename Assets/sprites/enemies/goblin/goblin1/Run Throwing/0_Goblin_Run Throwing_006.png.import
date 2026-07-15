@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dy57mcjctrrbo"
-path="res://.godot/imported/0_Goblin_Run Throwing_006.png-8f4bf237a002857c4d9b6825e6b4e834.ctex"
+path="res://.godot/imported/0_Goblin_Run Throwing_006.png-7de182e84dcdb9cc9fb50febd2fc9d9d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/sprites/enemies/goblin/goblin1/Run Throwing/0_Goblin_Run Throwing_006.png"
-dest_files=["res://.godot/imported/0_Goblin_Run Throwing_006.png-8f4bf237a002857c4d9b6825e6b4e834.ctex"]
+source_file="res://assets/sprites/enemies/goblin/goblin1/Run Throwing/0_Goblin_Run Throwing_006.png"
+dest_files=["res://.godot/imported/0_Goblin_Run Throwing_006.png-7de182e84dcdb9cc9fb50febd2fc9d9d.ctex"]
 
 [params]
 

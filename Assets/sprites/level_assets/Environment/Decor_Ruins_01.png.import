@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://l2cc5sl7vso5"
-path="res://.godot/imported/Decor_Ruins_01.png-a47f14b01c29c2b6a32b3d8857dcf5c9.ctex"
+path="res://.godot/imported/Decor_Ruins_01.png-ae74ab1eea0ffa0dd03d3597eb3bfd8b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/sprites/level_assets/Environment/Decor_Ruins_01.png"
-dest_files=["res://.godot/imported/Decor_Ruins_01.png-a47f14b01c29c2b6a32b3d8857dcf5c9.ctex"]
+source_file="res://assets/sprites/level_assets/Environment/Decor_Ruins_01.png"
+dest_files=["res://.godot/imported/Decor_Ruins_01.png-ae74ab1eea0ffa0dd03d3597eb3bfd8b.ctex"]
 
 [params]
 

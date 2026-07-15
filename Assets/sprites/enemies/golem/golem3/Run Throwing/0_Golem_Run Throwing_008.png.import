@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dvdywp6agimf5"
-path="res://.godot/imported/0_Golem_Run Throwing_008.png-a9fb8d696ecfc99ca95f5304b66a4629.ctex"
+path="res://.godot/imported/0_Golem_Run Throwing_008.png-38117d7a815cff04edf9180592b69a63.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/sprites/enemies/golem/golem3/Run Throwing/0_Golem_Run Throwing_008.png"
-dest_files=["res://.godot/imported/0_Golem_Run Throwing_008.png-a9fb8d696ecfc99ca95f5304b66a4629.ctex"]
+source_file="res://assets/sprites/enemies/golem/golem3/Run Throwing/0_Golem_Run Throwing_008.png"
+dest_files=["res://.godot/imported/0_Golem_Run Throwing_008.png-38117d7a815cff04edf9180592b69a63.ctex"]
 
 [params]
 

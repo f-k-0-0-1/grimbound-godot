@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://doq1y1cft1fuw"
-path="res://.godot/imported/NameBack.png-059b6b2c13b83e8c79dc4ffa46634808.ctex"
+path="res://.godot/imported/NameBack.png-2a5a8af2fb3a71fa251861d800fa9920.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/sprites/level_gui/Logotype/NameBack.png"
-dest_files=["res://.godot/imported/NameBack.png-059b6b2c13b83e8c79dc4ffa46634808.ctex"]
+source_file="res://assets/sprites/level_gui/Logotype/NameBack.png"
+dest_files=["res://.godot/imported/NameBack.png-2a5a8af2fb3a71fa251861d800fa9920.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ydn65jqj832n"
-path="res://.godot/imported/0_Golem_Throwing in The Air_011.png-0fdb30197342cc4625decc4b0e49957b.ctex"
+path="res://.godot/imported/0_Golem_Throwing in The Air_011.png-bae5f9787954a0418b5d68fbf4ac9e8a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/sprites/enemies/golem/golem1/Throwing in The Air/0_Golem_Throwing in The Air_011.png"
-dest_files=["res://.godot/imported/0_Golem_Throwing in The Air_011.png-0fdb30197342cc4625decc4b0e49957b.ctex"]
+source_file="res://assets/sprites/enemies/golem/golem1/Throwing in The Air/0_Golem_Throwing in The Air_011.png"
+dest_files=["res://.godot/imported/0_Golem_Throwing in The Air_011.png-bae5f9787954a0418b5d68fbf4ac9e8a.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ci253cnp1nbei"
-path="res://.godot/imported/0_Reaper_Man_Dying_008.png-3f0aeddfa59fc6525c740706e561202a.ctex"
+path="res://.godot/imported/0_Reaper_Man_Dying_008.png-b076412bcca387937b69c2e2964bfbec.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/sprites/player/reaper2/Dying/0_Reaper_Man_Dying_008.png"
-dest_files=["res://.godot/imported/0_Reaper_Man_Dying_008.png-3f0aeddfa59fc6525c740706e561202a.ctex"]
+source_file="res://assets/sprites/player/reaper2/Dying/0_Reaper_Man_Dying_008.png"
+dest_files=["res://.godot/imported/0_Reaper_Man_Dying_008.png-b076412bcca387937b69c2e2964bfbec.ctex"]
 
 [params]
 

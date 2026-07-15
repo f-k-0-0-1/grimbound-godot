@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dihljanykss3x"
-path="res://.godot/imported/BorderKnot(Horizontal)_01.png-bb41988f8d9a06e13e022303e5eba864.ctex"
+path="res://.godot/imported/BorderKnot(Horizontal)_01.png-25566ca761d2b10c82501cb88a8d4328.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/sprites/rpg_ui/BorderKnot(Horizontal)_01.png"
-dest_files=["res://.godot/imported/BorderKnot(Horizontal)_01.png-bb41988f8d9a06e13e022303e5eba864.ctex"]
+source_file="res://assets/sprites/rpg_ui/BorderKnot(Horizontal)_01.png"
+dest_files=["res://.godot/imported/BorderKnot(Horizontal)_01.png-25566ca761d2b10c82501cb88a8d4328.ctex"]
 
 [params]
 

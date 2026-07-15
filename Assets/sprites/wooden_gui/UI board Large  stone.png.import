@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://wmg3ykidhq0l"
-path="res://.godot/imported/UI board Large  stone.png-77525d0469fadb31ce9e8fc3422e47f1.ctex"
+path="res://.godot/imported/UI board Large  stone.png-882da7c1adf0ea693d3d38201b59b765.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/sprites/wooden_gui/UI board Large  stone.png"
-dest_files=["res://.godot/imported/UI board Large  stone.png-77525d0469fadb31ce9e8fc3422e47f1.ctex"]
+source_file="res://assets/sprites/wooden_gui/UI board Large  stone.png"
+dest_files=["res://.godot/imported/UI board Large  stone.png-882da7c1adf0ea693d3d38201b59b765.ctex"]
 
 [params]
 

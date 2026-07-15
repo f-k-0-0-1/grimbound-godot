@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bn3bxmhvk2byj"
-path="res://.godot/imported/0_Orc_Falling Down_002.png-535f82e797417e0c3ff679d51f3d905a.ctex"
+path="res://.godot/imported/0_Orc_Falling Down_002.png-d22edf05c701b523ba52d258185fc97c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/sprites/enemies/goblin/goblin3/Falling Down/0_Orc_Falling Down_002.png"
-dest_files=["res://.godot/imported/0_Orc_Falling Down_002.png-535f82e797417e0c3ff679d51f3d905a.ctex"]
+source_file="res://assets/sprites/enemies/goblin/goblin3/Falling Down/0_Orc_Falling Down_002.png"
+dest_files=["res://.godot/imported/0_Orc_Falling Down_002.png-d22edf05c701b523ba52d258185fc97c.ctex"]
 
 [params]
 

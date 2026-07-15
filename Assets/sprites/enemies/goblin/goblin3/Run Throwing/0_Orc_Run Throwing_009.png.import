@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://gfj2gbos31s7"
-path="res://.godot/imported/0_Orc_Run Throwing_009.png-af833436e12ddf638440765e0fa99008.ctex"
+path="res://.godot/imported/0_Orc_Run Throwing_009.png-5a2379e6da70a65937779e6f1265f913.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/sprites/enemies/goblin/goblin3/Run Throwing/0_Orc_Run Throwing_009.png"
-dest_files=["res://.godot/imported/0_Orc_Run Throwing_009.png-af833436e12ddf638440765e0fa99008.ctex"]
+source_file="res://assets/sprites/enemies/goblin/goblin3/Run Throwing/0_Orc_Run Throwing_009.png"
+dest_files=["res://.godot/imported/0_Orc_Run Throwing_009.png-5a2379e6da70a65937779e6f1265f913.ctex"]
 
 [params]
 
