@@ -1,0 +1,20 @@
+# Godot-specific overrides
+.godot/
+.import/
+export_presets.cfg
+
+# Imported mono binaries
+.mono/
+data_*/
+mono_crash_*.json
+
+# System/Editor-specific overrides
+.DS_Store
+Thumbs.db
+
+# Build artifacts (if you are compiling custom binaries or export templates)
+bin/
+build/
+
+# Local developer configuration overrides
+*.uid
