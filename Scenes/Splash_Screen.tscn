@@ -4,6 +4,7 @@
 [ext_resource type="FontFile" uid="uid://btxv8pw11ftag" path="res://Fonts/EightBitDragon-anqx.ttf" id="2_qwaqo"]
 
 [node name="Root" type="Control" unique_id=832887764]
+process_mode = 1
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0

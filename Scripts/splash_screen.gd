@@ -54,18 +54,28 @@ func _process(delta: float) -> void:
 			# Handle NUll
 			log_t.bbcode_enabled = true;
 			
-			# [Asked Form AI: Question: How to Apply Color in String"
-			log_t.text = "[color=yellow]Log:[/color] Main Scene Null !";
+			# [AI Help] Color in RichTextLable
+			log_t.text = "[color=Red]Log:[/color] Main Scene Null !";
 			
-			# Pin The Log Lable To The Top Left
-			log_t.anchor_right = 1.0;
-			log_t.anchor_bottom = 1.0;
+			# Tweaks
+			log_t.modulate.a = 0.8;
+			log_t.custom_minimum_size = Vector2(200, 20);
+			log_t.add_theme_font_size_override("normal_font_size", 12);
+			log_t.fit_content = true;
+			log_t.scroll_active = false;
 			
 			# Add To The Tree
 			add_child(log_t);
 			
-			# Wait for Seconds Before Quit
-			await get_tree().create_timer(Exit_Wait_Time).timeout;
+			# [AI Help] Grow Inwords
+			log_t.grow_horizontal = Control.GROW_DIRECTION_BEGIN
+			log_t.grow_vertical = Control.GROW_DIRECTION_BEGIN
+			
+			# Set Ancors
+			log_t.set_anchors_and_offsets_preset(Control.PRESET_BOTTOM_RIGHT);
+			
+			# Wait for Seconds Before Quit, 
+			await get_tree().create_timer(Exit_Wait_Time + 100000000000000000.0).timeout;
 			
 			# Then Exit With Exit Code
 			get_tree().quit(ERROR);
