@@ -1,5 +1,5 @@
 72322a848ab928aa5c89f0cb78209805
-::res://::1784109963
+::res://::1784112627
 export_presets.cfg::TextFile::-1::1784109354::0::1::::<><><>0<>0<><>::
 icon.svg::CompressedTexture2D::7516761694336584562::1784106986::1784107236::1::::<><><>0<>0<>1bbac1dd73d80aa2ee1c5648cb3f055b<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 README.md::TextFile::-1::1784106840::0::1::::<><><>0<>0<><>::
@@ -2616,12 +2616,16 @@ UI board Medium  parchment.png::CompressedTexture2D::1814114709442698142::178410
 UI board Medium  stone.png::CompressedTexture2D::7574003689313442789::1784109771::1784109907::1::::<><><>0<>0<>0beac501e3adbb0a5d5d3852f8fd207d<>res://.godot/imported/UI board Medium  stone.png-aa2dc2344d4b7945fbb923bbb1193bdb.ctex::
 UI board Small  parchment.png::CompressedTexture2D::7692293366535228757::1784109771::1784109907::1::::<><><>0<>0<>69b088c9e74cf2ab4c8c7ef75904258e<>res://.godot/imported/UI board Small  parchment.png-af8192362a8a44ddbb9199c6d9e04f91.ctex::
 UI board Small  stone.png::CompressedTexture2D::5700358169425672441::1784109771::1784109907::1::::<><><>0<>0<>f2e4f61f7862804257c3cb2d1f1ea13a<>res://.godot/imported/UI board Small  stone.png-8ca5ec514e753ba7cae9825540f3be9b.ctex::
-::res://Globals/::1784107565
-::res://R/::1784109771
+::res://Fonts/::1784112631
+EightBitDragon-anqx.ttf::FontFile::3768824212258282074::1784112631::1784112631::1::::<><><>0<>0<>2063a3735f914a46c561d0942b91090b<>res://.godot/imported/EightBitDragon-anqx.ttf-d79fe8459ce573a2723b2d8dd0a926ce.fontdata::
+::res://Globals/::1784110379
+SceneManager.gd::GDScript::1487774753444510805::1784110379::0::1::::<>Node<><>0<>0<><>::
+::res://Resources/::1784109771
 resources.md::TextFile::-1::1784109771::0::1::::<><><>0<>0<><>::
-::res://Scenes/::1784109878
+::res://Scenes/::1784112307
+Splash_Screen.tscn::PackedScene::518885829133879163::1784112307::0::1::::<><><>0<>0<><>::uid://xu7prjsaaath::::res://Scripts/splash_screen.gd
 scenes.md::TextFile::-1::1784109771::0::1::::<><><>0<>0<><>::
-::res://Scripts/::1784109868
-scripts.md::TextFile::-1::1784109771::0::1::::<><><>0<>0<><>::
+::res://Scripts/::1784112128
+splash_screen.gd::GDScript::1657601597051071117::1784112128::0::1::::<>Node<><>0<>0<><>::
 ::res://Shaders/::1784107551
 ::res://Textures/::1784107509
