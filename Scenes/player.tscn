@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://bo17ncj2gqp0n"]
+
+[ext_resource type="Script" uid="uid://dhmxst58m32x6" path="res://Scripts/player.gd" id="1_cvnsp"]
+[ext_resource type="Texture2D" uid="uid://7qrwpgjm1res" path="res://Assets/sprites/player/reaper1/Idle/0_Reaper_Man_Idle_000.png" id="2_6t5aa"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_dbq10"]
+radius = 30.0
+height = 134.0
+
+[node name="Player" type="CharacterBody2D" unique_id=28132837]
+script = ExtResource("1_cvnsp")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1200521248]
+position = Vector2(-187, 171)
+scale = Vector2(0.25111112, 0.25111112)
+texture = ExtResource("2_6t5aa")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1395951671]
+position = Vector2(-188, 176)
+shape = SubResource("CapsuleShape2D_dbq10")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=686029647]
+zoom = Vector2(0.5, 0.5)
+limit_left = -4500
+limit_top = -70
+limit_right = 5500
+limit_bottom = 660
+position_smoothing_enabled = true
+position_smoothing_speed = 8.0
+drag_left_margin = 0.0
+drag_top_margin = 0.0
+drag_right_margin = 0.0
+drag_bottom_margin = 0.0

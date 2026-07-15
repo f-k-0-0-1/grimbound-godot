@@ -14,17 +14,18 @@ const MAX_VISIBLE: float = 1.0;
 # Local Vars
 var cached_alpha: float;
 var log_t: RichTextLabel;
-var is_Wating: bool;
+var is_Waiting: bool;
+var has_transitioned: bool = false;  # Prevent multiple transitions
 
 # Run Once
 func _ready() -> void:
 	# Defaults
-	is_Wating = false;
+	is_Waiting = false;
 	
 	# Set The Bg Color In Splash Black
 	RenderingServer.set_default_clear_color(Color(0, 0, 0, 1));
 	
-	# Cahced The Label
+	# Cached The Label
 	log_t = RichTextLabel.new();
 	
 	# Set the Alpha to zero
@@ -34,48 +35,46 @@ func _ready() -> void:
 # Run Always
 func _process(delta: float) -> void:
 	# If Timer In Waiting Do Nothing 
-	if (is_Wating):
+	if (is_Waiting):
 		return;
 	
-	# Increase the Alpha Slowely
+	# Prevent multiple transitions
+	if (has_transitioned):
+		return;
+	
+	# Increase the Alpha Slowly
 	cached_alpha += 0.1 * delta * Visible_Speed; 
 	orgName.modulate.a = cached_alpha;
 
 	# If Alpha Max Out Change to Main Menu
 	if (cached_alpha > MAX_VISIBLE):
-		# Change Screen Here
-		if (SceneManager.init_Scene("main") != null):
-			# TODO Faiq: Change To The PackedScene Of Main Menu
-			pass;
+		has_transitioned = true
+		
+		# Transition to main menu
+		if (SceneManager.has_method("go_to_menu")):
+			SceneManager.go_to_menu()
 		else:
-			# Set The Wating
-			is_Wating = true;
-			
-			# Handle NUll
-			log_t.bbcode_enabled = true;
-			
-			# [AI Help] Color in RichTextLable
-			log_t.text = "[color=Red]Log:[/color] Main Scene Null !";
-			
-			# Tweaks
-			log_t.modulate.a = 0.8;
-			log_t.custom_minimum_size = Vector2(200, 20);
-			log_t.add_theme_font_size_override("normal_font_size", 12);
-			log_t.fit_content = true;
-			log_t.scroll_active = false;
-			
-			# Add To The Tree
-			add_child(log_t);
-			
-			# [AI Help] Grow Inwords
-			log_t.grow_horizontal = Control.GROW_DIRECTION_BEGIN
-			log_t.grow_vertical = Control.GROW_DIRECTION_BEGIN
-			
-			# Set Ancors
-			log_t.set_anchors_and_offsets_preset(Control.PRESET_BOTTOM_RIGHT);
-			
-			# Wait for Seconds Before Quit, 
-			await get_tree().create_timer(Exit_Wait_Time + 100000000000000000.0).timeout;
-			
-			# Then Exit With Exit Code
-			get_tree().quit(ERROR);
+			# Fallback: direct scene load
+			var error = get_tree().change_scene_to_file("res://scenes/menus/main_menu.tscn")
+			if error != OK:
+				_show_error_and_quit("Main Menu Scene Not Found!")
+
+# Show error and quit
+func _show_error_and_quit(error_message: String) -> void:
+	is_Waiting = true
+	
+	log_t.bbcode_enabled = true
+	log_t.text = "[color=Red]Error:[/color] " + error_message
+	log_t.modulate.a = 0.8
+	log_t.custom_minimum_size = Vector2(200, 20)
+	log_t.add_theme_font_size_override("normal_font_size", 12)
+	log_t.fit_content = true
+	log_t.scroll_active = false
+	
+	add_child(log_t)
+	log_t.grow_horizontal = Control.GROW_DIRECTION_BEGIN
+	log_t.grow_vertical = Control.GROW_DIRECTION_BEGIN
+	log_t.set_anchors_and_offsets_preset(Control.PRESET_BOTTOM_RIGHT)
+	
+	await get_tree().create_timer(Exit_Wait_Time).timeout
+	get_tree().quit(ERROR)
