@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dunoibmqdimk8"
-path="res://.godot/imported/Light.png-66ddfd634f3cd247ea5899dac734497f.ctex"
+path="res://.godot/imported/Light.png-006e530b8a0c4a48ca144d79f29f501e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/level_assets/Collectable Object/Light.png"
-dest_files=["res://.godot/imported/Light.png-66ddfd634f3cd247ea5899dac734497f.ctex"]
+source_file="res://Assets/sprites/level_assets/Collectable Object/Light.png"
+dest_files=["res://.godot/imported/Light.png-006e530b8a0c4a48ca144d79f29f501e.ctex"]
 
 [params]
 

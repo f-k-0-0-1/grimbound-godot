@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dfn2poiy43j02"
-path="res://.godot/imported/Border(Vertical)_03.png-fe6607bce766b9ceec655aac20e972d8.ctex"
+path="res://.godot/imported/Border(Vertical)_03.png-296ade07bc61dcc8586f7132b5280bfb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/rpg_ui/Border(Vertical)_03.png"
-dest_files=["res://.godot/imported/Border(Vertical)_03.png-fe6607bce766b9ceec655aac20e972d8.ctex"]
+source_file="res://Assets/sprites/rpg_ui/Border(Vertical)_03.png"
+dest_files=["res://.godot/imported/Border(Vertical)_03.png-296ade07bc61dcc8586f7132b5280bfb.ctex"]
 
 [params]
 

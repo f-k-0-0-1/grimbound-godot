@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cyrcibugkomtb"
-path="res://.godot/imported/TextBTN_New-Start.png-18ff501ad526a23861688b59573eafad.ctex"
+path="res://.godot/imported/TextBTN_New-Start.png-e0a89b6d1c8c1cd70cd1a3d268f4109d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/wooden_gui/TextBTN_New-Start.png"
-dest_files=["res://.godot/imported/TextBTN_New-Start.png-18ff501ad526a23861688b59573eafad.ctex"]
+source_file="res://Assets/sprites/wooden_gui/TextBTN_New-Start.png"
+dest_files=["res://.godot/imported/TextBTN_New-Start.png-e0a89b6d1c8c1cd70cd1a3d268f4109d.ctex"]
 
 [params]
 

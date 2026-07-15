@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bycmmej12wdbq"
-path="res://.godot/imported/0_Golem_Falling Down_000.png-ab6b14c174bd2723ff6c0ee434c3509e.ctex"
+path="res://.godot/imported/0_Golem_Falling Down_000.png-8dfc5730bd8b40ed719b0fa3835dfb4a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/enemies/golem/golem3/Falling Down/0_Golem_Falling Down_000.png"
-dest_files=["res://.godot/imported/0_Golem_Falling Down_000.png-ab6b14c174bd2723ff6c0ee434c3509e.ctex"]
+source_file="res://Assets/sprites/enemies/golem/golem3/Falling Down/0_Golem_Falling Down_000.png"
+dest_files=["res://.godot/imported/0_Golem_Falling Down_000.png-8dfc5730bd8b40ed719b0fa3835dfb4a.ctex"]
 
 [params]
 

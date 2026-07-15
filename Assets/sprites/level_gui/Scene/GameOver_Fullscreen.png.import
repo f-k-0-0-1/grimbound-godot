@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dtbh852onor8l"
-path="res://.godot/imported/GameOver_Fullscreen.png-6cd5b704f60c3d1fa907c1a60cb70b23.ctex"
+path="res://.godot/imported/GameOver_Fullscreen.png-3ad07a8936a7c6a7bd80a8fa9edae871.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/level_gui/Scene/GameOver_Fullscreen.png"
-dest_files=["res://.godot/imported/GameOver_Fullscreen.png-6cd5b704f60c3d1fa907c1a60cb70b23.ctex"]
+source_file="res://Assets/sprites/level_gui/Scene/GameOver_Fullscreen.png"
+dest_files=["res://.godot/imported/GameOver_Fullscreen.png-3ad07a8936a7c6a7bd80a8fa9edae871.ctex"]
 
 [params]
 

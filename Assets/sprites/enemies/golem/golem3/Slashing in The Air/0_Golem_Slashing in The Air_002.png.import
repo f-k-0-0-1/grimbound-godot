@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://tq2jahe3tdox"
-path="res://.godot/imported/0_Golem_Slashing in The Air_002.png-ee676386f72bcfcce15b023a7fb14ddf.ctex"
+path="res://.godot/imported/0_Golem_Slashing in The Air_002.png-74eaeaed899c90858ff9eb7fe1f4828f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/enemies/golem/golem3/Slashing in The Air/0_Golem_Slashing in The Air_002.png"
-dest_files=["res://.godot/imported/0_Golem_Slashing in The Air_002.png-ee676386f72bcfcce15b023a7fb14ddf.ctex"]
+source_file="res://Assets/sprites/enemies/golem/golem3/Slashing in The Air/0_Golem_Slashing in The Air_002.png"
+dest_files=["res://.godot/imported/0_Golem_Slashing in The Air_002.png-74eaeaed899c90858ff9eb7fe1f4828f.ctex"]
 
 [params]
 

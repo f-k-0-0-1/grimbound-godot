@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cdog77f5gdisx"
-path="res://.godot/imported/0_Orc_Kicking_008.png-bf1385b48648f2c12e733598acfd2e11.ctex"
+path="res://.godot/imported/0_Orc_Kicking_008.png-fe4c3fa7d2aa21cd4d880ba5d7c35a86.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/enemies/goblin/goblin3/Kicking/0_Orc_Kicking_008.png"
-dest_files=["res://.godot/imported/0_Orc_Kicking_008.png-bf1385b48648f2c12e733598acfd2e11.ctex"]
+source_file="res://Assets/sprites/enemies/goblin/goblin3/Kicking/0_Orc_Kicking_008.png"
+dest_files=["res://.godot/imported/0_Orc_Kicking_008.png-fe4c3fa7d2aa21cd4d880ba5d7c35a86.ctex"]
 
 [params]
 

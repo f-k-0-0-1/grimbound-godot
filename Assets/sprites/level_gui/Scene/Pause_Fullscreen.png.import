@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://buskjuo6jthxj"
-path="res://.godot/imported/Pause_Fullscreen.png-f41fd26f875ef7c2ff87e1858e1f0a84.ctex"
+path="res://.godot/imported/Pause_Fullscreen.png-18c3e55c6416ae066d7812aea52df5ac.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/level_gui/Scene/Pause_Fullscreen.png"
-dest_files=["res://.godot/imported/Pause_Fullscreen.png-f41fd26f875ef7c2ff87e1858e1f0a84.ctex"]
+source_file="res://Assets/sprites/level_gui/Scene/Pause_Fullscreen.png"
+dest_files=["res://.godot/imported/Pause_Fullscreen.png-18c3e55c6416ae066d7812aea52df5ac.ctex"]
 
 [params]
 

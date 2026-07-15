@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://crbh6exa8fo26"
-path="res://.godot/imported/0_Reaper_Man_Slashing_008.png-861f235abcea9594d9e3e31c10243bf4.ctex"
+path="res://.godot/imported/0_Reaper_Man_Slashing_008.png-81ac807453711ac70b1abd632c70817d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/player/reaper3/Slashing/0_Reaper_Man_Slashing_008.png"
-dest_files=["res://.godot/imported/0_Reaper_Man_Slashing_008.png-861f235abcea9594d9e3e31c10243bf4.ctex"]
+source_file="res://Assets/sprites/player/reaper3/Slashing/0_Reaper_Man_Slashing_008.png"
+dest_files=["res://.godot/imported/0_Reaper_Man_Slashing_008.png-81ac807453711ac70b1abd632c70817d.ctex"]
 
 [params]
 

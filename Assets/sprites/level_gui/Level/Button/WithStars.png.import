@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bcdguqthuhatt"
-path="res://.godot/imported/WithStars.png-90e1e1281c9b49b566481a266704599a.ctex"
+path="res://.godot/imported/WithStars.png-c0174ba208d3f135f8eb74799eb433af.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/level_gui/Level/Button/WithStars.png"
-dest_files=["res://.godot/imported/WithStars.png-90e1e1281c9b49b566481a266704599a.ctex"]
+source_file="res://Assets/sprites/level_gui/Level/Button/WithStars.png"
+dest_files=["res://.godot/imported/WithStars.png-c0174ba208d3f135f8eb74799eb433af.ctex"]
 
 [params]
 

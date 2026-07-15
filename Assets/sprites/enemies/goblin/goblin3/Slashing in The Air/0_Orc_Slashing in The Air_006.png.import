@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b1yyqwd5a3ttb"
-path="res://.godot/imported/0_Orc_Slashing in The Air_006.png-6675d191102e7bb3c04dacec38ec2475.ctex"
+path="res://.godot/imported/0_Orc_Slashing in The Air_006.png-d86abbd4d0260aed48051ec3dc5d5bc8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/enemies/goblin/goblin3/Slashing in The Air/0_Orc_Slashing in The Air_006.png"
-dest_files=["res://.godot/imported/0_Orc_Slashing in The Air_006.png-6675d191102e7bb3c04dacec38ec2475.ctex"]
+source_file="res://Assets/sprites/enemies/goblin/goblin3/Slashing in The Air/0_Orc_Slashing in The Air_006.png"
+dest_files=["res://.godot/imported/0_Orc_Slashing in The Air_006.png-d86abbd4d0260aed48051ec3dc5d5bc8.ctex"]
 
 [params]
 

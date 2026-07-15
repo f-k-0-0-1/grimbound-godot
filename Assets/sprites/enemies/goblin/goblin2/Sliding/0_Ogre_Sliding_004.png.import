@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dorfud7h3nf5m"
-path="res://.godot/imported/0_Ogre_Sliding_004.png-a6040a503197edc8f1aeda66b086c1e6.ctex"
+path="res://.godot/imported/0_Ogre_Sliding_004.png-549740791fa284ec3315dc54fcc17166.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/enemies/goblin/goblin2/Sliding/0_Ogre_Sliding_004.png"
-dest_files=["res://.godot/imported/0_Ogre_Sliding_004.png-a6040a503197edc8f1aeda66b086c1e6.ctex"]
+source_file="res://Assets/sprites/enemies/goblin/goblin2/Sliding/0_Ogre_Sliding_004.png"
+dest_files=["res://.godot/imported/0_Ogre_Sliding_004.png-549740791fa284ec3315dc54fcc17166.ctex"]
 
 [params]
 

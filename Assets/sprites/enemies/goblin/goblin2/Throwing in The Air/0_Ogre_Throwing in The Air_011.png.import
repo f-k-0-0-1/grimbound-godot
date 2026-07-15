@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d2k4y6kxicudp"
-path="res://.godot/imported/0_Ogre_Throwing in The Air_011.png-f09341812e5a6b194b0c8f67070fae9d.ctex"
+path="res://.godot/imported/0_Ogre_Throwing in The Air_011.png-82365a6d3d09d1ad2700cbb181670860.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/enemies/goblin/goblin2/Throwing in The Air/0_Ogre_Throwing in The Air_011.png"
-dest_files=["res://.godot/imported/0_Ogre_Throwing in The Air_011.png-f09341812e5a6b194b0c8f67070fae9d.ctex"]
+source_file="res://Assets/sprites/enemies/goblin/goblin2/Throwing in The Air/0_Ogre_Throwing in The Air_011.png"
+dest_files=["res://.godot/imported/0_Ogre_Throwing in The Air_011.png-82365a6d3d09d1ad2700cbb181670860.ctex"]
 
 [params]
 

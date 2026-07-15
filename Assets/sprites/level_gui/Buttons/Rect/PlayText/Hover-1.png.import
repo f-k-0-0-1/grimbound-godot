@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dpsgc7m07ap07"
-path="res://.godot/imported/Hover-1.png-2679c601b439b8f3459a7baad10facc8.ctex"
+path="res://.godot/imported/Hover-1.png-5216ec35e84ce828727b2c1c07d44560.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/level_gui/Buttons/Rect/PlayText/Hover-1.png"
-dest_files=["res://.godot/imported/Hover-1.png-2679c601b439b8f3459a7baad10facc8.ctex"]
+source_file="res://Assets/sprites/level_gui/Buttons/Rect/PlayText/Hover-1.png"
+dest_files=["res://.godot/imported/Hover-1.png-5216ec35e84ce828727b2c1c07d44560.ctex"]
 
 [params]
 

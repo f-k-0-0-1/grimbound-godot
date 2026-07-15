@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dvxcmpypy3g2i"
-path="res://.godot/imported/Ground_10.png-05d758ccbd90ff2aa6394f6f1aa2ecbf.ctex"
+path="res://.godot/imported/Ground_10.png-3cd0dd94c2f2ab5666282e0e60c862a0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/level_assets/Platformer/Ground_10.png"
-dest_files=["res://.godot/imported/Ground_10.png-05d758ccbd90ff2aa6394f6f1aa2ecbf.ctex"]
+source_file="res://Assets/sprites/level_assets/Platformer/Ground_10.png"
+dest_files=["res://.godot/imported/Ground_10.png-3cd0dd94c2f2ab5666282e0e60c862a0.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://vqdx2cjud4qk"
-path="res://.godot/imported/0_Golem_Idle Blinking_016.png-b571245e72415dde8e386019da5cd8d5.ctex"
+path="res://.godot/imported/0_Golem_Idle Blinking_016.png-9fb205b01ca3eac6bd97e60448df4aa1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/enemies/golem/golem3/Idle Blinking/0_Golem_Idle Blinking_016.png"
-dest_files=["res://.godot/imported/0_Golem_Idle Blinking_016.png-b571245e72415dde8e386019da5cd8d5.ctex"]
+source_file="res://Assets/sprites/enemies/golem/golem3/Idle Blinking/0_Golem_Idle Blinking_016.png"
+dest_files=["res://.godot/imported/0_Golem_Idle Blinking_016.png-9fb205b01ca3eac6bd97e60448df4aa1.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cwdg3iamrho8c"
-path="res://.godot/imported/0_Golem_Walking_003.png-3f055164e03b39027c3ad75d605acf28.ctex"
+path="res://.godot/imported/0_Golem_Walking_003.png-2d1b3844567aa5bd7a093c72c88a686b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/enemies/golem/golem1/Walking/0_Golem_Walking_003.png"
-dest_files=["res://.godot/imported/0_Golem_Walking_003.png-3f055164e03b39027c3ad75d605acf28.ctex"]
+source_file="res://Assets/sprites/enemies/golem/golem1/Walking/0_Golem_Walking_003.png"
+dest_files=["res://.godot/imported/0_Golem_Walking_003.png-2d1b3844567aa5bd7a093c72c88a686b.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://u6frf4vba5vs"
-path="res://.godot/imported/Chest_01_Unlocked.png-b6ca2c43047b8fca498d56510d1800a2.ctex"
+path="res://.godot/imported/Chest_01_Unlocked.png-5d440310f6a4cfe5736cd6ddd3f2de6e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/level_assets/Collectable Object/Chest_01_Unlocked.png"
-dest_files=["res://.godot/imported/Chest_01_Unlocked.png-b6ca2c43047b8fca498d56510d1800a2.ctex"]
+source_file="res://Assets/sprites/level_assets/Collectable Object/Chest_01_Unlocked.png"
+dest_files=["res://.godot/imported/Chest_01_Unlocked.png-5d440310f6a4cfe5736cd6ddd3f2de6e.ctex"]
 
 [params]
 

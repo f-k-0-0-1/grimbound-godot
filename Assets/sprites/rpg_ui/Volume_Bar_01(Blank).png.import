@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dx4c0mxolxwbv"
-path="res://.godot/imported/Volume_Bar_01(Blank).png-dff858f7feef491c0461434225c790d5.ctex"
+path="res://.godot/imported/Volume_Bar_01(Blank).png-d98fb58908eb34e018b0e14f3c26be9b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/rpg_ui/Volume_Bar_01(Blank).png"
-dest_files=["res://.godot/imported/Volume_Bar_01(Blank).png-dff858f7feef491c0461434225c790d5.ctex"]
+source_file="res://Assets/sprites/rpg_ui/Volume_Bar_01(Blank).png"
+dest_files=["res://.godot/imported/Volume_Bar_01(Blank).png-d98fb58908eb34e018b0e14f3c26be9b.ctex"]
 
 [params]
 

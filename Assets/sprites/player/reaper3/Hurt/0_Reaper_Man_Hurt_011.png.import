@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://croqp45o0f6hp"
-path="res://.godot/imported/0_Reaper_Man_Hurt_011.png-72a8ec3092b439c60599a828fbdda2ce.ctex"
+path="res://.godot/imported/0_Reaper_Man_Hurt_011.png-e464677d2ffaf826ba085db3ce13a61e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/player/reaper3/Hurt/0_Reaper_Man_Hurt_011.png"
-dest_files=["res://.godot/imported/0_Reaper_Man_Hurt_011.png-72a8ec3092b439c60599a828fbdda2ce.ctex"]
+source_file="res://Assets/sprites/player/reaper3/Hurt/0_Reaper_Man_Hurt_011.png"
+dest_files=["res://.godot/imported/0_Reaper_Man_Hurt_011.png-e464677d2ffaf826ba085db3ce13a61e.ctex"]
 
 [params]
 

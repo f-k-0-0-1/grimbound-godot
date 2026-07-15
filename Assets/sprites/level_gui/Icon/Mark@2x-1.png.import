@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bfxm2w6v47b1g"
-path="res://.godot/imported/Mark@2x-1.png-83ef2ff45208787dbc9409cc5b165ae6.ctex"
+path="res://.godot/imported/Mark@2x-1.png-cf39bcc20080b03fb8c3a8abe77449c0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/level_gui/Icon/Mark@2x-1.png"
-dest_files=["res://.godot/imported/Mark@2x-1.png-83ef2ff45208787dbc9409cc5b165ae6.ctex"]
+source_file="res://Assets/sprites/level_gui/Icon/Mark@2x-1.png"
+dest_files=["res://.godot/imported/Mark@2x-1.png-cf39bcc20080b03fb8c3a8abe77449c0.ctex"]
 
 [params]
 

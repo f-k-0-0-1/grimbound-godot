@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d2w11ohcdj1hd"
-path="res://.godot/imported/UI board Large  parchment.png-1f94157aa86478e0560b86a54894d792.ctex"
+path="res://.godot/imported/UI board Large  parchment.png-65d05a44d34da4bdbbc7efa037a62e8f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/wooden_gui/UI board Large  parchment.png"
-dest_files=["res://.godot/imported/UI board Large  parchment.png-1f94157aa86478e0560b86a54894d792.ctex"]
+source_file="res://Assets/sprites/wooden_gui/UI board Large  parchment.png"
+dest_files=["res://.godot/imported/UI board Large  parchment.png-65d05a44d34da4bdbbc7efa037a62e8f.ctex"]
 
 [params]
 

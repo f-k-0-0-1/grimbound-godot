@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bjrje5a3yf5mn"
-path="res://.godot/imported/Panel_Tooltip_01.png-8745b6010c99ecf5f6350fc00837585c.ctex"
+path="res://.godot/imported/Panel_Tooltip_01.png-7262830f851a4bf40864be64332f8023.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/rpg_ui/Panel_Tooltip_01.png"
-dest_files=["res://.godot/imported/Panel_Tooltip_01.png-8745b6010c99ecf5f6350fc00837585c.ctex"]
+source_file="res://Assets/sprites/rpg_ui/Panel_Tooltip_01.png"
+dest_files=["res://.godot/imported/Panel_Tooltip_01.png-7262830f851a4bf40864be64332f8023.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d338mqx7ntimu"
-path="res://.godot/imported/0_Reaper_Man_Falling Down_003.png-ea750b5a4f1ee3c02831339f22643d52.ctex"
+path="res://.godot/imported/0_Reaper_Man_Falling Down_003.png-8b37170bfbb9e098e78c14c07f1f72fd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/player/reaper3/Falling Down/0_Reaper_Man_Falling Down_003.png"
-dest_files=["res://.godot/imported/0_Reaper_Man_Falling Down_003.png-ea750b5a4f1ee3c02831339f22643d52.ctex"]
+source_file="res://Assets/sprites/player/reaper3/Falling Down/0_Reaper_Man_Falling Down_003.png"
+dest_files=["res://.godot/imported/0_Reaper_Man_Falling Down_003.png-8b37170bfbb9e098e78c14c07f1f72fd.ctex"]
 
 [params]
 

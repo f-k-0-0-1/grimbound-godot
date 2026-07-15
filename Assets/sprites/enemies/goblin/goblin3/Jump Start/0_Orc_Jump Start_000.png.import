@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ctubiokinv3bx"
-path="res://.godot/imported/0_Orc_Jump Start_000.png-47222804d64028b369d73b49bf216c27.ctex"
+path="res://.godot/imported/0_Orc_Jump Start_000.png-e01e5a14192add9de5e1d2395427038e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/enemies/goblin/goblin3/Jump Start/0_Orc_Jump Start_000.png"
-dest_files=["res://.godot/imported/0_Orc_Jump Start_000.png-47222804d64028b369d73b49bf216c27.ctex"]
+source_file="res://Assets/sprites/enemies/goblin/goblin3/Jump Start/0_Orc_Jump Start_000.png"
+dest_files=["res://.godot/imported/0_Orc_Jump Start_000.png-e01e5a14192add9de5e1d2395427038e.ctex"]
 
 [params]
 

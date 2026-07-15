@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dvnj4f40p526r"
-path="res://.godot/imported/0_Goblin_Jump Start_003.png-c6d96673cc1bc2a13c3ab1962092f79d.ctex"
+path="res://.godot/imported/0_Goblin_Jump Start_003.png-50606043fb50c3bfcd84998819c13ad2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/enemies/goblin/goblin1/Jump Start/0_Goblin_Jump Start_003.png"
-dest_files=["res://.godot/imported/0_Goblin_Jump Start_003.png-c6d96673cc1bc2a13c3ab1962092f79d.ctex"]
+source_file="res://Assets/sprites/enemies/goblin/goblin1/Jump Start/0_Goblin_Jump Start_003.png"
+dest_files=["res://.godot/imported/0_Goblin_Jump Start_003.png-50606043fb50c3bfcd84998819c13ad2.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d4neboj3ifwwl"
-path="res://.godot/imported/Fantasy Wooden GUI  - PNG.png-b9d9a857124447c4424e47e669f1b66a.ctex"
+path="res://.godot/imported/Fantasy Wooden GUI  - PNG.png-d3cd61edc2c3b1d3515756b5c760a241.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/wooden_gui/Fantasy Wooden GUI  - PNG.png"
-dest_files=["res://.godot/imported/Fantasy Wooden GUI  - PNG.png-b9d9a857124447c4424e47e669f1b66a.ctex"]
+source_file="res://Assets/sprites/wooden_gui/Fantasy Wooden GUI  - PNG.png"
+dest_files=["res://.godot/imported/Fantasy Wooden GUI  - PNG.png-d3cd61edc2c3b1d3515756b5c760a241.ctex"]
 
 [params]
 

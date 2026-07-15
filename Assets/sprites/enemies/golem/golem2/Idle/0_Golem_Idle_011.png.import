@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://fd1p6ft76fpv"
-path="res://.godot/imported/0_Golem_Idle_011.png-d9fd8ffe84d661720cd8f3cf1dbc6ad2.ctex"
+path="res://.godot/imported/0_Golem_Idle_011.png-f1286bb98e5b10bcd57a7a75767507bb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/enemies/golem/golem2/Idle/0_Golem_Idle_011.png"
-dest_files=["res://.godot/imported/0_Golem_Idle_011.png-d9fd8ffe84d661720cd8f3cf1dbc6ad2.ctex"]
+source_file="res://Assets/sprites/enemies/golem/golem2/Idle/0_Golem_Idle_011.png"
+dest_files=["res://.godot/imported/0_Golem_Idle_011.png-f1286bb98e5b10bcd57a7a75767507bb.ctex"]
 
 [params]
 

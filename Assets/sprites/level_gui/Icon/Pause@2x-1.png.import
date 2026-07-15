@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://hhxiyq3wj3hg"
-path="res://.godot/imported/Pause@2x-1.png-b309633bf7d2b4b481b13900c6945996.ctex"
+path="res://.godot/imported/Pause@2x-1.png-52d957cce889023e18ae57b4e950fe67.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/level_gui/Icon/Pause@2x-1.png"
-dest_files=["res://.godot/imported/Pause@2x-1.png-b309633bf7d2b4b481b13900c6945996.ctex"]
+source_file="res://Assets/sprites/level_gui/Icon/Pause@2x-1.png"
+dest_files=["res://.godot/imported/Pause@2x-1.png-52d957cce889023e18ae57b4e950fe67.ctex"]
 
 [params]
 

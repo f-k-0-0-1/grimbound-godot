@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bsm0dnhsdqitv"
-path="res://.godot/imported/0_Reaper_Man_Slashing in The Air_010.png-1af0f8520cb0b69361153dc0083974fe.ctex"
+path="res://.godot/imported/0_Reaper_Man_Slashing in The Air_010.png-b683238e04edd885cf96043e29bce5ef.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/player/reaper2/Slashing in The Air/0_Reaper_Man_Slashing in The Air_010.png"
-dest_files=["res://.godot/imported/0_Reaper_Man_Slashing in The Air_010.png-1af0f8520cb0b69361153dc0083974fe.ctex"]
+source_file="res://Assets/sprites/player/reaper2/Slashing in The Air/0_Reaper_Man_Slashing in The Air_010.png"
+dest_files=["res://.godot/imported/0_Reaper_Man_Slashing in The Air_010.png-b683238e04edd885cf96043e29bce5ef.ctex"]
 
 [params]
 

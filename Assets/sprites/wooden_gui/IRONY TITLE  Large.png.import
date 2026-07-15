@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cry6h273xfyfk"
-path="res://.godot/imported/IRONY TITLE  Large.png-b103999fcc805a7e09126e6d3bf6eac2.ctex"
+path="res://.godot/imported/IRONY TITLE  Large.png-db647338afbb4ae8b9c16b1ce33ab768.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/wooden_gui/IRONY TITLE  Large.png"
-dest_files=["res://.godot/imported/IRONY TITLE  Large.png-b103999fcc805a7e09126e6d3bf6eac2.ctex"]
+source_file="res://Assets/sprites/wooden_gui/IRONY TITLE  Large.png"
+dest_files=["res://.godot/imported/IRONY TITLE  Large.png-db647338afbb4ae8b9c16b1ce33ab768.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dhg4davxridp6"
-path="res://.godot/imported/0_Golem_Kicking_007.png-76cc0741e051b265ad9b52e4bc110b2c.ctex"
+path="res://.godot/imported/0_Golem_Kicking_007.png-6a0f922864fed5d165c8a0f691a3416a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/enemies/golem/golem3/Kicking/0_Golem_Kicking_007.png"
-dest_files=["res://.godot/imported/0_Golem_Kicking_007.png-76cc0741e051b265ad9b52e4bc110b2c.ctex"]
+source_file="res://Assets/sprites/enemies/golem/golem3/Kicking/0_Golem_Kicking_007.png"
+dest_files=["res://.godot/imported/0_Golem_Kicking_007.png-6a0f922864fed5d165c8a0f691a3416a.ctex"]
 
 [params]
 

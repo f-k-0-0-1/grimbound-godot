@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bpp8vc5lh76oh"
-path="res://.godot/imported/0_Orc_Jump Loop_001.png-0d2b81d7037270f01ebd6221b95316d3.ctex"
+path="res://.godot/imported/0_Orc_Jump Loop_001.png-a876547f5abf496485c965069dca424b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/enemies/goblin/goblin3/Jump Loop/0_Orc_Jump Loop_001.png"
-dest_files=["res://.godot/imported/0_Orc_Jump Loop_001.png-0d2b81d7037270f01ebd6221b95316d3.ctex"]
+source_file="res://Assets/sprites/enemies/goblin/goblin3/Jump Loop/0_Orc_Jump Loop_001.png"
+dest_files=["res://.godot/imported/0_Orc_Jump Loop_001.png-a876547f5abf496485c965069dca424b.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dg4ba4wrmpme8"
-path="res://.godot/imported/Little_Wreckage.png-3408f867364d6655c66424958e8321f0.ctex"
+path="res://.godot/imported/Little_Wreckage.png-d2753be8c97ebc542da7ec3390e1aa0a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/level_assets/Environment/Little_Wreckage.png"
-dest_files=["res://.godot/imported/Little_Wreckage.png-3408f867364d6655c66424958e8321f0.ctex"]
+source_file="res://Assets/sprites/level_assets/Environment/Little_Wreckage.png"
+dest_files=["res://.godot/imported/Little_Wreckage.png-d2753be8c97ebc542da7ec3390e1aa0a.ctex"]
 
 [params]
 
