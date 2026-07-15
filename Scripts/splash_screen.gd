@@ -21,6 +21,9 @@ func _ready() -> void:
 	# Defaults
 	is_Wating = false;
 	
+	# Set The Bg Color In Splash Black
+	RenderingServer.set_default_clear_color(Color(0, 0, 0, 1));
+	
 	# Cahced The Label
 	log_t = RichTextLabel.new();
 	
@@ -52,7 +55,7 @@ func _process(delta: float) -> void:
 			log_t.bbcode_enabled = true;
 			
 			# [Asked Form AI: Question: How to Apply Color in String"
-			log_t.text = "[color=red]Log:[/color] Main Scene NULL";
+			log_t.text = "[color=yellow]Log:[/color] Main Scene Null !";
 			
 			# Pin The Log Lable To The Top Left
 			log_t.anchor_right = 1.0;
