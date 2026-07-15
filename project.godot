@@ -11,8 +11,12 @@ config_version=5
 [application]
 
 config/name="GrimBound"
+config/description="A handcrafted 2D action-platformer built with Godot 4 for Android"
+config/version="1.0"
 config/features=PackedStringArray("4.6", "Mobile")
-config/icon="res://icon.svg"
+boot_splash/show_image=false
+boot_splash/use_filter=false
+config/icon="uid://dfdf74y1b1kfa"
 
 [physics]
 
