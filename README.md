@@ -1,6 +1,6 @@
 # Grimbound
 
-> A handcrafted 2D action-platformer built with **Godot 4**, featuring fast-paced combat, exploration, hidden secrets, and challenging platforming.
+> A handcrafted 2D action-platformer built with **Godot 4.6**, featuring fast-paced combat, exploration, hidden secrets, and challenging platforming.
 
 > **Status:** 🚧 In Development
 
@@ -59,7 +59,7 @@ Project
 
 # Technologies
 
-- **Engine:** Godot 4.x
+- **Engine:** Godot 4.6.2
 - **Language:** GDScript
 - **Platform:** Android (Primary)
 - **Version Control:** Git & GitHub
@@ -214,8 +214,5 @@ No license has been assigned yet.
 
 ---
 
-## Author
-
-Developed by **F K**
 
 Built with ❤️ using **Godot Engine**.
