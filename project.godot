@@ -16,6 +16,7 @@ config/version="1.0"
 run/main_scene="uid://hnl8dychaa7l"
 config/features=PackedStringArray("4.6", "Mobile")
 boot_splash/show_image=false
+boot_splash/stretch_mode=0
 boot_splash/use_filter=false
 config/icon="uid://dfdf74y1b1kfa"
 
@@ -27,9 +28,13 @@ SceneManager="*uid://vgxoylwphugr"
 
 window/size/viewport_width=640
 window/size/viewport_height=360
+window/size/mode=1
 window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
-window/vsync/vsync_mode=2
+
+[gui]
+
+theme/custom_font="uid://btxv8pw11ftag"
 
 [input_devices]
 

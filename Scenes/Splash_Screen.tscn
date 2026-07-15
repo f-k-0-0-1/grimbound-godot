@@ -1,8 +1,10 @@
 [gd_scene format=3 uid="uid://hnl8dychaa7l"]
 
-[ext_resource type="Script" uid="uid://ddrvix7ixut0n" path="res://Scripts/splash_screen.gd" id="1_b13rc"]
+[ext_resource type="Script" uid="uid://xu7prjsaaath" path="res://Scripts/splash_screen.gd" id="1_b13rc"]
+[ext_resource type="FontFile" uid="uid://btxv8pw11ftag" path="res://Fonts/EightBitDragon-anqx.ttf" id="2_qwaqo"]
 
 [node name="Root" type="Control" unique_id=832887764]
+process_mode = 1
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -10,31 +12,26 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_b13rc")
-Visible_Speed = 2.0
-
-[node name="Bg" type="ColorRect" parent="." unique_id=2137778342]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-color = Color(0, 0, 0, 1)
+Visible_Speed = 1.5
+Exit_Wait_Time = 5.0
 
 [node name="Label" type="Label" parent="." unique_id=393992487]
+texture_filter = 1
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -73.55435
-offset_top = -25.25
-offset_right = 73.55435
-offset_bottom = 25.25
+offset_left = -123.41089
+offset_top = -32.125
+offset_right = 123.40988
+offset_bottom = 32.125
 grow_horizontal = 2
 grow_vertical = 2
+scale = Vector2(1, 1.0030538)
+theme_override_fonts/font = ExtResource("2_qwaqo")
 theme_override_font_sizes/font_size = 20
-text = "Tencent Studios"
+text = "Last Breath Studios"
 horizontal_alignment = 1
 vertical_alignment = 1
