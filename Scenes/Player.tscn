@@ -25,5 +25,6 @@ shape = SubResource("CapsuleShape2D_2a624")
 
 [node name="Camera" type="Camera2D" parent="." unique_id=156959296]
 zoom = Vector2(0.2, 0.2)
+limit_enabled = false
 limit_smoothed = true
 position_smoothing_enabled = true
