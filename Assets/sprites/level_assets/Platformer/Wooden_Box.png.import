@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://npmuh4ln6smh"
-path="res://.godot/imported/Wooden_Box.png-d75efabb62c64bc89224b3f10bd93229.ctex"
+path="res://.godot/imported/Wooden_Box.png-7c2222b34196e2b63d9c927b927436ae.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/sprites/level_assets/Platformer/Wooden_Box.png"
-dest_files=["res://.godot/imported/Wooden_Box.png-d75efabb62c64bc89224b3f10bd93229.ctex"]
+source_file="res://assets/sprites/level_assets/Platformer/Wooden_Box.png"
+dest_files=["res://.godot/imported/Wooden_Box.png-7c2222b34196e2b63d9c927b927436ae.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bmylnxk6hys0g"
-path="res://.godot/imported/0_Goblin_Slashing_009.png-53c5b8cbbc21f43d0ed8ac5f5697cd50.ctex"
+path="res://.godot/imported/0_Goblin_Slashing_009.png-7e24cc2c61296da9e06053cdc7a5f845.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/sprites/enemies/goblin/goblin1/Slashing/0_Goblin_Slashing_009.png"
-dest_files=["res://.godot/imported/0_Goblin_Slashing_009.png-53c5b8cbbc21f43d0ed8ac5f5697cd50.ctex"]
+source_file="res://assets/sprites/enemies/goblin/goblin1/Slashing/0_Goblin_Slashing_009.png"
+dest_files=["res://.godot/imported/0_Goblin_Slashing_009.png-7e24cc2c61296da9e06053cdc7a5f845.ctex"]
 
 [params]
 

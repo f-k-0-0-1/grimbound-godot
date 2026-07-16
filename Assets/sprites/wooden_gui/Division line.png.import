@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://6wvfp1wgf6o8"
-path="res://.godot/imported/Division line.png-b3f8602cc84f677a74ae85e0c70eddd7.ctex"
+path="res://.godot/imported/Division line.png-5c08f63191e1c270faa7cd1f7898a52b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/sprites/wooden_gui/Division line.png"
-dest_files=["res://.godot/imported/Division line.png-b3f8602cc84f677a74ae85e0c70eddd7.ctex"]
+source_file="res://assets/sprites/wooden_gui/Division line.png"
+dest_files=["res://.godot/imported/Division line.png-5c08f63191e1c270faa7cd1f7898a52b.ctex"]
 
 [params]
 

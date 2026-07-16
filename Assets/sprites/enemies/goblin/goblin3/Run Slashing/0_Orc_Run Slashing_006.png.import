@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dwk2yohgydyrf"
-path="res://.godot/imported/0_Orc_Run Slashing_006.png-41b37716b65b9fac69f9a50708c6a222.ctex"
+path="res://.godot/imported/0_Orc_Run Slashing_006.png-14b804d9b1f2b17c807291dec4a81104.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/sprites/enemies/goblin/goblin3/Run Slashing/0_Orc_Run Slashing_006.png"
-dest_files=["res://.godot/imported/0_Orc_Run Slashing_006.png-41b37716b65b9fac69f9a50708c6a222.ctex"]
+source_file="res://assets/sprites/enemies/goblin/goblin3/Run Slashing/0_Orc_Run Slashing_006.png"
+dest_files=["res://.godot/imported/0_Orc_Run Slashing_006.png-14b804d9b1f2b17c807291dec4a81104.ctex"]
 
 [params]
 

@@ -24,6 +24,8 @@ config/icon="uid://dfdf74y1b1kfa"
 [autoload]
 
 SceneManager="*uid://cfl8foq0q1aoc"
+GameManager="*uid://q31wb0gbc7lq"
+SaveManager="*uid://bt13cdi7i4omm"
 
 [display]
 

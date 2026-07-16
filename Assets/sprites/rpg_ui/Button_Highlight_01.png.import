@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bgwlalslkpua4"
-path="res://.godot/imported/Button_Highlight_01.png-2303c973dc5ecb9b65a8fb8d3846a0da.ctex"
+path="res://.godot/imported/Button_Highlight_01.png-74e2a815195234a21d3da7050504d685.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/sprites/rpg_ui/Button_Highlight_01.png"
-dest_files=["res://.godot/imported/Button_Highlight_01.png-2303c973dc5ecb9b65a8fb8d3846a0da.ctex"]
+source_file="res://assets/sprites/rpg_ui/Button_Highlight_01.png"
+dest_files=["res://.godot/imported/Button_Highlight_01.png-74e2a815195234a21d3da7050504d685.ctex"]
 
 [params]
 

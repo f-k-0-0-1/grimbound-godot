@@ -1,0 +1,84 @@
+[gd_scene format=3 uid="uid://bgq28aohflfnv"]
+
+[ext_resource type="Script" uid="uid://dugrus88hmod0" path="res://scripts/mobile_controls.gd" id="1_kth8y"]
+[ext_resource type="Texture2D" uid="uid://cxy4oj5vwcs4d" path="res://assets/sprites/ui_buttons/Icon/Left/A_Left1.png" id="2_k6aum"]
+[ext_resource type="Texture2D" uid="uid://4diqggajamg8" path="res://assets/sprites/ui_buttons/Icon/Left/A_Left2.png" id="3_cnqve"]
+[ext_resource type="Texture2D" uid="uid://b3sao124bkq1k" path="res://assets/sprites/ui_buttons/Icon/Right/A_Right1.png" id="4_kffq0"]
+[ext_resource type="Texture2D" uid="uid://c5s3s87hn7g2b" path="res://assets/sprites/ui_buttons/Icon/Right/A_Right2.png" id="5_bswi6"]
+[ext_resource type="Texture2D" uid="uid://ceum0xmg6o4ir" path="res://assets/sprites/ui_buttons/Icon/Up/A_Up1.png" id="6_ilxsp"]
+[ext_resource type="Texture2D" uid="uid://bheka8vtheev8" path="res://assets/sprites/ui_buttons/Icon/Up/A_Up2.png" id="7_saaj3"]
+[ext_resource type="Texture2D" uid="uid://xjl5yhon8w5w" path="res://assets/sprites/ui_buttons/Icon/Back/A_Back1.png" id="8_jnbrs"]
+[ext_resource type="Texture2D" uid="uid://ba5oqcvwyl1xt" path="res://assets/sprites/ui_buttons/Icon/Back/A_Back2.png" id="9_bdd5e"]
+
+[node name="MobileControls" type="CanvasLayer" unique_id=499995920]
+script = ExtResource("1_kth8y")
+
+[node name="LeftContainer" type="Control" parent="." unique_id=1651939373]
+layout_mode = 3
+anchor_top = 0.70000005
+anchor_bottom = 0.70000005
+offset_left = 49.0
+offset_top = -20.000015
+offset_right = 89.0
+offset_bottom = 19.999985
+grow_vertical = 0
+
+[node name="LeftButton" type="TouchScreenButton" parent="LeftContainer" unique_id=1968947571]
+position = Vector2(-13, -2)
+scale = Vector2(3, 3)
+texture_normal = ExtResource("2_k6aum")
+texture_pressed = ExtResource("3_cnqve")
+action = "move_left"
+
+[node name="RightContainer" type="Control" parent="." unique_id=1031851395]
+layout_mode = 3
+anchor_top = 0.69200003
+anchor_bottom = 0.69200003
+offset_left = 102.0
+offset_top = -20.12001
+offset_right = 142.0
+offset_bottom = 19.87999
+grow_vertical = 0
+
+[node name="RightButton" type="TouchScreenButton" parent="RightContainer" unique_id=1194660726]
+position = Vector2(3, 1)
+scale = Vector2(3, 3)
+texture_normal = ExtResource("4_kffq0")
+texture_pressed = ExtResource("5_bswi6")
+action = "move_right"
+
+[node name="JumpContainer" type="Control" parent="." unique_id=1633145044]
+layout_mode = 3
+anchor_left = 1.0
+anchor_top = 0.69200003
+anchor_right = 1.0
+anchor_bottom = 0.69200003
+offset_left = -80.0
+offset_top = -20.12001
+offset_right = -40.0
+offset_bottom = 19.87999
+grow_horizontal = 0
+grow_vertical = 0
+
+[node name="JumpButton" type="TouchScreenButton" parent="JumpContainer" unique_id=677837650]
+position = Vector2(-2, -1)
+scale = Vector2(3, 3)
+texture_normal = ExtResource("6_ilxsp")
+texture_pressed = ExtResource("7_saaj3")
+passby_press = true
+action = "jump"
+
+[node name="BackButton" type="Control" parent="." unique_id=821787390]
+layout_mode = 3
+anchor_top = 0.075
+anchor_bottom = 0.075
+offset_left = 23.0
+offset_top = -15.000002
+offset_right = 53.0
+offset_bottom = 14.999998
+
+[node name="TouchScreenButton" type="TouchScreenButton" parent="BackButton" unique_id=987054541]
+position = Vector2(-6.999999, 0)
+scale = Vector2(2.5, 2.5)
+texture_normal = ExtResource("8_jnbrs")
+texture_pressed = ExtResource("9_bdd5e")

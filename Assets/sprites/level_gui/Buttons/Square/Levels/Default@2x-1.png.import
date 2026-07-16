@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c2uibl7pue0p2"
-path="res://.godot/imported/Default@2x-1.png-8cc2559d0bfa98886525ae843a5b5d9c.ctex"
+path="res://.godot/imported/Default@2x-1.png-121019f002bda39894720420d14d228e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/sprites/level_gui/Buttons/Square/Levels/Default@2x-1.png"
-dest_files=["res://.godot/imported/Default@2x-1.png-8cc2559d0bfa98886525ae843a5b5d9c.ctex"]
+source_file="res://assets/sprites/level_gui/Buttons/Square/Levels/Default@2x-1.png"
+dest_files=["res://.godot/imported/Default@2x-1.png-121019f002bda39894720420d14d228e.ctex"]
 
 [params]
 

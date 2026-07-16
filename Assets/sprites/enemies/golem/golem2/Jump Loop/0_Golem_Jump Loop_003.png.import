@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d08rrnaqweshn"
-path="res://.godot/imported/0_Golem_Jump Loop_003.png-49bb44fb169872cbb80f17edbd7ef9d1.ctex"
+path="res://.godot/imported/0_Golem_Jump Loop_003.png-739b49fd3737c342de8b83d63f9ec09c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/sprites/enemies/golem/golem2/Jump Loop/0_Golem_Jump Loop_003.png"
-dest_files=["res://.godot/imported/0_Golem_Jump Loop_003.png-49bb44fb169872cbb80f17edbd7ef9d1.ctex"]
+source_file="res://assets/sprites/enemies/golem/golem2/Jump Loop/0_Golem_Jump Loop_003.png"
+dest_files=["res://.godot/imported/0_Golem_Jump Loop_003.png-739b49fd3737c342de8b83d63f9ec09c.ctex"]
 
 [params]
 

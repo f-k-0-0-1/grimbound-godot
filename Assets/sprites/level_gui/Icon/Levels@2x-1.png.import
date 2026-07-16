@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://beakmmp5cmhal"
-path="res://.godot/imported/Levels@2x-1.png-addb9089d1a7bf60e0fcedeb607c244b.ctex"
+path="res://.godot/imported/Levels@2x-1.png-5d7e25e6321e5d34180bcb68bf9d9413.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/sprites/level_gui/Icon/Levels@2x-1.png"
-dest_files=["res://.godot/imported/Levels@2x-1.png-addb9089d1a7bf60e0fcedeb607c244b.ctex"]
+source_file="res://assets/sprites/level_gui/Icon/Levels@2x-1.png"
+dest_files=["res://.godot/imported/Levels@2x-1.png-5d7e25e6321e5d34180bcb68bf9d9413.ctex"]
 
 [params]
 

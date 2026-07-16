@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cxql4smlfphjb"
-path="res://.godot/imported/0_Ogre_Falling Down_000.png-ed3131b072e4edcd544bc550a26f63ca.ctex"
+path="res://.godot/imported/0_Ogre_Falling Down_000.png-e3bb9d161882d58c29b5f377656ad53b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/sprites/enemies/goblin/goblin2/Falling Down/0_Ogre_Falling Down_000.png"
-dest_files=["res://.godot/imported/0_Ogre_Falling Down_000.png-ed3131b072e4edcd544bc550a26f63ca.ctex"]
+source_file="res://assets/sprites/enemies/goblin/goblin2/Falling Down/0_Ogre_Falling Down_000.png"
+dest_files=["res://.godot/imported/0_Ogre_Falling Down_000.png-e3bb9d161882d58c29b5f377656ad53b.ctex"]
 
 [params]
 

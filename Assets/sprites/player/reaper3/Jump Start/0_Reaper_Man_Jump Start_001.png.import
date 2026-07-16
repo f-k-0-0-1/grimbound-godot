@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c6ltsc5vps84u"
-path="res://.godot/imported/0_Reaper_Man_Jump Start_001.png-282d5588fc215174d56fb2f73bf05727.ctex"
+path="res://.godot/imported/0_Reaper_Man_Jump Start_001.png-eb9d4c70e3d7bb11d3e37bce000b5383.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/sprites/player/reaper3/Jump Start/0_Reaper_Man_Jump Start_001.png"
-dest_files=["res://.godot/imported/0_Reaper_Man_Jump Start_001.png-282d5588fc215174d56fb2f73bf05727.ctex"]
+source_file="res://assets/sprites/player/reaper3/Jump Start/0_Reaper_Man_Jump Start_001.png"
+dest_files=["res://.godot/imported/0_Reaper_Man_Jump Start_001.png-eb9d4c70e3d7bb11d3e37bce000b5383.ctex"]
 
 [params]
 

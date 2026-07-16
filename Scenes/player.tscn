@@ -1,28 +1,27 @@
-[gd_scene format=3 uid="uid://bo17ncj2gqp0n"]
+[gd_scene format=3 uid="uid://cihkd4fr21nah"]
 
-[ext_resource type="Script" uid="uid://dhmxst58m32x6" path="res://Scripts/player.gd" id="1_cvnsp"]
-[ext_resource type="Texture2D" uid="uid://7qrwpgjm1res" path="res://Assets/sprites/player/reaper1/Idle/0_Reaper_Man_Idle_000.png" id="2_6t5aa"]
+[ext_resource type="Script" uid="uid://qqmobiclsmsu" path="res://scripts/player.gd" id="1_g2els"]
+[ext_resource type="SpriteFrames" uid="uid://b3i3s1brdd62h" path="res://resources/player_skins/Reaper_1.tres" id="2_qhqgy"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_dbq10"]
-radius = 30.0
-height = 134.0
+radius = 104.0
+height = 556.0
 
 [node name="Player" type="CharacterBody2D" unique_id=28132837]
-script = ExtResource("1_cvnsp")
+script = ExtResource("1_g2els")
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1200521248]
-position = Vector2(-187, 171)
-scale = Vector2(0.25111112, 0.25111112)
-texture = ExtResource("2_6t5aa")
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=2114595249]
+sprite_frames = ExtResource("2_qhqgy")
+animation = &"Walking"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1395951671]
-position = Vector2(-188, 176)
+position = Vector2(-9, 16)
 shape = SubResource("CapsuleShape2D_dbq10")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=686029647]
-zoom = Vector2(0.5, 0.5)
+zoom = Vector2(0.32, 0.32)
 limit_left = -4500
-limit_top = -70
+limit_top = -460
 limit_right = 5500
 limit_bottom = 660
 position_smoothing_enabled = true

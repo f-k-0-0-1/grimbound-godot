@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://qnp5uwx8era"
-path="res://.godot/imported/0_Reaper_Man_Run Slashing_008.png-e090f31bdaf64b2a8fb7fa6658a1ecc2.ctex"
+path="res://.godot/imported/0_Reaper_Man_Run Slashing_008.png-bb6aef883375485dfe0301e61acc2dbf.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/sprites/player/reaper2/Run Slashing/0_Reaper_Man_Run Slashing_008.png"
-dest_files=["res://.godot/imported/0_Reaper_Man_Run Slashing_008.png-e090f31bdaf64b2a8fb7fa6658a1ecc2.ctex"]
+source_file="res://assets/sprites/player/reaper2/Run Slashing/0_Reaper_Man_Run Slashing_008.png"
+dest_files=["res://.godot/imported/0_Reaper_Man_Run Slashing_008.png-bb6aef883375485dfe0301e61acc2dbf.ctex"]
 
 [params]
 

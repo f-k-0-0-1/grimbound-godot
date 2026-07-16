@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ddta2s0nbt4dy"
-path="res://.godot/imported/0_Goblin_Hurt_005.png-54565e77b93e3511dcfa3ba27ddd716b.ctex"
+path="res://.godot/imported/0_Goblin_Hurt_005.png-d876ae1a59bb369448336baee6bf1cbe.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/sprites/enemies/goblin/goblin1/Hurt/0_Goblin_Hurt_005.png"
-dest_files=["res://.godot/imported/0_Goblin_Hurt_005.png-54565e77b93e3511dcfa3ba27ddd716b.ctex"]
+source_file="res://assets/sprites/enemies/goblin/goblin1/Hurt/0_Goblin_Hurt_005.png"
+dest_files=["res://.godot/imported/0_Goblin_Hurt_005.png-d876ae1a59bb369448336baee6bf1cbe.ctex"]
 
 [params]
 

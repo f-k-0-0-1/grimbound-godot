@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bxb5qt4uqesau"
-path="res://.godot/imported/0_Goblin_Dying_011.png-eaf48578f082dcffddb5675205fb068c.ctex"
+path="res://.godot/imported/0_Goblin_Dying_011.png-68a282dd455f8680619bc607d8718fe1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/sprites/enemies/goblin/goblin1/Dying/0_Goblin_Dying_011.png"
-dest_files=["res://.godot/imported/0_Goblin_Dying_011.png-eaf48578f082dcffddb5675205fb068c.ctex"]
+source_file="res://assets/sprites/enemies/goblin/goblin1/Dying/0_Goblin_Dying_011.png"
+dest_files=["res://.godot/imported/0_Goblin_Dying_011.png-68a282dd455f8680619bc607d8718fe1.ctex"]
 
 [params]
 

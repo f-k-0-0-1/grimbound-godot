@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bhjnyy05ep31w"
-path="res://.godot/imported/0_Goblin_Idle Blinking_014.png-685c093e7fbc4073ba796b76984c933d.ctex"
+path="res://.godot/imported/0_Goblin_Idle Blinking_014.png-d3e983efa8372510c899dae317ed23df.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/sprites/enemies/goblin/goblin1/Idle Blinking/0_Goblin_Idle Blinking_014.png"
-dest_files=["res://.godot/imported/0_Goblin_Idle Blinking_014.png-685c093e7fbc4073ba796b76984c933d.ctex"]
+source_file="res://assets/sprites/enemies/goblin/goblin1/Idle Blinking/0_Goblin_Idle Blinking_014.png"
+dest_files=["res://.godot/imported/0_Goblin_Idle Blinking_014.png-d3e983efa8372510c899dae317ed23df.ctex"]
 
 [params]
 

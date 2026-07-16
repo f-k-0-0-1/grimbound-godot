@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ccc7libp2wdng"
-path="res://.godot/imported/0_Golem_Run Slashing_007.png-e239b1f0995f616d561fbc101ca7c425.ctex"
+path="res://.godot/imported/0_Golem_Run Slashing_007.png-d7bf55422ba2405e921251fd49768605.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/sprites/enemies/golem/golem1/Run Slashing/0_Golem_Run Slashing_007.png"
-dest_files=["res://.godot/imported/0_Golem_Run Slashing_007.png-e239b1f0995f616d561fbc101ca7c425.ctex"]
+source_file="res://assets/sprites/enemies/golem/golem1/Run Slashing/0_Golem_Run Slashing_007.png"
+dest_files=["res://.godot/imported/0_Golem_Run Slashing_007.png-d7bf55422ba2405e921251fd49768605.ctex"]
 
 [params]
 

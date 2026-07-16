@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://crrokowsrv3ot"
-path="res://.godot/imported/GrimBound_icon.png-fb6593451f7ec7005dfe3d413ab43455.ctex"
+path="res://.godot/imported/GrimBound_icon.png-bd9f7ea37a07e7c0c79ad8f16a1ed015.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/sprites/game_icon/GrimBound_icon.png"
-dest_files=["res://.godot/imported/GrimBound_icon.png-fb6593451f7ec7005dfe3d413ab43455.ctex"]
+source_file="res://assets/sprites/game_icon/GrimBound_icon.png"
+dest_files=["res://.godot/imported/GrimBound_icon.png-bd9f7ea37a07e7c0c79ad8f16a1ed015.ctex"]
 
 [params]
 

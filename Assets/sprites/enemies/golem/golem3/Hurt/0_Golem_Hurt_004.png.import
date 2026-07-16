@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d0o5dbg52dny7"
-path="res://.godot/imported/0_Golem_Hurt_004.png-b8a2ae42d6752a3e634d5bcba0bff80d.ctex"
+path="res://.godot/imported/0_Golem_Hurt_004.png-58c23912e3d570cfe08b90b838fd4923.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/sprites/enemies/golem/golem3/Hurt/0_Golem_Hurt_004.png"
-dest_files=["res://.godot/imported/0_Golem_Hurt_004.png-b8a2ae42d6752a3e634d5bcba0bff80d.ctex"]
+source_file="res://assets/sprites/enemies/golem/golem3/Hurt/0_Golem_Hurt_004.png"
+dest_files=["res://.godot/imported/0_Golem_Hurt_004.png-58c23912e3d570cfe08b90b838fd4923.ctex"]
 
 [params]
 

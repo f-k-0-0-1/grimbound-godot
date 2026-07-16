@@ -55,7 +55,7 @@ func _process(delta: float) -> void:
 			SceneManager.go_to_menu()
 		else:
 			# Fallback: direct scene load
-			var error = get_tree().change_scene_to_file("res://scenes/menus/main_menu.tscn")
+			var error = get_tree().change_scene_to_file("res://scenes/main_menu.tscn")
 			if error != OK:
 				_show_error_and_quit("Main Menu Scene Not Found!")
 

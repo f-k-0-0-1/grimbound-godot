@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b3ibveuctqc6c"
-path="res://.godot/imported/Default.png-6985b4983a58b5a08086407b48d366f2.ctex"
+path="res://.godot/imported/Default.png-4c9f282340b48542bd8d2e4a06f44639.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/sprites/level_gui/Buttons/Square/ArrowRight-Bold/Default.png"
-dest_files=["res://.godot/imported/Default.png-6985b4983a58b5a08086407b48d366f2.ctex"]
+source_file="res://assets/sprites/level_gui/Buttons/Square/ArrowRight-Bold/Default.png"
+dest_files=["res://.godot/imported/Default.png-4c9f282340b48542bd8d2e4a06f44639.ctex"]
 
 [params]
 

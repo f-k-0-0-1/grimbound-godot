@@ -1,0 +1,918 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://b3i3s1brdd62h"]
+
+[ext_resource type="Texture2D" uid="uid://iaiuj6ecwasn" path="res://assets/sprites/player/reaper1/Dying/0_Reaper_Man_Dying_000.png" id="1_wbf2g"]
+[ext_resource type="Texture2D" uid="uid://w206hkyybvun" path="res://assets/sprites/player/reaper1/Dying/0_Reaper_Man_Dying_001.png" id="2_7kq5k"]
+[ext_resource type="Texture2D" uid="uid://c1cfnurds3abk" path="res://assets/sprites/player/reaper1/Dying/0_Reaper_Man_Dying_002.png" id="3_qlh3f"]
+[ext_resource type="Texture2D" uid="uid://dxpa4qbixpe82" path="res://assets/sprites/player/reaper1/Dying/0_Reaper_Man_Dying_003.png" id="4_pxoi4"]
+[ext_resource type="Texture2D" uid="uid://cfwuiokm8ss3l" path="res://assets/sprites/player/reaper1/Dying/0_Reaper_Man_Dying_004.png" id="5_mb3r4"]
+[ext_resource type="Texture2D" uid="uid://b7ey38c84bnoc" path="res://assets/sprites/player/reaper1/Dying/0_Reaper_Man_Dying_005.png" id="6_v00yq"]
+[ext_resource type="Texture2D" uid="uid://vmql63ltgd4m" path="res://assets/sprites/player/reaper1/Dying/0_Reaper_Man_Dying_006.png" id="7_dd3t0"]
+[ext_resource type="Texture2D" uid="uid://csehp1fr5rujy" path="res://assets/sprites/player/reaper1/Dying/0_Reaper_Man_Dying_007.png" id="8_gekfx"]
+[ext_resource type="Texture2D" uid="uid://nvniakbw0uxy" path="res://assets/sprites/player/reaper1/Dying/0_Reaper_Man_Dying_008.png" id="9_lge4r"]
+[ext_resource type="Texture2D" uid="uid://decotopirwo1p" path="res://assets/sprites/player/reaper1/Dying/0_Reaper_Man_Dying_009.png" id="10_exdqx"]
+[ext_resource type="Texture2D" uid="uid://c3b3s6dlfog2v" path="res://assets/sprites/player/reaper1/Dying/0_Reaper_Man_Dying_010.png" id="11_bjq1k"]
+[ext_resource type="Texture2D" uid="uid://h1c1jqg8gfe3" path="res://assets/sprites/player/reaper1/Dying/0_Reaper_Man_Dying_011.png" id="12_mpr8e"]
+[ext_resource type="Texture2D" uid="uid://cabvl5coc7s8u" path="res://assets/sprites/player/reaper1/Dying/0_Reaper_Man_Dying_012.png" id="13_075yg"]
+[ext_resource type="Texture2D" uid="uid://c213v2l1nqjw0" path="res://assets/sprites/player/reaper1/Dying/0_Reaper_Man_Dying_013.png" id="14_hmuv6"]
+[ext_resource type="Texture2D" uid="uid://bv7f033sqri6y" path="res://assets/sprites/player/reaper1/Dying/0_Reaper_Man_Dying_014.png" id="15_f2c2p"]
+[ext_resource type="Texture2D" uid="uid://bftblx8rdhjmr" path="res://assets/sprites/player/reaper1/Falling Down/0_Reaper_Man_Falling Down_000.png" id="16_pyh8x"]
+[ext_resource type="Texture2D" uid="uid://blo13ocmac87u" path="res://assets/sprites/player/reaper1/Falling Down/0_Reaper_Man_Falling Down_001.png" id="17_nr2r5"]
+[ext_resource type="Texture2D" uid="uid://c4cge0015v2v6" path="res://assets/sprites/player/reaper1/Falling Down/0_Reaper_Man_Falling Down_002.png" id="18_0cn1x"]
+[ext_resource type="Texture2D" uid="uid://cj1v7ngqsxqoo" path="res://assets/sprites/player/reaper1/Falling Down/0_Reaper_Man_Falling Down_003.png" id="19_xlfuy"]
+[ext_resource type="Texture2D" uid="uid://f3na0s1btup7" path="res://assets/sprites/player/reaper1/Falling Down/0_Reaper_Man_Falling Down_004.png" id="20_5lymj"]
+[ext_resource type="Texture2D" uid="uid://gwcea0maj7yh" path="res://assets/sprites/player/reaper1/Falling Down/0_Reaper_Man_Falling Down_005.png" id="21_suqy7"]
+[ext_resource type="Texture2D" uid="uid://beaq0vkug3nmd" path="res://assets/sprites/player/reaper1/Hurt/0_Reaper_Man_Hurt_000.png" id="22_3poxc"]
+[ext_resource type="Texture2D" uid="uid://djqnpoiu4bxgh" path="res://assets/sprites/player/reaper1/Hurt/0_Reaper_Man_Hurt_001.png" id="23_yw7lt"]
+[ext_resource type="Texture2D" uid="uid://bqxf3trw2my8q" path="res://assets/sprites/player/reaper1/Hurt/0_Reaper_Man_Hurt_002.png" id="24_2c1do"]
+[ext_resource type="Texture2D" uid="uid://bk7smpyl84exs" path="res://assets/sprites/player/reaper1/Hurt/0_Reaper_Man_Hurt_003.png" id="25_3jbik"]
+[ext_resource type="Texture2D" uid="uid://b4vx6qrx38bjg" path="res://assets/sprites/player/reaper1/Hurt/0_Reaper_Man_Hurt_004.png" id="26_gj707"]
+[ext_resource type="Texture2D" uid="uid://da0vrwsgieg6x" path="res://assets/sprites/player/reaper1/Hurt/0_Reaper_Man_Hurt_005.png" id="27_gypgo"]
+[ext_resource type="Texture2D" uid="uid://bf8j7alqkn3c" path="res://assets/sprites/player/reaper1/Hurt/0_Reaper_Man_Hurt_006.png" id="28_bv1tx"]
+[ext_resource type="Texture2D" uid="uid://c2hw32umb3lm" path="res://assets/sprites/player/reaper1/Hurt/0_Reaper_Man_Hurt_007.png" id="29_c8wnu"]
+[ext_resource type="Texture2D" uid="uid://dkavaxpdyai73" path="res://assets/sprites/player/reaper1/Hurt/0_Reaper_Man_Hurt_008.png" id="30_oata5"]
+[ext_resource type="Texture2D" uid="uid://cdnpabtbtcqj7" path="res://assets/sprites/player/reaper1/Hurt/0_Reaper_Man_Hurt_009.png" id="31_g8edk"]
+[ext_resource type="Texture2D" uid="uid://342oiqaqlfjw" path="res://assets/sprites/player/reaper1/Hurt/0_Reaper_Man_Hurt_010.png" id="32_eyoqa"]
+[ext_resource type="Texture2D" uid="uid://dp84el6v6fu3a" path="res://assets/sprites/player/reaper1/Hurt/0_Reaper_Man_Hurt_011.png" id="33_d8jyw"]
+[ext_resource type="Texture2D" uid="uid://7qrwpgjm1res" path="res://assets/sprites/player/reaper1/Idle/0_Reaper_Man_Idle_000.png" id="34_7v418"]
+[ext_resource type="Texture2D" uid="uid://b0a6xutt2ah3o" path="res://assets/sprites/player/reaper1/Idle/0_Reaper_Man_Idle_001.png" id="35_146ir"]
+[ext_resource type="Texture2D" uid="uid://co3haqclmmw3r" path="res://assets/sprites/player/reaper1/Idle/0_Reaper_Man_Idle_002.png" id="36_o2c2w"]
+[ext_resource type="Texture2D" uid="uid://cseqg5hqit5uo" path="res://assets/sprites/player/reaper1/Idle/0_Reaper_Man_Idle_003.png" id="37_rx5v5"]
+[ext_resource type="Texture2D" uid="uid://cwaqyv60ycfql" path="res://assets/sprites/player/reaper1/Idle/0_Reaper_Man_Idle_004.png" id="38_yxuam"]
+[ext_resource type="Texture2D" uid="uid://bpt1bpjqkt5k7" path="res://assets/sprites/player/reaper1/Idle/0_Reaper_Man_Idle_005.png" id="39_ia4f5"]
+[ext_resource type="Texture2D" uid="uid://cp488t6t8xoo3" path="res://assets/sprites/player/reaper1/Idle/0_Reaper_Man_Idle_006.png" id="40_ao7v7"]
+[ext_resource type="Texture2D" uid="uid://vsgetqsmfo24" path="res://assets/sprites/player/reaper1/Idle/0_Reaper_Man_Idle_007.png" id="41_ehrcg"]
+[ext_resource type="Texture2D" uid="uid://bwyc6m7posvga" path="res://assets/sprites/player/reaper1/Idle/0_Reaper_Man_Idle_008.png" id="42_i07id"]
+[ext_resource type="Texture2D" uid="uid://codvuukh7jx5a" path="res://assets/sprites/player/reaper1/Idle/0_Reaper_Man_Idle_009.png" id="43_3sqpu"]
+[ext_resource type="Texture2D" uid="uid://bvacdn0edj4iv" path="res://assets/sprites/player/reaper1/Idle/0_Reaper_Man_Idle_010.png" id="44_wflcc"]
+[ext_resource type="Texture2D" uid="uid://cgublmv10n3ev" path="res://assets/sprites/player/reaper1/Idle/0_Reaper_Man_Idle_011.png" id="45_oggb1"]
+[ext_resource type="Texture2D" uid="uid://d0o7ar0sjsq5a" path="res://assets/sprites/player/reaper1/Idle/0_Reaper_Man_Idle_012.png" id="46_ka4ll"]
+[ext_resource type="Texture2D" uid="uid://c38pvjvol6voy" path="res://assets/sprites/player/reaper1/Idle/0_Reaper_Man_Idle_013.png" id="47_6fdff"]
+[ext_resource type="Texture2D" uid="uid://dgfcosm4f7umb" path="res://assets/sprites/player/reaper1/Idle/0_Reaper_Man_Idle_014.png" id="48_yuoyk"]
+[ext_resource type="Texture2D" uid="uid://3bolv8jlo7yb" path="res://assets/sprites/player/reaper1/Idle/0_Reaper_Man_Idle_015.png" id="49_bionj"]
+[ext_resource type="Texture2D" uid="uid://qaqaudxpyehc" path="res://assets/sprites/player/reaper1/Idle/0_Reaper_Man_Idle_016.png" id="50_lqj1p"]
+[ext_resource type="Texture2D" uid="uid://v6csklugqhj1" path="res://assets/sprites/player/reaper1/Idle/0_Reaper_Man_Idle_017.png" id="51_p41re"]
+[ext_resource type="Texture2D" uid="uid://ioe4swfsgf22" path="res://assets/sprites/player/reaper1/Idle Blinking/0_Reaper_Man_Idle Blinking_000.png" id="52_82vyb"]
+[ext_resource type="Texture2D" uid="uid://b2wwn4ly1u24s" path="res://assets/sprites/player/reaper1/Idle Blinking/0_Reaper_Man_Idle Blinking_001.png" id="53_3vc0a"]
+[ext_resource type="Texture2D" uid="uid://cyiy3r55tnvsq" path="res://assets/sprites/player/reaper1/Idle Blinking/0_Reaper_Man_Idle Blinking_002.png" id="54_sag42"]
+[ext_resource type="Texture2D" uid="uid://8jbly3watnu6" path="res://assets/sprites/player/reaper1/Idle Blinking/0_Reaper_Man_Idle Blinking_003.png" id="55_8l6aa"]
+[ext_resource type="Texture2D" uid="uid://bjaxg63ftgkfp" path="res://assets/sprites/player/reaper1/Idle Blinking/0_Reaper_Man_Idle Blinking_004.png" id="56_0jpyg"]
+[ext_resource type="Texture2D" uid="uid://d14kq5abh7lxs" path="res://assets/sprites/player/reaper1/Idle Blinking/0_Reaper_Man_Idle Blinking_005.png" id="57_853uh"]
+[ext_resource type="Texture2D" uid="uid://bcdtclqv7rn2y" path="res://assets/sprites/player/reaper1/Idle Blinking/0_Reaper_Man_Idle Blinking_006.png" id="58_uxo6x"]
+[ext_resource type="Texture2D" uid="uid://88xmq2cnmdsc" path="res://assets/sprites/player/reaper1/Idle Blinking/0_Reaper_Man_Idle Blinking_007.png" id="59_b86w3"]
+[ext_resource type="Texture2D" uid="uid://dx4gnxcowjpuh" path="res://assets/sprites/player/reaper1/Idle Blinking/0_Reaper_Man_Idle Blinking_008.png" id="60_hirqa"]
+[ext_resource type="Texture2D" uid="uid://2jdy848fkk3c" path="res://assets/sprites/player/reaper1/Idle Blinking/0_Reaper_Man_Idle Blinking_009.png" id="61_on2ju"]
+[ext_resource type="Texture2D" uid="uid://b4w46faqyokob" path="res://assets/sprites/player/reaper1/Idle Blinking/0_Reaper_Man_Idle Blinking_010.png" id="62_iyrv7"]
+[ext_resource type="Texture2D" uid="uid://cp4bhw2k5h2hd" path="res://assets/sprites/player/reaper1/Idle Blinking/0_Reaper_Man_Idle Blinking_011.png" id="63_edn6o"]
+[ext_resource type="Texture2D" uid="uid://c1ghrsoo8imgv" path="res://assets/sprites/player/reaper1/Idle Blinking/0_Reaper_Man_Idle Blinking_012.png" id="64_kel56"]
+[ext_resource type="Texture2D" uid="uid://ypvwu5c4ebqj" path="res://assets/sprites/player/reaper1/Idle Blinking/0_Reaper_Man_Idle Blinking_013.png" id="65_3klie"]
+[ext_resource type="Texture2D" uid="uid://b62g83cj6o3vo" path="res://assets/sprites/player/reaper1/Idle Blinking/0_Reaper_Man_Idle Blinking_014.png" id="66_q5kgo"]
+[ext_resource type="Texture2D" uid="uid://bredfe2wgfsa" path="res://assets/sprites/player/reaper1/Idle Blinking/0_Reaper_Man_Idle Blinking_015.png" id="67_h5l2w"]
+[ext_resource type="Texture2D" uid="uid://dhtxk3rbf4ggs" path="res://assets/sprites/player/reaper1/Idle Blinking/0_Reaper_Man_Idle Blinking_016.png" id="68_jppsq"]
+[ext_resource type="Texture2D" uid="uid://74fpryaqd3u0" path="res://assets/sprites/player/reaper1/Idle Blinking/0_Reaper_Man_Idle Blinking_017.png" id="69_bp0tg"]
+[ext_resource type="Texture2D" uid="uid://k2nsti2owjhi" path="res://assets/sprites/player/reaper1/Jump Loop/0_Reaper_Man_Jump Loop_000.png" id="70_0ljqk"]
+[ext_resource type="Texture2D" uid="uid://bmetmnbgcapir" path="res://assets/sprites/player/reaper1/Jump Loop/0_Reaper_Man_Jump Loop_001.png" id="71_8b3o5"]
+[ext_resource type="Texture2D" uid="uid://ci3jloctbnm7d" path="res://assets/sprites/player/reaper1/Jump Loop/0_Reaper_Man_Jump Loop_002.png" id="72_kgf1t"]
+[ext_resource type="Texture2D" uid="uid://bjbrf2pvd5wre" path="res://assets/sprites/player/reaper1/Jump Loop/0_Reaper_Man_Jump Loop_003.png" id="73_f63fx"]
+[ext_resource type="Texture2D" uid="uid://lyg50gvj4emx" path="res://assets/sprites/player/reaper1/Jump Loop/0_Reaper_Man_Jump Loop_004.png" id="74_gplq8"]
+[ext_resource type="Texture2D" uid="uid://bn3gq0ri6deby" path="res://assets/sprites/player/reaper1/Jump Loop/0_Reaper_Man_Jump Loop_005.png" id="75_e42ii"]
+[ext_resource type="Texture2D" uid="uid://xr71j01kq20" path="res://assets/sprites/player/reaper1/Jump Start/0_Reaper_Man_Jump Start_000.png" id="76_8rw45"]
+[ext_resource type="Texture2D" uid="uid://k1bbotmh0ayf" path="res://assets/sprites/player/reaper1/Jump Start/0_Reaper_Man_Jump Start_001.png" id="77_rdrqd"]
+[ext_resource type="Texture2D" uid="uid://cp2h2hrgiy3jt" path="res://assets/sprites/player/reaper1/Jump Start/0_Reaper_Man_Jump Start_002.png" id="78_qvl3s"]
+[ext_resource type="Texture2D" uid="uid://bkixkpeqcjgst" path="res://assets/sprites/player/reaper1/Jump Start/0_Reaper_Man_Jump Start_003.png" id="79_atdr3"]
+[ext_resource type="Texture2D" uid="uid://6fihiqrmmqcs" path="res://assets/sprites/player/reaper1/Jump Start/0_Reaper_Man_Jump Start_004.png" id="80_drnlk"]
+[ext_resource type="Texture2D" uid="uid://do5ox1erx12dr" path="res://assets/sprites/player/reaper1/Jump Start/0_Reaper_Man_Jump Start_005.png" id="81_8hbed"]
+[ext_resource type="Texture2D" uid="uid://ei6dm0uwckev" path="res://assets/sprites/player/reaper1/Kicking/0_Reaper_Man_Kicking_000.png" id="82_atmt5"]
+[ext_resource type="Texture2D" uid="uid://ueeusesoakgi" path="res://assets/sprites/player/reaper1/Kicking/0_Reaper_Man_Kicking_001.png" id="83_jkgtl"]
+[ext_resource type="Texture2D" uid="uid://byuyyo5grb2dw" path="res://assets/sprites/player/reaper1/Kicking/0_Reaper_Man_Kicking_002.png" id="84_i2kr3"]
+[ext_resource type="Texture2D" uid="uid://cetywurprbl5m" path="res://assets/sprites/player/reaper1/Kicking/0_Reaper_Man_Kicking_003.png" id="85_b1k17"]
+[ext_resource type="Texture2D" uid="uid://qjbavdok1j1y" path="res://assets/sprites/player/reaper1/Kicking/0_Reaper_Man_Kicking_004.png" id="86_qd6qu"]
+[ext_resource type="Texture2D" uid="uid://cfrayvyu7pr0l" path="res://assets/sprites/player/reaper1/Kicking/0_Reaper_Man_Kicking_005.png" id="87_tioeb"]
+[ext_resource type="Texture2D" uid="uid://bp11r3n7gpgej" path="res://assets/sprites/player/reaper1/Kicking/0_Reaper_Man_Kicking_006.png" id="88_1lhhj"]
+[ext_resource type="Texture2D" uid="uid://c67ogqu425n7x" path="res://assets/sprites/player/reaper1/Kicking/0_Reaper_Man_Kicking_007.png" id="89_g1b55"]
+[ext_resource type="Texture2D" uid="uid://blu7rtt45n0rw" path="res://assets/sprites/player/reaper1/Kicking/0_Reaper_Man_Kicking_008.png" id="90_nbbch"]
+[ext_resource type="Texture2D" uid="uid://bh0nxh8ty4e8o" path="res://assets/sprites/player/reaper1/Kicking/0_Reaper_Man_Kicking_009.png" id="91_xptj7"]
+[ext_resource type="Texture2D" uid="uid://cft5tvvg1pwh2" path="res://assets/sprites/player/reaper1/Kicking/0_Reaper_Man_Kicking_010.png" id="92_x237e"]
+[ext_resource type="Texture2D" uid="uid://vxnml4x11vol" path="res://assets/sprites/player/reaper1/Kicking/0_Reaper_Man_Kicking_011.png" id="93_7my3g"]
+[ext_resource type="Texture2D" uid="uid://bjjoy2pamdc1a" path="res://assets/sprites/player/reaper1/Run Slashing/0_Reaper_Man_Run Slashing_000.png" id="94_03p3y"]
+[ext_resource type="Texture2D" uid="uid://ud5vgod6m2dc" path="res://assets/sprites/player/reaper1/Run Slashing/0_Reaper_Man_Run Slashing_001.png" id="95_tfml8"]
+[ext_resource type="Texture2D" uid="uid://dfo4peuhqsehe" path="res://assets/sprites/player/reaper1/Run Slashing/0_Reaper_Man_Run Slashing_002.png" id="96_6sqk2"]
+[ext_resource type="Texture2D" uid="uid://c70gxt8kvliau" path="res://assets/sprites/player/reaper1/Run Slashing/0_Reaper_Man_Run Slashing_003.png" id="97_pc8tl"]
+[ext_resource type="Texture2D" uid="uid://yxpm2gr3ridh" path="res://assets/sprites/player/reaper1/Run Slashing/0_Reaper_Man_Run Slashing_004.png" id="98_lx2vo"]
+[ext_resource type="Texture2D" uid="uid://8j3280qhlvf2" path="res://assets/sprites/player/reaper1/Run Slashing/0_Reaper_Man_Run Slashing_005.png" id="99_y0u8d"]
+[ext_resource type="Texture2D" uid="uid://d3xu2s6jm7lsj" path="res://assets/sprites/player/reaper1/Run Slashing/0_Reaper_Man_Run Slashing_006.png" id="100_4r1jm"]
+[ext_resource type="Texture2D" uid="uid://bgeg5xjl4kp0q" path="res://assets/sprites/player/reaper1/Run Slashing/0_Reaper_Man_Run Slashing_007.png" id="101_0dqb3"]
+[ext_resource type="Texture2D" uid="uid://dct1e5nc61ty3" path="res://assets/sprites/player/reaper1/Run Slashing/0_Reaper_Man_Run Slashing_008.png" id="102_qh76j"]
+[ext_resource type="Texture2D" uid="uid://cllh0bgkghnmw" path="res://assets/sprites/player/reaper1/Run Slashing/0_Reaper_Man_Run Slashing_009.png" id="103_g8c57"]
+[ext_resource type="Texture2D" uid="uid://b0bcwmob8bce3" path="res://assets/sprites/player/reaper1/Run Slashing/0_Reaper_Man_Run Slashing_010.png" id="104_0qfit"]
+[ext_resource type="Texture2D" uid="uid://bq4lwv6wh4g11" path="res://assets/sprites/player/reaper1/Run Slashing/0_Reaper_Man_Run Slashing_011.png" id="105_tvf8s"]
+[ext_resource type="Texture2D" uid="uid://dpks3sjn2g0tf" path="res://assets/sprites/player/reaper1/Run Throwing/0_Reaper_Man_Run Throwing_000.png" id="106_h7fnw"]
+[ext_resource type="Texture2D" uid="uid://cer6mdyvlpgv4" path="res://assets/sprites/player/reaper1/Run Throwing/0_Reaper_Man_Run Throwing_001.png" id="107_lyvkr"]
+[ext_resource type="Texture2D" uid="uid://dkdii7ajq2kvo" path="res://assets/sprites/player/reaper1/Run Throwing/0_Reaper_Man_Run Throwing_002.png" id="108_crb3k"]
+[ext_resource type="Texture2D" uid="uid://bmu8m7v8ndpu8" path="res://assets/sprites/player/reaper1/Run Throwing/0_Reaper_Man_Run Throwing_003.png" id="109_3coto"]
+[ext_resource type="Texture2D" uid="uid://bmsao73whkau7" path="res://assets/sprites/player/reaper1/Run Throwing/0_Reaper_Man_Run Throwing_004.png" id="110_nqij1"]
+[ext_resource type="Texture2D" uid="uid://bp5551m1l77fx" path="res://assets/sprites/player/reaper1/Run Throwing/0_Reaper_Man_Run Throwing_005.png" id="111_65c5x"]
+[ext_resource type="Texture2D" uid="uid://ds1vvpq7sfviq" path="res://assets/sprites/player/reaper1/Run Throwing/0_Reaper_Man_Run Throwing_006.png" id="112_rxfue"]
+[ext_resource type="Texture2D" uid="uid://b6n2wvrjqo1r7" path="res://assets/sprites/player/reaper1/Run Throwing/0_Reaper_Man_Run Throwing_007.png" id="113_6lvha"]
+[ext_resource type="Texture2D" uid="uid://c4a28jkofpdu2" path="res://assets/sprites/player/reaper1/Run Throwing/0_Reaper_Man_Run Throwing_008.png" id="114_4hxdf"]
+[ext_resource type="Texture2D" uid="uid://b8kgxew8spq07" path="res://assets/sprites/player/reaper1/Run Throwing/0_Reaper_Man_Run Throwing_009.png" id="115_cyn0y"]
+[ext_resource type="Texture2D" uid="uid://dy2cqfwlfgiqr" path="res://assets/sprites/player/reaper1/Run Throwing/0_Reaper_Man_Run Throwing_010.png" id="116_81efe"]
+[ext_resource type="Texture2D" uid="uid://c58okt6l1vrsj" path="res://assets/sprites/player/reaper1/Run Throwing/0_Reaper_Man_Run Throwing_011.png" id="117_5ornw"]
+[ext_resource type="Texture2D" uid="uid://erdo3aevuwu" path="res://assets/sprites/player/reaper1/Running/0_Reaper_Man_Running_000.png" id="118_pjjnd"]
+[ext_resource type="Texture2D" uid="uid://ds7ybdmmp356w" path="res://assets/sprites/player/reaper1/Running/0_Reaper_Man_Running_001.png" id="119_n6onk"]
+[ext_resource type="Texture2D" uid="uid://cv22g5850ph4x" path="res://assets/sprites/player/reaper1/Running/0_Reaper_Man_Running_002.png" id="120_gilcj"]
+[ext_resource type="Texture2D" uid="uid://d1cu1v2v2bslb" path="res://assets/sprites/player/reaper1/Running/0_Reaper_Man_Running_003.png" id="121_7wn8x"]
+[ext_resource type="Texture2D" uid="uid://ddrny8xtf8lf6" path="res://assets/sprites/player/reaper1/Running/0_Reaper_Man_Running_004.png" id="122_dx0h1"]
+[ext_resource type="Texture2D" uid="uid://begiiiviw6fpj" path="res://assets/sprites/player/reaper1/Running/0_Reaper_Man_Running_005.png" id="123_rjope"]
+[ext_resource type="Texture2D" uid="uid://qnkmbrg8so6d" path="res://assets/sprites/player/reaper1/Running/0_Reaper_Man_Running_006.png" id="124_c70u1"]
+[ext_resource type="Texture2D" uid="uid://bnboh3rvrl1w" path="res://assets/sprites/player/reaper1/Running/0_Reaper_Man_Running_007.png" id="125_eidrj"]
+[ext_resource type="Texture2D" uid="uid://bfd4t5itxk66w" path="res://assets/sprites/player/reaper1/Running/0_Reaper_Man_Running_008.png" id="126_7h7wb"]
+[ext_resource type="Texture2D" uid="uid://dt87grnp2aabx" path="res://assets/sprites/player/reaper1/Running/0_Reaper_Man_Running_009.png" id="127_uix61"]
+[ext_resource type="Texture2D" uid="uid://dh7h88sa8lh04" path="res://assets/sprites/player/reaper1/Running/0_Reaper_Man_Running_010.png" id="128_qdyob"]
+[ext_resource type="Texture2D" uid="uid://c402rf7243yxe" path="res://assets/sprites/player/reaper1/Running/0_Reaper_Man_Running_011.png" id="129_s75tt"]
+[ext_resource type="Texture2D" uid="uid://ct0pd5xk5jd0x" path="res://assets/sprites/player/reaper1/Slashing/0_Reaper_Man_Slashing_000.png" id="130_75tnh"]
+[ext_resource type="Texture2D" uid="uid://cgtlmvnpuruff" path="res://assets/sprites/player/reaper1/Slashing/0_Reaper_Man_Slashing_001.png" id="131_u1unu"]
+[ext_resource type="Texture2D" uid="uid://05fnqupx8lk6" path="res://assets/sprites/player/reaper1/Slashing/0_Reaper_Man_Slashing_002.png" id="132_k6qem"]
+[ext_resource type="Texture2D" uid="uid://dguk2tmyndppd" path="res://assets/sprites/player/reaper1/Slashing/0_Reaper_Man_Slashing_003.png" id="133_fiohn"]
+[ext_resource type="Texture2D" uid="uid://cwa26uo4q3ayd" path="res://assets/sprites/player/reaper1/Slashing/0_Reaper_Man_Slashing_004.png" id="134_viugc"]
+[ext_resource type="Texture2D" uid="uid://d0aitmerfuwrl" path="res://assets/sprites/player/reaper1/Slashing/0_Reaper_Man_Slashing_005.png" id="135_65fjy"]
+[ext_resource type="Texture2D" uid="uid://cltwm8t7a54rr" path="res://assets/sprites/player/reaper1/Slashing/0_Reaper_Man_Slashing_006.png" id="136_tfkoa"]
+[ext_resource type="Texture2D" uid="uid://dc3ay406wj8xa" path="res://assets/sprites/player/reaper1/Slashing/0_Reaper_Man_Slashing_007.png" id="137_c0hx4"]
+[ext_resource type="Texture2D" uid="uid://jg0mxlwvijbh" path="res://assets/sprites/player/reaper1/Slashing/0_Reaper_Man_Slashing_008.png" id="138_gtx2b"]
+[ext_resource type="Texture2D" uid="uid://bxxgkxxn6hpwd" path="res://assets/sprites/player/reaper1/Slashing/0_Reaper_Man_Slashing_009.png" id="139_5q6ey"]
+[ext_resource type="Texture2D" uid="uid://baen8hryywuyn" path="res://assets/sprites/player/reaper1/Slashing/0_Reaper_Man_Slashing_010.png" id="140_tlgbe"]
+[ext_resource type="Texture2D" uid="uid://bdtvmdptmf10w" path="res://assets/sprites/player/reaper1/Slashing/0_Reaper_Man_Slashing_011.png" id="141_fw342"]
+[ext_resource type="Texture2D" uid="uid://34rpi1antpv5" path="res://assets/sprites/player/reaper1/Slashing in The Air/0_Reaper_Man_Slashing in The Air_000.png" id="142_qbq10"]
+[ext_resource type="Texture2D" uid="uid://cwdcdesj1hp6v" path="res://assets/sprites/player/reaper1/Slashing in The Air/0_Reaper_Man_Slashing in The Air_001.png" id="143_k26c6"]
+[ext_resource type="Texture2D" uid="uid://cnkqtep1a585n" path="res://assets/sprites/player/reaper1/Slashing in The Air/0_Reaper_Man_Slashing in The Air_002.png" id="144_207kg"]
+[ext_resource type="Texture2D" uid="uid://b1w4wueeul6uq" path="res://assets/sprites/player/reaper1/Slashing in The Air/0_Reaper_Man_Slashing in The Air_003.png" id="145_udgbp"]
+[ext_resource type="Texture2D" uid="uid://dloi4mxym22wy" path="res://assets/sprites/player/reaper1/Slashing in The Air/0_Reaper_Man_Slashing in The Air_004.png" id="146_xmlp3"]
+[ext_resource type="Texture2D" uid="uid://cxnvln0y4uba6" path="res://assets/sprites/player/reaper1/Slashing in The Air/0_Reaper_Man_Slashing in The Air_005.png" id="147_068s0"]
+[ext_resource type="Texture2D" uid="uid://isq5v7tnxu87" path="res://assets/sprites/player/reaper1/Slashing in The Air/0_Reaper_Man_Slashing in The Air_006.png" id="148_6ckhb"]
+[ext_resource type="Texture2D" uid="uid://b12v5jakasvhd" path="res://assets/sprites/player/reaper1/Slashing in The Air/0_Reaper_Man_Slashing in The Air_007.png" id="149_4bpqr"]
+[ext_resource type="Texture2D" uid="uid://cdb61amgxwbhk" path="res://assets/sprites/player/reaper1/Slashing in The Air/0_Reaper_Man_Slashing in The Air_008.png" id="150_il3xn"]
+[ext_resource type="Texture2D" uid="uid://c1da6thyljpyu" path="res://assets/sprites/player/reaper1/Slashing in The Air/0_Reaper_Man_Slashing in The Air_009.png" id="151_n6c5l"]
+[ext_resource type="Texture2D" uid="uid://cq5ri0rwnqvkb" path="res://assets/sprites/player/reaper1/Slashing in The Air/0_Reaper_Man_Slashing in The Air_010.png" id="152_i8tb1"]
+[ext_resource type="Texture2D" uid="uid://ublm380bkp4f" path="res://assets/sprites/player/reaper1/Slashing in The Air/0_Reaper_Man_Slashing in The Air_011.png" id="153_jjw6x"]
+[ext_resource type="Texture2D" uid="uid://c2ayte7yqk538" path="res://assets/sprites/player/reaper1/Sliding/0_Reaper_Man_Sliding_000.png" id="154_j2ajm"]
+[ext_resource type="Texture2D" uid="uid://j6prcogbuigl" path="res://assets/sprites/player/reaper1/Sliding/0_Reaper_Man_Sliding_001.png" id="155_3pc3p"]
+[ext_resource type="Texture2D" uid="uid://cslyysmudu3j6" path="res://assets/sprites/player/reaper1/Sliding/0_Reaper_Man_Sliding_002.png" id="156_ttkv7"]
+[ext_resource type="Texture2D" uid="uid://daplunh0m60bb" path="res://assets/sprites/player/reaper1/Sliding/0_Reaper_Man_Sliding_003.png" id="157_vsk84"]
+[ext_resource type="Texture2D" uid="uid://bngf0defah0ej" path="res://assets/sprites/player/reaper1/Sliding/0_Reaper_Man_Sliding_004.png" id="158_usorf"]
+[ext_resource type="Texture2D" uid="uid://cl70fkv5473ot" path="res://assets/sprites/player/reaper1/Sliding/0_Reaper_Man_Sliding_005.png" id="159_soaa8"]
+[ext_resource type="Texture2D" uid="uid://b2g7ukhq3t7pv" path="res://assets/sprites/player/reaper1/Throwing/0_Reaper_Man_Throwing_000.png" id="160_b0pmh"]
+[ext_resource type="Texture2D" uid="uid://dsba8sjkh3k1b" path="res://assets/sprites/player/reaper1/Throwing/0_Reaper_Man_Throwing_001.png" id="161_aeda7"]
+[ext_resource type="Texture2D" uid="uid://b30ovdls86fqk" path="res://assets/sprites/player/reaper1/Throwing/0_Reaper_Man_Throwing_002.png" id="162_me4jj"]
+[ext_resource type="Texture2D" uid="uid://dbhl8dcfpbybo" path="res://assets/sprites/player/reaper1/Throwing/0_Reaper_Man_Throwing_003.png" id="163_30133"]
+[ext_resource type="Texture2D" uid="uid://cnyasfs26iscy" path="res://assets/sprites/player/reaper1/Throwing/0_Reaper_Man_Throwing_004.png" id="164_u6q3i"]
+[ext_resource type="Texture2D" uid="uid://d27inhb8eyjal" path="res://assets/sprites/player/reaper1/Throwing/0_Reaper_Man_Throwing_005.png" id="165_qjwgg"]
+[ext_resource type="Texture2D" uid="uid://xee37wlga1u" path="res://assets/sprites/player/reaper1/Throwing/0_Reaper_Man_Throwing_006.png" id="166_ymvdp"]
+[ext_resource type="Texture2D" uid="uid://ch3m7ifc7vokd" path="res://assets/sprites/player/reaper1/Throwing/0_Reaper_Man_Throwing_007.png" id="167_sa1xr"]
+[ext_resource type="Texture2D" uid="uid://clusn7b3d7247" path="res://assets/sprites/player/reaper1/Throwing/0_Reaper_Man_Throwing_008.png" id="168_48an4"]
+[ext_resource type="Texture2D" uid="uid://b6s5r2ups3poh" path="res://assets/sprites/player/reaper1/Throwing/0_Reaper_Man_Throwing_009.png" id="169_du2al"]
+[ext_resource type="Texture2D" uid="uid://bo67i75hw2vfu" path="res://assets/sprites/player/reaper1/Throwing/0_Reaper_Man_Throwing_010.png" id="170_eapye"]
+[ext_resource type="Texture2D" uid="uid://d3rgum0dqsqfb" path="res://assets/sprites/player/reaper1/Throwing/0_Reaper_Man_Throwing_011.png" id="171_r5t07"]
+[ext_resource type="Texture2D" uid="uid://dkrvufcj64v7b" path="res://assets/sprites/player/reaper1/Throwing in The Air/0_Reaper_Man_Throwing in The Air_000.png" id="172_sak5l"]
+[ext_resource type="Texture2D" uid="uid://bjnnayyxo6wx8" path="res://assets/sprites/player/reaper1/Throwing in The Air/0_Reaper_Man_Throwing in The Air_001.png" id="173_rciif"]
+[ext_resource type="Texture2D" uid="uid://dnbtnqnsnokjo" path="res://assets/sprites/player/reaper1/Throwing in The Air/0_Reaper_Man_Throwing in The Air_002.png" id="174_g1kko"]
+[ext_resource type="Texture2D" uid="uid://4bi8y5ey4ijb" path="res://assets/sprites/player/reaper1/Throwing in The Air/0_Reaper_Man_Throwing in The Air_003.png" id="175_yl8yy"]
+[ext_resource type="Texture2D" uid="uid://bb4ejg6a8vy3n" path="res://assets/sprites/player/reaper1/Throwing in The Air/0_Reaper_Man_Throwing in The Air_004.png" id="176_5w6lk"]
+[ext_resource type="Texture2D" uid="uid://bnkuxwvnntvmu" path="res://assets/sprites/player/reaper1/Throwing in The Air/0_Reaper_Man_Throwing in The Air_005.png" id="177_1mhpo"]
+[ext_resource type="Texture2D" uid="uid://jdt222x8o243" path="res://assets/sprites/player/reaper1/Throwing in The Air/0_Reaper_Man_Throwing in The Air_006.png" id="178_aqpk1"]
+[ext_resource type="Texture2D" uid="uid://8sld25u136ib" path="res://assets/sprites/player/reaper1/Throwing in The Air/0_Reaper_Man_Throwing in The Air_007.png" id="179_mq8pe"]
+[ext_resource type="Texture2D" uid="uid://5soxmgnnrf3j" path="res://assets/sprites/player/reaper1/Throwing in The Air/0_Reaper_Man_Throwing in The Air_008.png" id="180_ft06p"]
+[ext_resource type="Texture2D" uid="uid://cv6gpig5oj736" path="res://assets/sprites/player/reaper1/Throwing in The Air/0_Reaper_Man_Throwing in The Air_009.png" id="181_eeyh0"]
+[ext_resource type="Texture2D" uid="uid://7pbxfsf56c8d" path="res://assets/sprites/player/reaper1/Throwing in The Air/0_Reaper_Man_Throwing in The Air_010.png" id="182_2c8dw"]
+[ext_resource type="Texture2D" uid="uid://o0lrbxsf0y5g" path="res://assets/sprites/player/reaper1/Throwing in The Air/0_Reaper_Man_Throwing in The Air_011.png" id="183_37sbo"]
+[ext_resource type="Texture2D" uid="uid://bx7c05ai6tuvi" path="res://assets/sprites/player/reaper1/Walking/0_Reaper_Man_Walking_000.png" id="184_7du0h"]
+[ext_resource type="Texture2D" uid="uid://b72dyk4v2ol1g" path="res://assets/sprites/player/reaper1/Walking/0_Reaper_Man_Walking_001.png" id="185_edq45"]
+[ext_resource type="Texture2D" uid="uid://dkkgaodugc0xd" path="res://assets/sprites/player/reaper1/Walking/0_Reaper_Man_Walking_002.png" id="186_ambc0"]
+[ext_resource type="Texture2D" uid="uid://bpxbiwqfe7fc" path="res://assets/sprites/player/reaper1/Walking/0_Reaper_Man_Walking_003.png" id="187_61pa6"]
+[ext_resource type="Texture2D" uid="uid://cii3xa73v6r2i" path="res://assets/sprites/player/reaper1/Walking/0_Reaper_Man_Walking_004.png" id="188_5xj4v"]
+[ext_resource type="Texture2D" uid="uid://dnxte2tqwqpsj" path="res://assets/sprites/player/reaper1/Walking/0_Reaper_Man_Walking_005.png" id="189_83pn3"]
+[ext_resource type="Texture2D" uid="uid://cojm8cvtavg3k" path="res://assets/sprites/player/reaper1/Walking/0_Reaper_Man_Walking_006.png" id="190_t3sgv"]
+[ext_resource type="Texture2D" uid="uid://bkajvilmswry8" path="res://assets/sprites/player/reaper1/Walking/0_Reaper_Man_Walking_007.png" id="191_khs1e"]
+[ext_resource type="Texture2D" uid="uid://b6u0fhxm53k7q" path="res://assets/sprites/player/reaper1/Walking/0_Reaper_Man_Walking_008.png" id="192_ae6bc"]
+[ext_resource type="Texture2D" uid="uid://dhxcab8bivpv6" path="res://assets/sprites/player/reaper1/Walking/0_Reaper_Man_Walking_009.png" id="193_ik0et"]
+[ext_resource type="Texture2D" uid="uid://dh2ytcaynug2m" path="res://assets/sprites/player/reaper1/Walking/0_Reaper_Man_Walking_010.png" id="194_njiax"]
+[ext_resource type="Texture2D" uid="uid://ccwrcruk0us8j" path="res://assets/sprites/player/reaper1/Walking/0_Reaper_Man_Walking_011.png" id="195_jrtnf"]
+[ext_resource type="Texture2D" uid="uid://b6uwmob3x1l0a" path="res://assets/sprites/player/reaper1/Walking/0_Reaper_Man_Walking_012.png" id="196_d4qbw"]
+[ext_resource type="Texture2D" uid="uid://brpaqh1x7jyiu" path="res://assets/sprites/player/reaper1/Walking/0_Reaper_Man_Walking_013.png" id="197_6kq4a"]
+[ext_resource type="Texture2D" uid="uid://c5bjgudqss4q0" path="res://assets/sprites/player/reaper1/Walking/0_Reaper_Man_Walking_014.png" id="198_d41r0"]
+[ext_resource type="Texture2D" uid="uid://bjhjfg5rmvcl6" path="res://assets/sprites/player/reaper1/Walking/0_Reaper_Man_Walking_015.png" id="199_58d1a"]
+[ext_resource type="Texture2D" uid="uid://ce7mhhw5vn6pw" path="res://assets/sprites/player/reaper1/Walking/0_Reaper_Man_Walking_016.png" id="200_j1p1g"]
+[ext_resource type="Texture2D" uid="uid://duyi5qspfpw2x" path="res://assets/sprites/player/reaper1/Walking/0_Reaper_Man_Walking_017.png" id="201_jrpc7"]
+[ext_resource type="Texture2D" uid="uid://djgcox0kjq3tj" path="res://assets/sprites/player/reaper1/Walking/0_Reaper_Man_Walking_018.png" id="202_xibqr"]
+[ext_resource type="Texture2D" uid="uid://b4883ifrt5myy" path="res://assets/sprites/player/reaper1/Walking/0_Reaper_Man_Walking_019.png" id="203_anhe3"]
+[ext_resource type="Texture2D" uid="uid://cit8disxwdrqq" path="res://assets/sprites/player/reaper1/Walking/0_Reaper_Man_Walking_020.png" id="204_igwwg"]
+[ext_resource type="Texture2D" uid="uid://d0rmsb4npehxx" path="res://assets/sprites/player/reaper1/Walking/0_Reaper_Man_Walking_021.png" id="205_os44x"]
+[ext_resource type="Texture2D" uid="uid://d3j68s2jjw81m" path="res://assets/sprites/player/reaper1/Walking/0_Reaper_Man_Walking_022.png" id="206_mt5xq"]
+[ext_resource type="Texture2D" uid="uid://chc2bd4mffwac" path="res://assets/sprites/player/reaper1/Walking/0_Reaper_Man_Walking_023.png" id="207_t37j3"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_wbf2g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_7kq5k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_qlh3f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_pxoi4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_mb3r4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_v00yq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_dd3t0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_gekfx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_lge4r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_exdqx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_bjq1k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_mpr8e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_075yg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_hmuv6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_f2c2p")
+}],
+"loop": false,
+"name": &"Dying",
+"speed": 30.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("16_pyh8x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_nr2r5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_0cn1x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_xlfuy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_5lymj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_suqy7")
+}],
+"loop": true,
+"name": &"Falling_Down",
+"speed": 25.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("22_3poxc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_yw7lt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_2c1do")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_3jbik")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_gj707")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_gypgo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_bv1tx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_c8wnu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_oata5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_g8edk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_eyoqa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_d8jyw")
+}],
+"loop": false,
+"name": &"Hurt",
+"speed": 30.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("34_7v418")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_146ir")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_o2c2w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_rx5v5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_yxuam")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_ia4f5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_ao7v7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_ehrcg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_i07id")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_3sqpu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_wflcc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_oggb1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_ka4ll")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_6fdff")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_yuoyk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_bionj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50_lqj1p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51_p41re")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 15.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("52_82vyb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("53_3vc0a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("54_sag42")
+}, {
+"duration": 1.0,
+"texture": ExtResource("55_8l6aa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("56_0jpyg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("57_853uh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("58_uxo6x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("59_b86w3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("60_hirqa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("61_on2ju")
+}, {
+"duration": 1.0,
+"texture": ExtResource("62_iyrv7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("63_edn6o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("64_kel56")
+}, {
+"duration": 1.0,
+"texture": ExtResource("65_3klie")
+}, {
+"duration": 1.0,
+"texture": ExtResource("66_q5kgo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("67_h5l2w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("68_jppsq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("69_bp0tg")
+}],
+"loop": false,
+"name": &"Idle_Blinking",
+"speed": 15.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("70_0ljqk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("71_8b3o5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("72_kgf1t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("73_f63fx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("74_gplq8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("75_e42ii")
+}],
+"loop": true,
+"name": &"Jump_Loop",
+"speed": 30.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("76_8rw45")
+}, {
+"duration": 1.0,
+"texture": ExtResource("77_rdrqd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("78_qvl3s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("79_atdr3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("80_drnlk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("81_8hbed")
+}],
+"loop": false,
+"name": &"Jump_Start",
+"speed": 30.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("82_atmt5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("83_jkgtl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("84_i2kr3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("85_b1k17")
+}, {
+"duration": 1.0,
+"texture": ExtResource("86_qd6qu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("87_tioeb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("88_1lhhj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("89_g1b55")
+}, {
+"duration": 1.0,
+"texture": ExtResource("90_nbbch")
+}, {
+"duration": 1.0,
+"texture": ExtResource("91_xptj7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("92_x237e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("93_7my3g")
+}],
+"loop": true,
+"name": &"Kicking",
+"speed": 25.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("94_03p3y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("95_tfml8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("96_6sqk2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("97_pc8tl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("98_lx2vo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("99_y0u8d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("100_4r1jm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("101_0dqb3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("102_qh76j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("103_g8c57")
+}, {
+"duration": 1.0,
+"texture": ExtResource("104_0qfit")
+}, {
+"duration": 1.0,
+"texture": ExtResource("105_tvf8s")
+}],
+"loop": true,
+"name": &"Run_Slashing",
+"speed": 30.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("106_h7fnw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("107_lyvkr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("108_crb3k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("109_3coto")
+}, {
+"duration": 1.0,
+"texture": ExtResource("110_nqij1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("111_65c5x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("112_rxfue")
+}, {
+"duration": 1.0,
+"texture": ExtResource("113_6lvha")
+}, {
+"duration": 1.0,
+"texture": ExtResource("114_4hxdf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("115_cyn0y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("116_81efe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("117_5ornw")
+}],
+"loop": true,
+"name": &"Run_Throwing",
+"speed": 30.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("118_pjjnd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("119_n6onk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("120_gilcj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("121_7wn8x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("122_dx0h1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("123_rjope")
+}, {
+"duration": 1.0,
+"texture": ExtResource("124_c70u1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("125_eidrj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("126_7h7wb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("127_uix61")
+}, {
+"duration": 1.0,
+"texture": ExtResource("128_qdyob")
+}, {
+"duration": 1.0,
+"texture": ExtResource("129_s75tt")
+}],
+"loop": true,
+"name": &"Running",
+"speed": 25.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("130_75tnh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("131_u1unu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("132_k6qem")
+}, {
+"duration": 1.0,
+"texture": ExtResource("133_fiohn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("134_viugc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("135_65fjy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("136_tfkoa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("137_c0hx4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("138_gtx2b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("139_5q6ey")
+}, {
+"duration": 1.0,
+"texture": ExtResource("140_tlgbe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("141_fw342")
+}],
+"loop": false,
+"name": &"Slashing",
+"speed": 30.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("142_qbq10")
+}, {
+"duration": 1.0,
+"texture": ExtResource("143_k26c6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("144_207kg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("145_udgbp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("146_xmlp3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("147_068s0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("148_6ckhb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("149_4bpqr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("150_il3xn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("151_n6c5l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("152_i8tb1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("153_jjw6x")
+}],
+"loop": false,
+"name": &"Slashing_in_Air",
+"speed": 30.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("154_j2ajm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("155_3pc3p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("156_ttkv7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("157_vsk84")
+}, {
+"duration": 1.0,
+"texture": ExtResource("158_usorf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("159_soaa8")
+}],
+"loop": true,
+"name": &"Sliding",
+"speed": 25.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("160_b0pmh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("161_aeda7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("162_me4jj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("163_30133")
+}, {
+"duration": 1.0,
+"texture": ExtResource("164_u6q3i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("165_qjwgg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("166_ymvdp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("167_sa1xr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("168_48an4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("169_du2al")
+}, {
+"duration": 1.0,
+"texture": ExtResource("170_eapye")
+}, {
+"duration": 1.0,
+"texture": ExtResource("171_r5t07")
+}],
+"loop": false,
+"name": &"Throwing",
+"speed": 30.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("172_sak5l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("173_rciif")
+}, {
+"duration": 1.0,
+"texture": ExtResource("174_g1kko")
+}, {
+"duration": 1.0,
+"texture": ExtResource("175_yl8yy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("176_5w6lk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("177_1mhpo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("178_aqpk1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("179_mq8pe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("180_ft06p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("181_eeyh0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("182_2c8dw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("183_37sbo")
+}],
+"loop": false,
+"name": &"Throwing_in_Air",
+"speed": 30.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("184_7du0h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("185_edq45")
+}, {
+"duration": 1.0,
+"texture": ExtResource("186_ambc0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("187_61pa6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("188_5xj4v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("189_83pn3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("190_t3sgv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("191_khs1e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("192_ae6bc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("193_ik0et")
+}, {
+"duration": 1.0,
+"texture": ExtResource("194_njiax")
+}, {
+"duration": 1.0,
+"texture": ExtResource("195_jrtnf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("196_d4qbw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("197_6kq4a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("198_d41r0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("199_58d1a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("200_j1p1g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("201_jrpc7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("202_xibqr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("203_anhe3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("204_igwwg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("205_os44x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("206_mt5xq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("207_t37j3")
+}],
+"loop": true,
+"name": &"Walking",
+"speed": 30.0
+}]

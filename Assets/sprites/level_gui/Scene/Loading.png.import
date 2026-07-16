@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://drtmsol4gotno"
-path="res://.godot/imported/Loading.png-61913c57e79b6add2fdf2d291bd03c31.ctex"
+path="res://.godot/imported/Loading.png-9ce5bdcffefafb503f5c04c0aca09d82.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/sprites/level_gui/Scene/Loading.png"
-dest_files=["res://.godot/imported/Loading.png-61913c57e79b6add2fdf2d291bd03c31.ctex"]
+source_file="res://assets/sprites/level_gui/Scene/Loading.png"
+dest_files=["res://.godot/imported/Loading.png-9ce5bdcffefafb503f5c04c0aca09d82.ctex"]
 
 [params]
 

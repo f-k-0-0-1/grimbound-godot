@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://5s63jer7eahj"
-path="res://.godot/imported/Exclamation_Gray.png-587f55474e02a974f170aa2e6b7a76a7.ctex"
+path="res://.godot/imported/Exclamation_Gray.png-432542f776a014fc47250c0814ad398e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/sprites/wooden_gui/Exclamation_Gray.png"
-dest_files=["res://.godot/imported/Exclamation_Gray.png-587f55474e02a974f170aa2e6b7a76a7.ctex"]
+source_file="res://assets/sprites/wooden_gui/Exclamation_Gray.png"
+dest_files=["res://.godot/imported/Exclamation_Gray.png-432542f776a014fc47250c0814ad398e.ctex"]
 
 [params]
 

@@ -2,9 +2,9 @@
 extends Node
 
 # Scene constants
-const SCENE_SPLASH: String = "res://Scenes/Splash_Screen.tscn"
-const SCENE_MENU: String = "res://Scenes/main_menu.tscn"
-const SCENE_LEVEL_01: String = "res://Scenes/Levels/level_01.tscn"
+const SCENE_SPLASH: String = "res://scenes/Splash_Screen.tscn"
+const SCENE_MENU: String = "res://scenes/main_menu.tscn"
+const SCENE_LEVEL_01: String = "res://scenes/levels/level_01.tscn"
 
 # Current scene reference
 var current_scene: Node = null
@@ -40,7 +40,7 @@ func go_to_level_01() -> void:
 
 ## Go to any level by name
 func go_to_level(level_name: String) -> void:
-	var level_path = "res://Scenes/Levels/" + level_name + ".tscn"
+	var level_path = "res://scenes/levels/" + level_name + ".tscn"
 	load_scene(level_path)
 
 ## Reload current scene

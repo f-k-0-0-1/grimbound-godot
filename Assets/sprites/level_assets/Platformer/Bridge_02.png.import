@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dhp5vv15wy82j"
-path="res://.godot/imported/Bridge_02.png-3aa46cdfd7c342b77b7d0b839befb75d.ctex"
+path="res://.godot/imported/Bridge_02.png-5e94de21597c697452325785c7726262.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/sprites/level_assets/Platformer/Bridge_02.png"
-dest_files=["res://.godot/imported/Bridge_02.png-3aa46cdfd7c342b77b7d0b839befb75d.ctex"]
+source_file="res://assets/sprites/level_assets/Platformer/Bridge_02.png"
+dest_files=["res://.godot/imported/Bridge_02.png-5e94de21597c697452325785c7726262.ctex"]
 
 [params]
 

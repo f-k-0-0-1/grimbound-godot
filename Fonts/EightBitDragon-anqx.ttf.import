@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://btxv8pw11ftag"
-path="res://.godot/imported/EightBitDragon-anqx.ttf-d79fe8459ce573a2723b2d8dd0a926ce.fontdata"
+path="res://.godot/imported/EightBitDragon-anqx.ttf-01f823bdbcbca4b9d8a58760a3e0aad3.fontdata"
 
 [deps]
 
-source_file="res://Fonts/EightBitDragon-anqx.ttf"
-dest_files=["res://.godot/imported/EightBitDragon-anqx.ttf-d79fe8459ce573a2723b2d8dd0a926ce.fontdata"]
+source_file="res://fonts/EightBitDragon-anqx.ttf"
+dest_files=["res://.godot/imported/EightBitDragon-anqx.ttf-01f823bdbcbca4b9d8a58760a3e0aad3.fontdata"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bgxmc5etr81mb"
-path="res://.godot/imported/TextBTN_New-Start_Pressed.png-43ee4c7526c7916e9b8fa82260e66082.ctex"
+path="res://.godot/imported/TextBTN_New-Start_Pressed.png-c4ab20b47b1ea0c48632d05efbe6dcee.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/sprites/wooden_gui/TextBTN_New-Start_Pressed.png"
-dest_files=["res://.godot/imported/TextBTN_New-Start_Pressed.png-43ee4c7526c7916e9b8fa82260e66082.ctex"]
+source_file="res://assets/sprites/wooden_gui/TextBTN_New-Start_Pressed.png"
+dest_files=["res://.godot/imported/TextBTN_New-Start_Pressed.png-c4ab20b47b1ea0c48632d05efbe6dcee.ctex"]
 
 [params]
 

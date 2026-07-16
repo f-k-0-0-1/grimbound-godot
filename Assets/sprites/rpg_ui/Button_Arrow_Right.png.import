@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dpuwys0ulg5eb"
-path="res://.godot/imported/Button_Arrow_Right.png-ff76fba91aabe69cf13c7dedab03ac7b.ctex"
+path="res://.godot/imported/Button_Arrow_Right.png-9ba85ac34e3893136146c32e43478d3d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/sprites/rpg_ui/Button_Arrow_Right.png"
-dest_files=["res://.godot/imported/Button_Arrow_Right.png-ff76fba91aabe69cf13c7dedab03ac7b.ctex"]
+source_file="res://assets/sprites/rpg_ui/Button_Arrow_Right.png"
+dest_files=["res://.godot/imported/Button_Arrow_Right.png-9ba85ac34e3893136146c32e43478d3d.ctex"]
 
 [params]
 

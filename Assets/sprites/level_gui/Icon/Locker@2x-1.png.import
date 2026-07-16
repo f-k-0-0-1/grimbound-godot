@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c6gofn1pcq2bn"
-path="res://.godot/imported/Locker@2x-1.png-b453728d756e0697c142fd793b3b5c61.ctex"
+path="res://.godot/imported/Locker@2x-1.png-cf6aad2f23dc1b6899e6b2f263f55afa.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/sprites/level_gui/Icon/Locker@2x-1.png"
-dest_files=["res://.godot/imported/Locker@2x-1.png-b453728d756e0697c142fd793b3b5c61.ctex"]
+source_file="res://assets/sprites/level_gui/Icon/Locker@2x-1.png"
+dest_files=["res://.godot/imported/Locker@2x-1.png-cf6aad2f23dc1b6899e6b2f263f55afa.ctex"]
 
 [params]
 

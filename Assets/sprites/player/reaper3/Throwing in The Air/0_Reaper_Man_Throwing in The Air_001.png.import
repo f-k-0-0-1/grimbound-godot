@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b0rf618newq27"
-path="res://.godot/imported/0_Reaper_Man_Throwing in The Air_001.png-311cb3747590b776e91880a8652b4c08.ctex"
+path="res://.godot/imported/0_Reaper_Man_Throwing in The Air_001.png-c5e37887e8b57ad847b3d085e9e64bba.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/sprites/player/reaper3/Throwing in The Air/0_Reaper_Man_Throwing in The Air_001.png"
-dest_files=["res://.godot/imported/0_Reaper_Man_Throwing in The Air_001.png-311cb3747590b776e91880a8652b4c08.ctex"]
+source_file="res://assets/sprites/player/reaper3/Throwing in The Air/0_Reaper_Man_Throwing in The Air_001.png"
+dest_files=["res://.godot/imported/0_Reaper_Man_Throwing in The Air_001.png-c5e37887e8b57ad847b3d085e9e64bba.ctex"]
 
 [params]
 
