@@ -21,3 +21,4 @@ build/
 .godot/editor/editor_layout.cfg
 .godot/editor/editor_layout.cfg
 /.godot
+.godot/editor/script_editor_cache.cfg

@@ -56,7 +56,7 @@ tile_set = ExtResource("3_ni7lu")
 [node name="TileMap_Foreground" type="TileMapLayer" parent="World" unique_id=1413609721]
 
 [node name="Player" parent="." unique_id=28132837 instance=ExtResource("4_wf6s8")]
-position = Vector2(-3880, 4)
+position = Vector2(-3842, 252)
 
 [node name="MobileControls" type="CanvasLayer" parent="." unique_id=1275764004]
 script = ExtResource("5_dbq10")
