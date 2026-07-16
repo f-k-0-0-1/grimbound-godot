@@ -44,9 +44,10 @@ func _process(delta: float) -> void:
 	# If Alpha Max Out Change to Main Menu
 	if (cached_alpha > MAX_VISIBLE):
 		# Change Screen Here
-		if (SceneManager.init_Scene("main") != null):
-			# TODO Faiq: Change To The PackedScene Of Main Menu
-			pass;
+		var temp_Scene: PackedScene = SceneManager.init_Scene("level_1");
+		if (temp_Scene != null):
+			get_tree().change_scene_to_packed(temp_Scene);
+			return;
 		else:
 			# Set The Wating
 			is_Wating = true;
@@ -75,7 +76,7 @@ func _process(delta: float) -> void:
 			log_t.set_anchors_and_offsets_preset(Control.PRESET_BOTTOM_RIGHT);
 			
 			# Wait for Seconds Before Quit, 
-			await get_tree().create_timer(Exit_Wait_Time + 100000000000000000.0).timeout;
+			await get_tree().create_timer(Exit_Wait_Time + 10).timeout;
 			
 			# Then Exit With Exit Code
 			get_tree().quit(ERROR);

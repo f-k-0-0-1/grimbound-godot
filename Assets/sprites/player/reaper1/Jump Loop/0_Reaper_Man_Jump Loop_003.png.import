@@ -3,19 +3,21 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bjbrf2pvd5wre"
-path="res://.godot/imported/0_Reaper_Man_Jump Loop_003.png-1a33dea731cfd2c89451be7c7098f883.ctex"
+path.s3tc="res://.godot/imported/0_Reaper_Man_Jump Loop_003.png-1a33dea731cfd2c89451be7c7098f883.s3tc.ctex"
+path.etc2="res://.godot/imported/0_Reaper_Man_Jump Loop_003.png-1a33dea731cfd2c89451be7c7098f883.etc2.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/sprites/player/reaper1/Jump Loop/0_Reaper_Man_Jump Loop_003.png"
-dest_files=["res://.godot/imported/0_Reaper_Man_Jump Loop_003.png-1a33dea731cfd2c89451be7c7098f883.ctex"]
+dest_files=["res://.godot/imported/0_Reaper_Man_Jump Loop_003.png-1a33dea731cfd2c89451be7c7098f883.s3tc.ctex", "res://.godot/imported/0_Reaper_Man_Jump Loop_003.png-1a33dea731cfd2c89451be7c7098f883.etc2.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=0

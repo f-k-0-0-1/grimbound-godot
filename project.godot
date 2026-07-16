@@ -23,14 +23,19 @@ config/icon="uid://dfdf74y1b1kfa"
 [autoload]
 
 SceneManager="*uid://vgxoylwphugr"
+Global="*uid://cybuv5kfjk2kg"
 
 [display]
 
 window/size/viewport_width=640
 window/size/viewport_height=360
 window/size/mode=1
-window/stretch/mode="canvas_items"
+window/stretch/mode="viewport"
 window/stretch/aspect="expand"
+
+[global_group]
+
+player=""
 
 [gui]
 

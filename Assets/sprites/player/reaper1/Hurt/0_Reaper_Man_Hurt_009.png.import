@@ -3,19 +3,21 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cdnpabtbtcqj7"
-path="res://.godot/imported/0_Reaper_Man_Hurt_009.png-8839d5d5b87cea67d3ef1f4a42d2b3ba.ctex"
+path.s3tc="res://.godot/imported/0_Reaper_Man_Hurt_009.png-8839d5d5b87cea67d3ef1f4a42d2b3ba.s3tc.ctex"
+path.etc2="res://.godot/imported/0_Reaper_Man_Hurt_009.png-8839d5d5b87cea67d3ef1f4a42d2b3ba.etc2.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/sprites/player/reaper1/Hurt/0_Reaper_Man_Hurt_009.png"
-dest_files=["res://.godot/imported/0_Reaper_Man_Hurt_009.png-8839d5d5b87cea67d3ef1f4a42d2b3ba.ctex"]
+dest_files=["res://.godot/imported/0_Reaper_Man_Hurt_009.png-8839d5d5b87cea67d3ef1f4a42d2b3ba.s3tc.ctex", "res://.godot/imported/0_Reaper_Man_Hurt_009.png-8839d5d5b87cea67d3ef1f4a42d2b3ba.etc2.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=0

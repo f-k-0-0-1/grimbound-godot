@@ -3,19 +3,21 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dh7h88sa8lh04"
-path="res://.godot/imported/0_Reaper_Man_Running_010.png-7dbafdc3adf22a19ec77ef1471a95d0a.ctex"
+path.s3tc="res://.godot/imported/0_Reaper_Man_Running_010.png-7dbafdc3adf22a19ec77ef1471a95d0a.s3tc.ctex"
+path.etc2="res://.godot/imported/0_Reaper_Man_Running_010.png-7dbafdc3adf22a19ec77ef1471a95d0a.etc2.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/sprites/player/reaper1/Running/0_Reaper_Man_Running_010.png"
-dest_files=["res://.godot/imported/0_Reaper_Man_Running_010.png-7dbafdc3adf22a19ec77ef1471a95d0a.ctex"]
+dest_files=["res://.godot/imported/0_Reaper_Man_Running_010.png-7dbafdc3adf22a19ec77ef1471a95d0a.s3tc.ctex", "res://.godot/imported/0_Reaper_Man_Running_010.png-7dbafdc3adf22a19ec77ef1471a95d0a.etc2.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=0

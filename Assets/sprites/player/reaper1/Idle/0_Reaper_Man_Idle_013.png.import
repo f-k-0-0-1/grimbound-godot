@@ -3,19 +3,21 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c38pvjvol6voy"
-path="res://.godot/imported/0_Reaper_Man_Idle_013.png-cb3017deedf066c8997c9f57621d2eb3.ctex"
+path.s3tc="res://.godot/imported/0_Reaper_Man_Idle_013.png-cb3017deedf066c8997c9f57621d2eb3.s3tc.ctex"
+path.etc2="res://.godot/imported/0_Reaper_Man_Idle_013.png-cb3017deedf066c8997c9f57621d2eb3.etc2.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/sprites/player/reaper1/Idle/0_Reaper_Man_Idle_013.png"
-dest_files=["res://.godot/imported/0_Reaper_Man_Idle_013.png-cb3017deedf066c8997c9f57621d2eb3.ctex"]
+dest_files=["res://.godot/imported/0_Reaper_Man_Idle_013.png-cb3017deedf066c8997c9f57621d2eb3.s3tc.ctex", "res://.godot/imported/0_Reaper_Man_Idle_013.png-cb3017deedf066c8997c9f57621d2eb3.etc2.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=0
