@@ -13,18 +13,29 @@ script = ExtResource("1_kyqiw")
 
 [node name="Skin" type="AnimatedSprite2D" parent="." unique_id=526492905]
 texture_filter = 1
-position = Vector2(1, -17)
-scale = Vector2(0.1897222, 0.1897222)
+position = Vector2(-211.71996, 117.28004)
+scale = Vector2(0.24284452, 0.24284452)
 sprite_frames = ExtResource("2_gntrk")
-animation = &"Idle"
+animation = &"Run"
 autoplay = "Idle"
 
 [node name="Collider" type="CollisionShape2D" parent="." unique_id=806346536]
-position = Vector2(-2, -14)
+position = Vector2(-211.71997, 123.28003)
+scale = Vector2(1.2800006, 1.2800006)
 shape = SubResource("CapsuleShape2D_2a624")
 
-[node name="Camera" type="Camera2D" parent="." unique_id=156959296 groups=["player"]]
+[node name="Camera" type="Camera2D" parent="." unique_id=156959296]
+position = Vector2(0, -10)
 zoom = Vector2(0.5, 0.5)
-limit_enabled = false
+process_callback = 0
+limit_left = -4500
+limit_top = -70
+limit_right = 5500
+limit_bottom = 660
 limit_smoothed = true
 position_smoothing_enabled = true
+position_smoothing_speed = 8.0
+drag_left_margin = 0.0
+drag_top_margin = 0.0
+drag_right_margin = 0.0
+drag_bottom_margin = 0.0

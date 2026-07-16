@@ -1,0 +1,107 @@
+[gd_scene format=3 uid="uid://dsony5rycu06x"]
+
+[ext_resource type="Texture2D" uid="uid://bubaafwsqut2o" path="res://Assets/backgrounds/Background_01.png" id="1_28flt"]
+[ext_resource type="Script" uid="uid://dllw6w51850yt" path="res://Scripts/main_menu.gd" id="1_ce3w2"]
+[ext_resource type="Texture2D" uid="uid://d2qe00lt1cydj" path="res://Assets/backgrounds/Background_02.png" id="2_48xlc"]
+[ext_resource type="FontFile" uid="uid://btxv8pw11ftag" path="res://Fonts/EightBitDragon-anqx.ttf" id="3_1ehe0"]
+
+[node name="MainMenu" type="CanvasLayer" unique_id=1956981106]
+script = ExtResource("1_ce3w2")
+
+[node name="Parallax2D_Far" type="Node2D" parent="." unique_id=1339499507]
+
+[node name="Parallax2D" type="Parallax2D" parent="Parallax2D_Far" unique_id=1829795070]
+repeat_size = Vector2(666, 0)
+autoscroll = Vector2(15, 0)
+repeat_times = 3
+
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D_Far/Parallax2D" unique_id=635634669]
+position = Vector2(319.72937, 180.49998)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_28flt")
+
+[node name="Parallax2D_Near" type="Node2D" parent="." unique_id=284776981]
+
+[node name="Parallax2D" type="Parallax2D" parent="Parallax2D_Near" unique_id=215027274]
+repeat_size = Vector2(666, 0)
+autoscroll = Vector2(20, 0)
+repeat_times = 3
+
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D_Near/Parallax2D" unique_id=2007972040]
+position = Vector2(319.729, 180.5)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_48xlc")
+
+[node name="Title" type="Label" parent="." unique_id=1988884018]
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.05
+anchor_right = 0.5
+anchor_bottom = 0.05
+offset_left = -48.0
+offset_top = 2.0
+offset_right = 48.0
+offset_bottom = 19.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("3_1ehe0")
+theme_override_font_sizes/font_size = 40
+text = "GRIM BOUND"
+
+[node name="Buttons" type="Control" parent="." unique_id=2080103562]
+layout_mode = 3
+anchor_top = 0.47200003
+anchor_right = 1.0
+anchor_bottom = 0.47200003
+offset_left = 320.0
+offset_top = 0.07998657
+offset_right = -320.0
+offset_bottom = 0.07998657
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Buttons" unique_id=1209781504]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -66.0
+offset_top = -38.0
+offset_right = 66.0
+offset_bottom = 38.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PlayButton" type="Button" parent="Buttons/VBoxContainer" unique_id=1237540298]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_1ehe0")
+theme_override_font_sizes/font_size = 25
+text = "PLAY"
+
+[node name="MarginContainer" type="MarginContainer" parent="Buttons/VBoxContainer" unique_id=857856753]
+layout_mode = 2
+
+[node name="QuitButton" type="Button" parent="Buttons/VBoxContainer" unique_id=1660154191]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_1ehe0")
+theme_override_font_sizes/font_size = 25
+text = "QUIT
+"
+
+[node name="VersionLabel" type="Label" parent="." unique_id=1246834304]
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -127.0
+offset_top = -18.0
+offset_right = -12.0
+offset_bottom = -8.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("3_1ehe0")
+theme_override_font_sizes/font_size = 8
+text = "  Game Under Development  "
+
+[connection signal="pressed" from="Buttons/VBoxContainer/PlayButton" to="." method="play"]
+[connection signal="pressed" from="Buttons/VBoxContainer/QuitButton" to="." method="exit"]

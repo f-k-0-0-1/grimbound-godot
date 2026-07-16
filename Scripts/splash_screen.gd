@@ -22,7 +22,7 @@ func _ready() -> void:
 	is_Wating = false;
 	
 	# Set The Bg Color In Splash Black
-	RenderingServer.set_default_clear_color(Color(0, 0, 0, 1));
+	SceneManager.setBG(Global.BLACK);
 	
 	# Cahced The Label
 	log_t = RichTextLabel.new();
@@ -43,10 +43,10 @@ func _process(delta: float) -> void:
 
 	# If Alpha Max Out Change to Main Menu
 	if (cached_alpha > MAX_VISIBLE):
-		# Change Screen Here
-		var temp_Scene: PackedScene = SceneManager.init_Scene("level_1");
-		if (temp_Scene != null):
-			get_tree().change_scene_to_packed(temp_Scene);
+		# Change Scene To Main Menu
+		var main_menu: PackedScene = SceneManager.init_Scene("Main_Menu");
+		if (main_menu != null):
+			get_tree().change_scene_to_packed(main_menu);
 			return;
 		else:
 			# Set The Wating

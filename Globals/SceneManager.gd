@@ -3,7 +3,6 @@ extends Node;
 
 # PLS,PLS UPDATE THIS AFTER ADDING LEVELS @Faiq
 const TOTAL_LEVELS: int = 1;
-const DEFAULT_LEVLE_COLOR: Color = Color(0.501, 0.501, 0.501, 1.0)
 
 # Local Variables
 var scenes: Dictionary;
@@ -14,7 +13,9 @@ func _ready() -> void:
 	# Setup the Scenes
 	scenes = {
 		"Hud": "res://Scenes/Hud.tscn",
-		"level_1": "res://Scenes/TmpLevel.tscn"  # Just For Testing
+		"Main_Menu": "res://Scenes/Main_Menu.tscn",
+		"level_1": "res://Scenes/Levels/Level_1.tscn",
+		"level_2": "res://Scenes/Levels/TmpLevel.tscn"  	 # Just For Testing
 	};
 	
 	# Set The Current Level (0 For No Loaded Level)
@@ -29,14 +30,15 @@ func init_Scene(scene_name:String) -> PackedScene:
 		if (scenes[scene_name] == null):  				# If Scene Null Returns Null
 			temp_Init = null;
 		else:
-			# Check If Scene Is A Level Or  A Prefab
+			# Check If Scene Is A Level Or A Prefab
 			if (scene_name.begins_with("level_")):      							# Logic For Levels
 				temp_Init = load(scenes[scene_name]);
-				current_level = scene_name.replace("level_", "").to_int();  		# Extract The Level Number
-				RenderingServer.set_default_clear_color(DEFAULT_LEVLE_COLOR); 	# Set The Level Color
+				current_level = scene_name.replace("level_", "").to_int();  		# Extract The Level Numberr
+				setBG(Global.GRAY) 												# Set The Level Color
 				
 			else:
-				temp_Init = load(scenes[scene_name]);  	# For Prefabs
+				temp_Init = load(scenes[scene_name]);  	# For Prefab
+
 	
 	# Return The Packed Scene
 	return temp_Init;
@@ -48,3 +50,7 @@ func initHud() -> CanvasLayer:
 	# Load the Hud 
 	temp_Init = load(scenes["Hud"]).instantiate() as CanvasLayer;
 	return temp_Init;
+
+# Function To Set BackGround Color OF Scene
+func setBG(color: Color):
+	RenderingServer.set_default_clear_color(color);

@@ -11,6 +11,7 @@ size = Vector2(73, 69)
 [node name="TmpLevel" type="Node2D" unique_id=243723518]
 
 [node name="Player" parent="." unique_id=473209087 instance=ExtResource("1_l51ws")]
+position = Vector2(204, 0)
 
 [node name="BG" type="StaticBody2D" parent="." unique_id=1579565403]
 position = Vector2(80, 181)
