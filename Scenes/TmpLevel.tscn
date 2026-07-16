@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dqohjmbaxj2lh"]
 
-[ext_resource type="PackedScene" uid="uid://c2ik0x74qtlsy" path="res://Scenes/player.tscn" id="1_l51ws"]
+[ext_resource type="PackedScene" uid="uid://bo17ncj2gqp0n" path="res://Scenes/Player.tscn" id="1_l51ws"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fd57s"]
 size = Vector2(4560, 79)
@@ -11,7 +11,6 @@ size = Vector2(73, 69)
 [node name="TmpLevel" type="Node2D" unique_id=243723518]
 
 [node name="Player" parent="." unique_id=473209087 instance=ExtResource("1_l51ws")]
-position = Vector2(262, 41)
 
 [node name="BG" type="StaticBody2D" parent="." unique_id=1579565403]
 position = Vector2(80, 181)
