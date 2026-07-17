@@ -1,24 +1,43 @@
-# Godot-specific overrides
+# =========================
+# Godot
+# =========================
+
 .godot/
 .import/
 export_presets.cfg
 
-# Imported mono binaries
+# =========================
+# Mono / C#
+# =========================
+
 .mono/
 data_*/
 mono_crash_*.json
 
-# System/Editor-specific overrides
+# =========================
+# Exported Builds
+# =========================
+
+build/
+bin/
+exports/
+
+# =========================
+# IDE
+# =========================
+
+.vscode/
+.idea/
+
+# =========================
+# OS
+# =========================
+
 .DS_Store
 Thumbs.db
 
-# Build artifacts (if you are compiling custom binaries or export templates)
-bin/
-build/
+# =========================
+# Local editor files
+# =========================
 
-# Local developer configuration overrides
 *.uid
-.godot/editor/editor_layout.cfg
-.godot/editor/editor_layout.cfg
-/.godot
-.godot/editor/script_editor_cache.cfg
