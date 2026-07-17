@@ -1,4 +1,4 @@
-## Player - Loads skin from GameManager
+## Player - Loads skin from GameManager (lazy loaded)
 extends CharacterBody2D
 
 @export var move_speed: float = 420.0
@@ -8,23 +8,24 @@ extends CharacterBody2D
 @onready var sprite: AnimatedSprite2D = $AnimatedSprite2D
 
 func _ready() -> void:
-	print("Player: _ready START")
 	_apply_skin()
-	print("Player: _ready END")
 
 func refresh_skin() -> void:
-	print("Player: refresh_skin")
 	_apply_skin()
 
 func _apply_skin() -> void:
-	var skin := GameManager.get_selected_skin()
-
-	if skin == null:
-		push_warning("No player skin selected.")
+	if not GameManager.has_selected_skin():
+		print("Player: No skin selected")
 		return
-
-	sprite.sprite_frames = skin
-	sprite.play("Idle")
+	
+	var skin_frames = GameManager.get_selected_skin()
+	
+	if skin_frames:
+		sprite.sprite_frames = skin_frames
+		sprite.play("Idle")
+		print("Player: Skin applied")
+	else:
+		print("Player: Failed to load skin")
 
 func _physics_process(delta: float) -> void:
 	if not is_on_floor():
