@@ -1,5 +1,6 @@
 [gd_scene format=4 uid="uid://ds8ivd0pd0y3v"]
 
+[ext_resource type="Script" uid="uid://dpuk0fv8luvsw" path="res://scripts/levels/level_01.gd" id="1_50wog"]
 [ext_resource type="Texture2D" uid="uid://bubaafwsqut2o" path="res://assets/backgrounds/Background_01.png" id="1_66ail"]
 [ext_resource type="Texture2D" uid="uid://d2qe00lt1cydj" path="res://assets/backgrounds/Background_02.png" id="2_ni7lu"]
 [ext_resource type="TileSet" uid="uid://j2wjm3qmwu3q" path="res://assets/TileSets/tileset_ground.tres" id="3_ni7lu"]
@@ -7,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://bgq28aohflfnv" path="res://scenes/mobile_controls.tscn" id="5_dbq10"]
 
 [node name="Level_01" type="Node2D" unique_id=592318608]
+script = ExtResource("1_50wog")
 
 [node name="Parallax2D_Far" type="Node2D" parent="." unique_id=153467452]
 
@@ -45,10 +47,8 @@ tile_set = ExtResource("3_ni7lu")
 
 [node name="TileMap_Decoration" type="TileMapLayer" parent="World" unique_id=354910151]
 
-[node name="TileMap_Foreground" type="TileMapLayer" parent="World" unique_id=1413609721]
-
-[node name="MobileControls" parent="." unique_id=499995920 instance=ExtResource("5_dbq10")]
-
 [node name="Player" parent="." unique_id=28132837 instance=ExtResource("4_wf6s8")]
 position = Vector2(-3612, 394)
 scale = Vector2(0.4, 0.4)
+
+[node name="MobileControls" parent="." unique_id=499995920 instance=ExtResource("5_dbq10")]

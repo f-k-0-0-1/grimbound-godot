@@ -1,4 +1,4 @@
-## MainMenu - Menu controller with skin selection
+## MainMenu - Menu controller with skin selection (lazy loading)
 extends CanvasLayer
 
 # Button references
@@ -14,6 +14,9 @@ extends CanvasLayer
 
 # Preload level
 var level_01: PackedScene = preload("res://scenes/levels/level_01.tscn")
+
+# Skin cache (loaded on demand)
+var _skin_cache: Dictionary = {}
 
 func _ready() -> void:
 	print("MainMenu: _ready START")
@@ -42,26 +45,68 @@ func _ready() -> void:
 
 func _load_saved_skin() -> void:
 	if GameManager.has_selected_skin():
-		player.refresh_skin()
+		_apply_skin_to_preview(GameManager.get_selected_skin_index())
+
+func _get_skin(index: int) -> SpriteFrames:
+	# Check cache first
+	if _skin_cache.has(index):
+		return _skin_cache[index]
+	
+	# Load on demand
+	var path = "res://resources/player_skins/Reaper_" + str(index + 1) + ".tres"
+	print("MainMenu: Loading skin from:", path)
+	
+	var skin = load(path)
+	if skin:
+		_skin_cache[index] = skin
+		print("MainMenu: Skin loaded and cached")
+	else:
+		print("MainMenu: Failed to load skin")
+	
+	return skin
+
+func _apply_skin_to_preview(index: int) -> void:
+	var skin_frames = _get_skin(index)
+	
+	if not skin_frames:
+		print("MainMenu: Preview update failed - no skin frames")
+		return
+	
+	# Safety: ensure player and sprite exist
+	if not player:
+		print("MainMenu: Player node is null!")
+		return
+	
+	if not player.has_method("refresh_skin"):
+		print("MainMenu: Player has no refresh_skin method!")
+		return
+	
+	# Use Player's refresh_skin method instead of direct access
+	player.refresh_skin()
+	print("MainMenu: Preview updated via player.refresh_skin()")
 
 func _on_skin_1_pressed() -> void:
 	GameManager.set_selected_skin(0)
-	player.refresh_skin()
+	_apply_skin_to_preview(0)
 	character_popup.visible = false
 
 func _on_skin_2_pressed() -> void:
 	GameManager.set_selected_skin(1)
-	player.refresh_skin()
+	_apply_skin_to_preview(1)
 	character_popup.visible = false
 
 func _on_skin_3_pressed() -> void:
 	GameManager.set_selected_skin(2)
-	player.refresh_skin()
+	_apply_skin_to_preview(2)
 	character_popup.visible = false
 
 func _on_play_pressed() -> void:
 	_animate_button(play_button)
-	get_tree().change_scene_to_packed(level_01)
+	# Use SceneManager instead of direct change
+	if SceneManager:
+		SceneManager.go_to_level_01()
+	else:
+		get_tree().change_scene_to_packed(level_01)
 
 func _on_quit_pressed() -> void:
 	_animate_button(quit_button)

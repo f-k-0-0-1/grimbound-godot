@@ -8,51 +8,57 @@ const SCENE_LEVEL_01: String = "res://scenes/levels/level_01.tscn"
 
 # Current scene reference
 var current_scene: Node = null
+var is_transitioning: bool = false
 
-# Called when the SceneManager is autoloaded
 func _ready() -> void:
-	# Get the current scene (splash screen)
 	var root = get_tree().root
 	current_scene = root.get_child(root.get_child_count() - 1)
 
-## Load any scene by path
 func load_scene(scene_path: String) -> void:
-	var error = get_tree().change_scene_to_file(scene_path)
-	if error != OK:
-		push_error("Failed to load scene: ", scene_path)
+	if is_transitioning:
+		print("SceneManager: Already transitioning, ignoring request")
 		return
 	
-	# Update current scene reference
+	is_transitioning = true
+	print("SceneManager: Loading scene:", scene_path)
+	
+	# Check if file exists
+	if not ResourceLoader.exists(scene_path):
+		push_error("SceneManager: Scene not found:", scene_path)
+		is_transitioning = false
+		return
+	
+	var error = get_tree().change_scene_to_file(scene_path)
+	if error != OK:
+		push_error("SceneManager: Failed to load scene:", scene_path)
+		is_transitioning = false
+		return
+	
 	await get_tree().process_frame
 	current_scene = get_tree().current_scene
+	is_transitioning = false
+	print("SceneManager: Scene loaded successfully")
 
-## Go to splash screen
 func go_to_splash() -> void:
 	load_scene(SCENE_SPLASH)
 
-## Go to main menu
 func go_to_menu() -> void:
 	load_scene(SCENE_MENU)
 
-## Go to level 01
 func go_to_level_01() -> void:
 	load_scene(SCENE_LEVEL_01)
 
-## Go to any level by name
 func go_to_level(level_name: String) -> void:
 	var level_path = "res://scenes/levels/" + level_name + ".tscn"
 	load_scene(level_path)
 
-## Reload current scene
 func reload_current_scene() -> void:
 	if current_scene and current_scene.scene_file_path:
 		load_scene(current_scene.scene_file_path)
 
-## Quit the game
 func quit_game() -> void:
 	get_tree().quit()
 
-## Get current scene name
 func get_current_scene_name() -> String:
 	if current_scene and current_scene.scene_file_path:
 		return current_scene.scene_file_path.get_file().get_basename()
