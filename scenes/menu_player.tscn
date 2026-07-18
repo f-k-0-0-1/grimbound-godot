@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://bg3wek7lpkk87"]
+
+[ext_resource type="SpriteFrames" uid="uid://b3i3s1brdd62h" path="res://resources/player_skins/Reaper_1.tres" id="1_eqesl"]
+[ext_resource type="Script" uid="uid://lox8xwtdgev3" path="res://scripts/menu_player.gd" id="1_kvvui"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_kvvui"]
+radius = 26.0
+height = 136.0
+
+[node name="MenuPlayer" type="CharacterBody2D" unique_id=748704954]
+script = ExtResource("1_kvvui")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1713404889]
+sprite_frames = ExtResource("1_eqesl")
+animation = &"Dying"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1738750328]
+position = Vector2(0, 5)
+shape = SubResource("CapsuleShape2D_kvvui")

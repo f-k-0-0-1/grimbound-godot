@@ -4,25 +4,26 @@
 [ext_resource type="SpriteFrames" uid="uid://b3i3s1brdd62h" path="res://resources/player_skins/Reaper_1.tres" id="2_qhqgy"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_dbq10"]
-radius = 104.0
-height = 556.0
+radius = 28.0
+height = 138.0
 
 [node name="Player" type="CharacterBody2D" unique_id=28132837]
 script = ExtResource("1_g2els")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=2114595249]
+texture_filter = 2
 sprite_frames = ExtResource("2_qhqgy")
-animation = &"Walking"
+animation = &"Dying"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1395951671]
-position = Vector2(-9, 16)
+position = Vector2(0, 6)
 shape = SubResource("CapsuleShape2D_dbq10")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=686029647]
 zoom = Vector2(0.32, 0.32)
-limit_left = -4500
+limit_left = -6500
 limit_top = -460
-limit_right = 5500
+limit_right = 8000
 limit_bottom = 660
 position_smoothing_enabled = true
 position_smoothing_speed = 8.0

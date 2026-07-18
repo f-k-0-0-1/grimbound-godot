@@ -1,15 +1,15 @@
 [gd_scene format=3 uid="uid://d0rqsdishkj6g"]
 
-[ext_resource type="Texture2D" uid="uid://bubaafwsqut2o" path="res://assets/backgrounds/Background_01.png" id="1_28flt"]
+[ext_resource type="Texture2D" uid="uid://clgskvtyisfof" path="res://assets/backgrounds/Background_01.png" id="1_28flt"]
 [ext_resource type="Script" uid="uid://cxe4hyvrm6xv1" path="res://scripts/main_menu.gd" id="1_ce3w2"]
-[ext_resource type="Texture2D" uid="uid://d2qe00lt1cydj" path="res://assets/backgrounds/Background_02.png" id="2_48xlc"]
+[ext_resource type="Texture2D" uid="uid://xdqjdvf5ffrg" path="res://assets/backgrounds/Background_02.png" id="2_48xlc"]
 [ext_resource type="FontFile" uid="uid://btxv8pw11ftag" path="res://fonts/EightBitDragon-anqx.ttf" id="3_1ehe0"]
-[ext_resource type="TileSet" uid="uid://j2wjm3qmwu3q" path="res://assets/TileSets/tileset_ground.tres" id="4_opfnp"]
-[ext_resource type="PackedScene" uid="uid://cihkd4fr21nah" path="res://scenes/player.tscn" id="6_cp0ys"]
+[ext_resource type="TileSet" uid="uid://dyus17lhqf0xx" path="res://assets/TileSets/level01_tileset_ground.tres" id="4_5dd4i"]
+[ext_resource type="PackedScene" uid="uid://bg3wek7lpkk87" path="res://scenes/menu_player.tscn" id="5_5dd4i"]
 [ext_resource type="Shader" uid="uid://djrwcmfnkinl7" path="res://resources/shader/blurr.gdshader" id="7_cp0ys"]
-[ext_resource type="Texture2D" uid="uid://7qrwpgjm1res" path="res://assets/sprites/player/reaper1/Idle/0_Reaper_Man_Idle_000.png" id="8_5egv6"]
-[ext_resource type="Texture2D" uid="uid://dmrqb5j3twbe2" path="res://assets/sprites/player/reaper2/Idle/0_Reaper_Man_Idle_000.png" id="10_8dnnj"]
-[ext_resource type="Texture2D" uid="uid://dbu26c333wx8m" path="res://assets/sprites/player/reaper3/Idle/0_Reaper_Man_Idle_000.png" id="11_m3bi6"]
+[ext_resource type="Texture2D" uid="uid://dg6g750f83x8i" path="res://assets/sprites/player/reaper1/Idle/0_Reaper_Man_Idle_000.png" id="8_5egv6"]
+[ext_resource type="Texture2D" uid="uid://ccvodghmitoei" path="res://assets/sprites/player/reaper2/Idle/0_Reaper_Man_Idle_000.png" id="10_8dnnj"]
+[ext_resource type="Texture2D" uid="uid://bxhsff2ie2ikd" path="res://assets/sprites/player/reaper3/Idle/0_Reaper_Man_Idle_000.png" id="11_m3bi6"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_yhxw7"]
 shader = ExtResource("7_cp0ys")
@@ -21,30 +21,36 @@ script = ExtResource("1_ce3w2")
 [node name="Parallax2D_Far" type="Node2D" parent="." unique_id=1339499507]
 
 [node name="Parallax2D" type="Parallax2D" parent="Parallax2D_Far" unique_id=1829795070]
-repeat_size = Vector2(666, 0)
+repeat_size = Vector2(700, 0)
 autoscroll = Vector2(15, 0)
 repeat_times = 3
 
 [node name="Sprite2D" type="Sprite2D" parent="Parallax2D_Far/Parallax2D" unique_id=635634669]
+texture_filter = 2
 position = Vector2(319.72937, 180.49998)
-scale = Vector2(0.5, 0.5)
+scale = Vector2(0.7, 0.7)
 texture = ExtResource("1_28flt")
 
 [node name="Parallax2D_Near" type="Node2D" parent="." unique_id=284776981]
 
 [node name="Parallax2D" type="Parallax2D" parent="Parallax2D_Near" unique_id=215027274]
-repeat_size = Vector2(666, 0)
+repeat_size = Vector2(700, 0)
 autoscroll = Vector2(20, 0)
 repeat_times = 3
 
 [node name="Sprite2D" type="Sprite2D" parent="Parallax2D_Near/Parallax2D" unique_id=2007972040]
+texture_filter = 2
 position = Vector2(319.729, 180.5)
-scale = Vector2(0.5, 0.5)
+scale = Vector2(0.7, 0.7)
 texture = ExtResource("2_48xlc")
 
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=113158151]
-tile_map_data = PackedByteArray(0, 0, 0, 0, 2, 0, 7, 0, 0, 0, 0, 0, 0, 0)
-tile_set = ExtResource("4_opfnp")
+tile_map_data = PackedByteArray(0, 0, 1, 0, 3, 0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 14, 0, 0, 0, 0, 0, 0, 0)
+tile_set = ExtResource("4_5dd4i")
+
+[node name="MenuPlayer" parent="." unique_id=748704954 instance=ExtResource("5_5dd4i")]
+position = Vector2(76.99999, 234.99998)
+scale = Vector2(0.7, 0.7)
 
 [node name="Title" type="Label" parent="." unique_id=1988884018]
 anchors_preset = -1
@@ -60,6 +66,33 @@ grow_horizontal = 2
 theme_override_fonts/font = ExtResource("3_1ehe0")
 theme_override_font_sizes/font_size = 40
 text = "GRIM BOUND"
+
+[node name="VersionLabel" type="Label" parent="." unique_id=1246834304]
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -136.0
+offset_top = -18.0
+offset_right = -12.0
+offset_bottom = -8.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("3_1ehe0")
+theme_override_font_sizes/font_size = 8
+text = "  Game Under Development  "
+
+[node name="TutorialOverlay" type="Label" parent="." unique_id=1628880711]
+anchors_preset = -1
+anchor_top = 0.42800003
+anchor_bottom = 0.42800003
+offset_left = 37.0
+offset_top = -5.080017
+offset_right = 160.0
+offset_bottom = 4.919983
+theme_override_font_sizes/font_size = 10
+text = "Swipe to Move & Jump"
 
 [node name="Buttons" type="Control" parent="." unique_id=2080103562]
 layout_mode = 3
@@ -92,32 +125,27 @@ text = "PLAY"
 [node name="MarginContainer" type="MarginContainer" parent="Buttons/VBoxContainer" unique_id=857856753]
 layout_mode = 2
 
-[node name="QuitButton" type="Button" parent="Buttons/VBoxContainer" unique_id=1660154191]
+[node name="MarginContainer3" type="MarginContainer" parent="Buttons/VBoxContainer" unique_id=1577103407]
+layout_mode = 2
+
+[node name="SkinButton" type="Button" parent="Buttons/VBoxContainer" unique_id=1660154191]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_1ehe0")
+text = "PLAYER SKINS
+"
+
+[node name="MarginContainer2" type="MarginContainer" parent="Buttons/VBoxContainer" unique_id=1943286014]
+layout_mode = 2
+
+[node name="MarginContainer4" type="MarginContainer" parent="Buttons/VBoxContainer" unique_id=1489514892]
+layout_mode = 2
+
+[node name="QuitButton" type="Button" parent="Buttons/VBoxContainer" unique_id=695201130]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("3_1ehe0")
 theme_override_font_sizes/font_size = 25
 text = "QUIT
 "
-
-[node name="VersionLabel" type="Label" parent="." unique_id=1246834304]
-anchors_preset = 3
-anchor_left = 1.0
-anchor_top = 1.0
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = -127.0
-offset_top = -18.0
-offset_right = -12.0
-offset_bottom = -8.0
-grow_horizontal = 0
-grow_vertical = 0
-theme_override_fonts/font = ExtResource("3_1ehe0")
-theme_override_font_sizes/font_size = 8
-text = "  Game Under Development  "
-
-[node name="Player" parent="." unique_id=28132837 instance=ExtResource("6_cp0ys")]
-position = Vector2(71, 211.00002)
-scale = Vector2(0.15, 0.15)
 
 [node name="character_select_popup" type="Control" parent="." unique_id=1629617102]
 visible = false
@@ -150,19 +178,20 @@ offset_right = 62.399994
 offset_bottom = 87.479996
 
 [node name="TextureButton" type="TextureButton" parent="character_select_popup/BlurPanel/Panel" unique_id=1856672053]
+texture_filter = 2
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -89.5
-offset_top = -87.5
-offset_right = 810.5
-offset_bottom = 812.5
+offset_left = -86.50001
+offset_top = -89.5
+offset_right = 138.5
+offset_bottom = 135.5
 grow_horizontal = 2
 grow_vertical = 2
-scale = Vector2(0.2, 0.2)
+scale = Vector2(0.8, 0.8)
 texture_normal = ExtResource("8_5egv6")
 texture_pressed = ExtResource("8_5egv6")
 texture_hover = ExtResource("8_5egv6")
@@ -180,6 +209,7 @@ offset_right = 62.359985
 offset_bottom = 87.479996
 
 [node name="TextureButton2" type="TextureButton" parent="character_select_popup/BlurPanel/Panel2" unique_id=10982617]
+texture_filter = 2
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -188,11 +218,11 @@ anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -85.5
 offset_top = -87.5
-offset_right = 814.5
-offset_bottom = 812.5
+offset_right = 139.5
+offset_bottom = 137.5
 grow_horizontal = 2
 grow_vertical = 2
-scale = Vector2(0.2, 0.2)
+scale = Vector2(0.8, 0.8)
 texture_normal = ExtResource("10_8dnnj")
 texture_pressed = ExtResource("10_8dnnj")
 texture_hover = ExtResource("10_8dnnj")
@@ -210,6 +240,7 @@ offset_right = 62.23999
 offset_bottom = 87.479996
 
 [node name="TextureButton3" type="TextureButton" parent="character_select_popup/BlurPanel/Panel3" unique_id=62106660]
+texture_filter = 2
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -218,11 +249,11 @@ anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -89.5
 offset_top = -87.5
-offset_right = 810.5
-offset_bottom = 812.5
+offset_right = 135.5
+offset_bottom = 137.5
 grow_horizontal = 2
 grow_vertical = 2
-scale = Vector2(0.2, 0.2)
+scale = Vector2(0.8, 0.8)
 texture_normal = ExtResource("11_m3bi6")
 texture_pressed = ExtResource("11_m3bi6")
 texture_hover = ExtResource("11_m3bi6")
