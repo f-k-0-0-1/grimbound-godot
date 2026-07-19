@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://bl2jctuvkqm7"]
+
+[ext_resource type="Script" uid="uid://dh5o2g3de7e5p" path="res://scripts/ladder.gd" id="1_xxwne"]
+[ext_resource type="Texture2D" uid="uid://xky0fdd2e0ae" path="res://assets/sprites/medivial_ruins/Platformer/Ladder.png" id="2_xb1tl"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ku54x"]
+size = Vector2(83, 94)
+
+[node name="Ladder" type="Area2D" unique_id=876198596]
+script = ExtResource("1_xxwne")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=402625913]
+texture = ExtResource("2_xb1tl")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1955513611]
+position = Vector2(-0.5, 1)
+shape = SubResource("RectangleShape2D_ku54x")

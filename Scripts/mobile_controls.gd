@@ -3,6 +3,8 @@ extends CanvasLayer
 # TouchScreenButton references
 @onready var left_button: TouchScreenButton = $LeftContainer/LeftButton
 @onready var right_button: TouchScreenButton = $RightContainer/RightButton
+@onready var up_button: TouchScreenButton = $UpContainer/UpButton
+@onready var down_button: TouchScreenButton = $DownContainer/DowntButton
 @onready var jump_button: TouchScreenButton = $JumpContainer/JumpButton
 @onready var back_button: TouchScreenButton = $BackButton/TouchScreenButton
 
@@ -13,6 +15,12 @@ func _ready() -> void:
 	
 	right_button.pressed.connect(_on_right_pressed)
 	right_button.released.connect(_on_right_released)
+	
+	up_button.pressed.connect(_on_up_pressed)
+	up_button.released.connect(_on_up_released)
+	
+	down_button.pressed.connect(_on_down_pressed)
+	down_button.released.connect(_on_down_released)
 	
 	jump_button.pressed.connect(_on_jump_pressed)
 	jump_button.released.connect(_on_jump_released)
@@ -33,6 +41,20 @@ func _on_right_pressed() -> void:
 
 func _on_right_released() -> void:
 	Input.action_release("move_right")
+
+# Up Button
+func _on_up_pressed() -> void:
+	Input.action_press("move_up")
+
+func _on_up_released() -> void:
+	Input.action_release("move_up")
+
+# Down Button
+func _on_down_pressed() -> void:
+	Input.action_press("move_down")
+
+func _on_down_released() -> void:
+	Input.action_release("move_down")
 
 # Jump Button
 func _on_jump_pressed() -> void:

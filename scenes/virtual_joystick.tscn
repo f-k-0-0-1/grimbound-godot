@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://ga4bqhwsj0jc"]
+
+[ext_resource type="Texture2D" uid="uid://l4goywyhnlaq" path="res://assets/sprites/VirtualJoystickPack/Joystick.png" id="1_fh201"]
+[ext_resource type="Texture2D" uid="uid://dq2fr12v8yn5u" path="res://assets/sprites/VirtualJoystickPack/LargeHandleFilled.png" id="2_m4cqf"]
+[ext_resource type="Script" uid="uid://d110e1g1revqd" path="res://scripts/virtual_joystick.gd" id="2_t6lej"]
+
+[node name="VirtualJoystick" type="Control" unique_id=166577599]
+layout_mode = 3
+anchor_top = 0.67
+anchor_bottom = 0.67
+offset_top = -241.20001
+offset_bottom = -241.20001
+script = ExtResource("2_t6lej")
+
+[node name="joystick" type="TouchScreenButton" parent="." unique_id=1366825007]
+position = Vector2(55, 103)
+scale = Vector2(0.47, 0.47)
+texture_normal = ExtResource("1_fh201")
+texture_pressed = ExtResource("1_fh201")
+
+[node name="knob" type="Sprite2D" parent="joystick" unique_id=1196045798]
+position = Vector2(150, 150)
+scale = Vector2(0.75, 0.75)
+texture = ExtResource("2_m4cqf")

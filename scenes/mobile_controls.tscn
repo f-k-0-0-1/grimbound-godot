@@ -7,8 +7,10 @@
 [ext_resource type="Texture2D" uid="uid://c5s3s87hn7g2b" path="res://assets/sprites/ui_buttons/Icon/Right/A_Right2.png" id="5_bswi6"]
 [ext_resource type="Texture2D" uid="uid://ceum0xmg6o4ir" path="res://assets/sprites/ui_buttons/Icon/Up/A_Up1.png" id="6_ilxsp"]
 [ext_resource type="Texture2D" uid="uid://bheka8vtheev8" path="res://assets/sprites/ui_buttons/Icon/Up/A_Up2.png" id="7_saaj3"]
+[ext_resource type="Texture2D" uid="uid://c2326aa0n330a" path="res://assets/sprites/ui_buttons/Icon/Down/A_.Down1.png" id="8_cnqve"]
 [ext_resource type="Texture2D" uid="uid://xjl5yhon8w5w" path="res://assets/sprites/ui_buttons/Icon/Back/A_Back1.png" id="8_jnbrs"]
 [ext_resource type="Texture2D" uid="uid://ba5oqcvwyl1xt" path="res://assets/sprites/ui_buttons/Icon/Back/A_Back2.png" id="9_bdd5e"]
+[ext_resource type="Texture2D" uid="uid://bunet2a132obi" path="res://assets/sprites/ui_buttons/Icon/Down/A_.Down2.png" id="9_kffq0"]
 
 [node name="MobileControls" type="CanvasLayer" unique_id=499995920]
 script = ExtResource("1_kth8y")
@@ -24,28 +26,62 @@ offset_bottom = 19.999985
 grow_vertical = 0
 
 [node name="LeftButton" type="TouchScreenButton" parent="LeftContainer" unique_id=1968947571]
+modulate = Color(1, 1, 1, 0.49411765)
 position = Vector2(-13, -2)
 scale = Vector2(3, 3)
 texture_normal = ExtResource("2_k6aum")
 texture_pressed = ExtResource("3_cnqve")
-action = "move_left"
 
 [node name="RightContainer" type="Control" parent="." unique_id=1031851395]
 layout_mode = 3
 anchor_top = 0.69200003
 anchor_bottom = 0.69200003
-offset_left = 102.0
+offset_left = 184.0
 offset_top = -20.12001
-offset_right = 142.0
-offset_bottom = 19.87999
+offset_right = 234.0
+offset_bottom = 35.87999
 grow_vertical = 0
 
 [node name="RightButton" type="TouchScreenButton" parent="RightContainer" unique_id=1194660726]
-position = Vector2(3, 1)
+modulate = Color(1, 1, 1, 0.49411765)
+position = Vector2(-11, 1)
 scale = Vector2(3, 3)
 texture_normal = ExtResource("4_kffq0")
 texture_pressed = ExtResource("5_bswi6")
-action = "move_right"
+
+[node name="UpContainer" type="Control" parent="." unique_id=881465194]
+layout_mode = 3
+anchor_top = 0.55300003
+anchor_bottom = 0.55300003
+offset_left = 112.0
+offset_top = -24.080017
+offset_right = 162.0
+offset_bottom = 23.919983
+grow_vertical = 0
+
+[node name="UpButton" type="TouchScreenButton" parent="UpContainer" unique_id=1706609734]
+modulate = Color(1, 1, 1, 0.49411765)
+position = Vector2(-9, -11)
+scale = Vector2(3, 3)
+texture_normal = ExtResource("6_ilxsp")
+texture_pressed = ExtResource("7_saaj3")
+
+[node name="DownContainer" type="Control" parent="." unique_id=1920066425]
+layout_mode = 3
+anchor_top = 0.87900007
+anchor_bottom = 0.87900007
+offset_left = 113.0
+offset_top = -18.440033
+offset_right = 163.0
+offset_bottom = 32.559967
+grow_vertical = 0
+
+[node name="DowntButton" type="TouchScreenButton" parent="DownContainer" unique_id=182533048]
+modulate = Color(1, 1, 1, 0.49411765)
+position = Vector2(-7, -6)
+scale = Vector2(3, 3)
+texture_normal = ExtResource("8_cnqve")
+texture_pressed = ExtResource("9_kffq0")
 
 [node name="JumpContainer" type="Control" parent="." unique_id=1633145044]
 layout_mode = 3
@@ -61,6 +97,7 @@ grow_horizontal = 0
 grow_vertical = 0
 
 [node name="JumpButton" type="TouchScreenButton" parent="JumpContainer" unique_id=677837650]
+modulate = Color(1, 1, 1, 0.49411765)
 position = Vector2(-2, -1)
 scale = Vector2(3, 3)
 texture_normal = ExtResource("6_ilxsp")

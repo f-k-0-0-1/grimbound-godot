@@ -2,7 +2,7 @@
 extends Node2D
 
 @onready var player: CharacterBody2D = $Player
-@onready var mobile_controls: CanvasLayer = $MobileControls
+@onready var mobile_controls: Control = $VirtualJoystick
 
 func _ready() -> void:
 	print("Level_01: _ready START")

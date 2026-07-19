@@ -2,12 +2,21 @@
 extends CharacterBody2D
 
 @export var move_speed: float = 550.0
-@export var jump_force: float = -850.0
-@export var gravity: float = 1200.0
+@export var jump_force: float = -1000.0
+@export var gravity: float = 2500.0
 @export var friction: float = 0.85
 @export var acceleration: float = 0.92
 @export var fall_threshold: float = 1000.0  # Y position to trigger respawn
 @export var spawn_position: Vector2 = Vector2.ZERO
+
+# --- Ladder Variables ---
+@export var climb_speed: float = 300.0
+var active_ladders: int = 0 # Tracks how many ladder blocks we are touching
+var ladder_cooldown: float = 0.0 # NEW: Prevents instantly regrabbing the ladder when jumping
+
+# --- Double Jump Variables ---
+@export var max_jumps: int = 2
+var current_jumps: int = 0
 
 @onready var sprite: AnimatedSprite2D = $AnimatedSprite2D
 
@@ -44,9 +53,26 @@ func _apply_skin() -> void:
 			sprite.play("Idle")
 
 func _physics_process(delta: float) -> void:
-	_apply_gravity(delta)
-	_handle_jump()
-	_handle_movement(delta) # Pass delta here
+	# --- NEW: Tick down the ladder cooldown timer ---
+	if ladder_cooldown > 0:
+		ladder_cooldown -= delta
+		
+	# --- State Machine: Climbing vs Normal Movement ---
+	# NEW: Only grab the ladder if we aren't in a jump cooldown
+	if active_ladders > 0 and ladder_cooldown <= 0.0: 
+		_handle_climbing()
+	else:
+		# Reset jump counter on floor
+		if is_on_floor():
+			current_jumps = 0
+		elif current_jumps == 0:
+			# Consumes first jump if walking off a ledge
+			current_jumps = 1
+			
+		_apply_gravity(delta)
+		_handle_jump()
+		_handle_movement(delta)
+		
 	_update_animation()
 	
 	# Jitter Fix: Snap floating point micro-velocities to absolute zero before moving
@@ -56,20 +82,44 @@ func _physics_process(delta: float) -> void:
 	move_and_slide()
 	_check_fall()
 
+func _handle_climbing() -> void:
+	# 1. Listen for up/down inputs to climb
+	var direction_y := Input.get_axis("move_up", "move_down")
+	velocity.y = direction_y * climb_speed
+	
+	# 2. Allow horizontal movement so the player can walk off the sides of the ladder
+	var direction_x := Input.get_axis("move_left", "move_right")
+	velocity.x = direction_x * move_speed
+	
+	# 3. Allow jumping off the ladder mid-climb
+	if Input.is_action_just_pressed("jump"):
+		# NEW: Trigger a 0.2 second cooldown so we physically leave the ladder
+		ladder_cooldown = 0.2 
+		velocity.y = jump_force
+
 func _apply_gravity(delta: float) -> void:
 	if not is_on_floor():
 		velocity.y += gravity * delta
 		velocity.y = min(velocity.y, 1500.0)
 
 func _handle_jump() -> void:
-	if Input.is_action_just_pressed("jump") and is_on_floor():
-		velocity.y = jump_force
+	# Allow jump if under max_jumps limit
+	if Input.is_action_just_pressed("jump"):
+		if current_jumps < max_jumps:
+			velocity.y = jump_force
+			current_jumps += 1
+			
+			# Visual Polish: Restart the jump animation if it's a mid-air double jump
+			if current_jumps > 1 and sprite and sprite.sprite_frames:
+				if sprite.sprite_frames.has_animation("Jump_Start"):
+					sprite.stop()
+					sprite.play("Jump_Start")
 
 func _handle_movement(delta: float) -> void:
 	var direction := Input.get_axis("move_left", "move_right")
 	
 	if direction != 0:
-		# Frame-rate independent acceleration (maintaining your existing export scale)
+		# Frame-rate independent acceleration
 		velocity.x = lerp(velocity.x, direction * move_speed, (1.0 - acceleration) * 60.0 * delta)
 		current_direction = sign(direction)
 		sprite.flip_h = direction < 0
@@ -83,7 +133,10 @@ func _update_animation() -> void:
 	
 	var anim = "Idle"
 	
-	if not is_on_floor():
+	# Ensure the player doesn't look like they are falling while on a ladder
+	if active_ladders > 0:
+		anim = "Idle" 
+	elif not is_on_floor():
 		anim = "Jump_Start" if velocity.y < 0 else "Falling_Down"
 	elif abs(velocity.x) > 10:
 		anim = "Running"
@@ -99,7 +152,5 @@ func respawn() -> void:
 	# Reset position and velocity
 	global_position = spawn_position
 	velocity = Vector2.ZERO
-	# Optionally reset health or other state
-	# Play respawn animation if available
 	if sprite and sprite.sprite_frames and sprite.sprite_frames.has_animation("Idle"):
 		sprite.play("Idle")
