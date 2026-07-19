@@ -1,8 +1,8 @@
 ## Player - Clean player controller with smooth movement and respawn
 extends CharacterBody2D
 
-@export var move_speed: float = 450.0
-@export var jump_force: float = -700.0
+@export var move_speed: float = 550.0
+@export var jump_force: float = -850.0
 @export var gravity: float = 1200.0
 @export var friction: float = 0.85
 @export var acceleration: float = 0.92

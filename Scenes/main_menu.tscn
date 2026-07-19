@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://d0rqsdishkj6g"]
 
-[ext_resource type="Texture2D" uid="uid://clgskvtyisfof" path="res://assets/backgrounds/Background_01.png" id="1_28flt"]
 [ext_resource type="Script" uid="uid://cxe4hyvrm6xv1" path="res://scripts/main_menu.gd" id="1_ce3w2"]
+[ext_resource type="Texture2D" uid="uid://b1246cjwv5ro" path="res://assets/forest_bg/Default.png" id="2_5dd4i"]
 [ext_resource type="Texture2D" uid="uid://xdqjdvf5ffrg" path="res://assets/backgrounds/Background_02.png" id="2_48xlc"]
 [ext_resource type="FontFile" uid="uid://btxv8pw11ftag" path="res://fonts/EightBitDragon-anqx.ttf" id="3_1ehe0"]
 [ext_resource type="TileSet" uid="uid://dyus17lhqf0xx" path="res://assets/TileSets/level01_tileset_ground.tres" id="4_5dd4i"]
@@ -21,15 +21,15 @@ script = ExtResource("1_ce3w2")
 [node name="Parallax2D_Far" type="Node2D" parent="." unique_id=1339499507]
 
 [node name="Parallax2D" type="Parallax2D" parent="Parallax2D_Far" unique_id=1829795070]
-repeat_size = Vector2(700, 0)
+repeat_size = Vector2(768, 0)
 autoscroll = Vector2(15, 0)
 repeat_times = 3
 
 [node name="Sprite2D" type="Sprite2D" parent="Parallax2D_Far/Parallax2D" unique_id=635634669]
 texture_filter = 2
 position = Vector2(319.72937, 180.49998)
-scale = Vector2(0.7, 0.7)
-texture = ExtResource("1_28flt")
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("2_5dd4i")
 
 [node name="Parallax2D_Near" type="Node2D" parent="." unique_id=284776981]
 

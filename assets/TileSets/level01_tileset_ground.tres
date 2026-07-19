@@ -101,32 +101,58 @@ texture_region_size = Vector2i(96, 96)
 texture = ExtResource("15_7j8ls")
 texture_region_size = Vector2i(96, 96)
 0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(48, -48, 48, 48, -6, 48, -7, -48, 48, -48)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_66qyd"]
 texture = ExtResource("16_s6kew")
 texture_region_size = Vector2i(96, 96)
 0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(48, -48, 48, 48, -1, 38.700012, -19.487175, 24.270416, -37, 6.700012, -39, -16.299988, -41, -48)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7oxed"]
 texture = ExtResource("17_i3fgt")
 texture_region_size = Vector2i(96, 96)
 0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-48, -48, 48, -48, 48, 48, -48, 48, -48, -48)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_501ou"]
 texture = ExtResource("18_iaabh")
 texture_region_size = Vector2i(96, 96)
 0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-48, -48, -48, 48, -24.801857, 48, 11, 34.700012, 28.34497, 13.641037, 48, -5.8461304, 48, -34.19111, 39, -48)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_01ysu"]
 texture = ExtResource("19_1bmj0")
 texture_region_size = Vector2i(96, 96)
 0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-48, -48, -48, 48, 5.314682, 48, 3.5431213, -48)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cjbm0"]
 texture = ExtResource("20_7x5ok")
+texture_region_size = Vector2i(96, 96)
+0:0/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_nxmup"]
 texture = ExtResource("21_7kbom")
+texture_region_size = Vector2i(96, 48)
+0:2/0 = 0
+1:2/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+5:2/0 = 0
+4:2/0 = 0
+3:2/0 = 0
+2:2/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+5:0/0 = 0
+4:0/0 = 0
+3:0/0 = 0
+2:0/0 = 0
+1:0/0 = 0
+0:0/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fs8dh"]
 texture = ExtResource("22_6gpxr")
@@ -136,9 +162,13 @@ texture = ExtResource("23_6rqcx")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1xd6r"]
 texture = ExtResource("24_2tyb2")
+texture_region_size = Vector2i(48, 48)
+0:0/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_214s8"]
 texture = ExtResource("25_hr1xa")
+texture_region_size = Vector2i(48, 48)
+0:0/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vookq"]
 texture = ExtResource("26_tmv6p")
