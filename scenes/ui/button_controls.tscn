@@ -10,7 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://c2326aa0n330a" path="res://assets/sprites/ui_buttons/Icon/Down/A_.Down1.png" id="8_cnqve"]
 [ext_resource type="Texture2D" uid="uid://bunet2a132obi" path="res://assets/sprites/ui_buttons/Icon/Down/A_.Down2.png" id="9_kffq0"]
 
-[node name="MobileControls" type="CanvasLayer" unique_id=499995920]
+[node name="ButtonControls" type="CanvasLayer" unique_id=499995920]
 script = ExtResource("1_kth8y")
 
 [node name="LeftContainer" type="Control" parent="." unique_id=1651939373]

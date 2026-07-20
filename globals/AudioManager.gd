@@ -20,6 +20,9 @@ var sfx_tracks = {
 	"player_hurt": preload("res://audio/sfx/player_hurt.ogg"),
 	"star_twinkle": preload("res://audio/sfx/star_twinkle.ogg"),
 	"sword_swing": preload("res://audio/sfx/sword_swing_sfx.ogg"),
+	"walk": preload("res://audio/sfx/walking-on-grass.ogg"),
+	"walk_1": preload("res://audio/sfx/walk_1.ogg"),
+	"walk_2": preload("res://audio/sfx/walk_2.ogg"),
 	"teleport": preload("res://audio/sfx/teleport_sfx.ogg")
 }
 

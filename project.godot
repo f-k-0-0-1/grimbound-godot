@@ -21,6 +21,10 @@ boot_splash/stretch_mode=0
 boot_splash/use_filter=false
 config/icon="uid://dfdf74y1b1kfa"
 
+[audio]
+
+buses/default_bus_layout="uid://5ic5lw8no1b6"
+
 [autoload]
 
 SceneManager="*uid://cfl8foq0q1aoc"

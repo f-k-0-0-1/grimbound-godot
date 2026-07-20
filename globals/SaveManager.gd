@@ -59,6 +59,21 @@ func load_coins() -> int:
 	var data: Dictionary = _load_data()
 	return data.get("total_coins", 0)
 
+# ===== NEW: Control Scheme Settings =====
+
+# Save the active control scheme ("joystick" or "buttons")
+func save_control_scheme(scheme: String) -> void:
+	var data: Dictionary = _load_data()
+	data["control_scheme"] = scheme
+	_save_data(data)
+
+# Load the control scheme (defaults to "joystick" if not set yet)
+func load_control_scheme() -> String:
+	var data: Dictionary = _load_data()
+	return data.get("control_scheme", "joystick")
+
+# ===== Audio Settings (ConfigFile) =====
+
 func save_audio_settings(music_val: float, sfx_val: float) -> void:
 	# Store the linear 0.0 - 1.0 values under the section "Audio"
 	config_file.set_value("Audio", "music_volume", music_val)

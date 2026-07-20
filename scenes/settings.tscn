@@ -146,6 +146,35 @@ position = Vector2(-120, 11)
 scale = Vector2(0.05083334, 0.05083334)
 texture = ExtResource("3_f4mfi")
 
+[node name="VBoxContainer" type="VBoxContainer" parent="Control" unique_id=526597273]
+layout_mode = 0
+offset_left = -139.0
+offset_top = 59.0
+offset_right = 85.0
+offset_bottom = 114.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Control/VBoxContainer" unique_id=865357718]
+layout_mode = 2
+
+[node name="ButtonLabel" type="Label" parent="Control/VBoxContainer/HBoxContainer" unique_id=487311935]
+custom_minimum_size = Vector2(175, 0)
+layout_mode = 2
+text = "Button Controls"
+
+[node name="ButtonControls" type="CheckButton" parent="Control/VBoxContainer/HBoxContainer" unique_id=918860510]
+layout_mode = 2
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="Control/VBoxContainer" unique_id=1384714993]
+layout_mode = 2
+
+[node name="JoystickLabel" type="Label" parent="Control/VBoxContainer/HBoxContainer2" unique_id=458322363]
+custom_minimum_size = Vector2(175, 0)
+layout_mode = 2
+text = "Joystick Controls"
+
+[node name="JoystickControls" type="CheckButton" parent="Control/VBoxContainer/HBoxContainer2" unique_id=1224161182]
+layout_mode = 2
+
 [node name="BackButton" type="TextureButton" parent="." unique_id=54970838]
 layout_mode = 0
 offset_left = 15.0

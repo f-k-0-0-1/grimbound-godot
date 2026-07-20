@@ -4,7 +4,7 @@
 [ext_resource type="Script" uid="uid://d110e1g1revqd" path="res://scripts/virtual_joystick.gd" id="2_t6lej"]
 [ext_resource type="Texture2D" uid="uid://cvgcnj5ygjhdf" path="res://assets/sprites/VirtualJoystickPack/SmallHandleFilled.png" id="3_m4cqf"]
 
-[node name="Joystick" type="CanvasLayer" unique_id=249377758]
+[node name="JoystickControl" type="CanvasLayer" unique_id=249377758]
 script = ExtResource("2_t6lej")
 
 [node name="LeftTouchZone" type="Control" parent="." unique_id=3140638]
