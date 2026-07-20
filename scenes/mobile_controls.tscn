@@ -8,8 +8,6 @@
 [ext_resource type="Texture2D" uid="uid://ceum0xmg6o4ir" path="res://assets/sprites/ui_buttons/Icon/Up/A_Up1.png" id="6_ilxsp"]
 [ext_resource type="Texture2D" uid="uid://bheka8vtheev8" path="res://assets/sprites/ui_buttons/Icon/Up/A_Up2.png" id="7_saaj3"]
 [ext_resource type="Texture2D" uid="uid://c2326aa0n330a" path="res://assets/sprites/ui_buttons/Icon/Down/A_.Down1.png" id="8_cnqve"]
-[ext_resource type="Texture2D" uid="uid://xjl5yhon8w5w" path="res://assets/sprites/ui_buttons/Icon/Back/A_Back1.png" id="8_jnbrs"]
-[ext_resource type="Texture2D" uid="uid://ba5oqcvwyl1xt" path="res://assets/sprites/ui_buttons/Icon/Back/A_Back2.png" id="9_bdd5e"]
 [ext_resource type="Texture2D" uid="uid://bunet2a132obi" path="res://assets/sprites/ui_buttons/Icon/Down/A_.Down2.png" id="9_kffq0"]
 
 [node name="MobileControls" type="CanvasLayer" unique_id=499995920]
@@ -104,18 +102,3 @@ texture_normal = ExtResource("6_ilxsp")
 texture_pressed = ExtResource("7_saaj3")
 passby_press = true
 action = "jump"
-
-[node name="BackButton" type="Control" parent="." unique_id=821787390]
-layout_mode = 3
-anchor_top = 0.075
-anchor_bottom = 0.075
-offset_left = 23.0
-offset_top = -15.000002
-offset_right = 53.0
-offset_bottom = 14.999998
-
-[node name="TouchScreenButton" type="TouchScreenButton" parent="BackButton" unique_id=987054541]
-position = Vector2(-6.999999, 0)
-scale = Vector2(2.5, 2.5)
-texture_normal = ExtResource("8_jnbrs")
-texture_pressed = ExtResource("9_bdd5e")

@@ -6,7 +6,6 @@ extends CanvasLayer
 @onready var up_button: TouchScreenButton = $UpContainer/UpButton
 @onready var down_button: TouchScreenButton = $DownContainer/DowntButton
 @onready var jump_button: TouchScreenButton = $JumpContainer/JumpButton
-@onready var back_button: TouchScreenButton = $BackButton/TouchScreenButton
 
 func _ready() -> void:
 	# Connect movement buttons
@@ -25,8 +24,6 @@ func _ready() -> void:
 	jump_button.pressed.connect(_on_jump_pressed)
 	jump_button.released.connect(_on_jump_released)
 	
-	# Connect back button
-	back_button.pressed.connect(_on_back_pressed)
 
 # Left Button
 func _on_left_pressed() -> void:
@@ -62,12 +59,3 @@ func _on_jump_pressed() -> void:
 
 func _on_jump_released() -> void:
 	Input.action_release("jump")
-
-# Back Button
-func _on_back_pressed() -> void:
-	# Go back to main menu
-	if SceneManager and SceneManager.has_method("go_to_menu"):
-		SceneManager.go_to_menu()
-	else:
-		# Fallback: direct load
-		get_tree().change_scene_to_file("res://scenes/menus/main_menu.tscn")

@@ -1,0 +1,77 @@
+[gd_scene format=3 uid="uid://2ea7ga67fmih"]
+
+[ext_resource type="Script" uid="uid://t1nn8n16yeu4" path="res://scripts/hud.gd" id="1_oo0fn"]
+[ext_resource type="Texture2D" uid="uid://c5pel2hqijv0y" path="res://assets/sprites/level_gui/Counter/Icon/dollar_icon.png" id="2_oo0fn"]
+[ext_resource type="Texture2D" uid="uid://cd7kugg4jpqse" path="res://assets/sprites/ui_buttons/Icon/Back/B_Button55.png" id="3_6fi6k"]
+[ext_resource type="Texture2D" uid="uid://s8xwg55p7vul" path="res://assets/sprites/ui_buttons/Icon/Back/B_Button56.png" id="4_uo2fv"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_oo0fn"]
+bg_color = Color(0, 0, 0, 0.4862745)
+corner_radius_top_left = 7
+corner_radius_top_right = 7
+corner_radius_bottom_right = 7
+corner_radius_bottom_left = 7
+corner_detail = 20
+
+[node name="HUD" type="CanvasLayer" unique_id=7372671]
+script = ExtResource("1_oo0fn")
+
+[node name="Control" type="Control" parent="." unique_id=76655752]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="Control" unique_id=1525026622]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -80.0
+offset_bottom = 40.0
+grow_horizontal = 0
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 15
+
+[node name="Panel" type="Panel" parent="Control/MarginContainer" unique_id=1295602562]
+custom_minimum_size = Vector2(0, 32)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_oo0fn")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Control/MarginContainer" unique_id=2085788241]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="Control/MarginContainer/HBoxContainer" unique_id=1346753238]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="Control/MarginContainer/HBoxContainer" unique_id=366973857]
+texture_filter = 2
+custom_minimum_size = Vector2(27, 27)
+layout_mode = 2
+texture = ExtResource("2_oo0fn")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Label" type="Label" parent="Control/MarginContainer/HBoxContainer" unique_id=1876924643]
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
+text = "00"
+
+[node name="MarginContainer2" type="MarginContainer" parent="Control/MarginContainer/HBoxContainer" unique_id=414607297]
+layout_mode = 2
+
+[node name="MarginContainer2" type="MarginContainer" parent="Control" unique_id=364917429]
+layout_mode = 0
+offset_right = 35.0
+offset_bottom = 30.0
+theme_override_constants/margin_left = 15
+theme_override_constants/margin_top = 10
+
+[node name="BackButton" type="TextureButton" parent="Control/MarginContainer2" unique_id=187578691]
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 2
+texture_normal = ExtResource("3_6fi6k")
+texture_pressed = ExtResource("4_uo2fv")
+stretch_mode = 5

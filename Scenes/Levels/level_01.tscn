@@ -9,6 +9,8 @@
 [ext_resource type="TileSet" uid="uid://bn7pf0cdvledm" path="res://assets/TileSets/level01_tileset_decor.tres" id="5_t0hvh"]
 [ext_resource type="PackedScene" uid="uid://bl2jctuvkqm7" path="res://scenes/ladder.tscn" id="6_kfebt"]
 [ext_resource type="PackedScene" uid="uid://dgb5ffj3mf41w" path="res://scenes/coin.tscn" id="10_r72dd"]
+[ext_resource type="PackedScene" uid="uid://2ea7ga67fmih" path="res://scenes/hud.tscn" id="11_ijn0p"]
+[ext_resource type="PackedScene" uid="uid://ga4bqhwsj0jc" path="res://scenes/virtual_joystick.tscn" id="12_jmes4"]
 [ext_resource type="PackedScene" uid="uid://dfxn150xbg8gv" path="res://scenes/signboard.tscn" id="30_e5bmj"]
 
 [node name="Level_01" type="Node2D" unique_id=592318608]
@@ -95,6 +97,11 @@ position = Vector2(-2065, 231.00002)
 scale = Vector2(1.2, 1.2)
 
 [node name="MobileControls" parent="." unique_id=499995920 instance=ExtResource("5_dbq10")]
+visible = false
+
+[node name="HUD" parent="." unique_id=7372671 instance=ExtResource("11_ijn0p")]
+
+[node name="Joystick" parent="." unique_id=249377758 instance=ExtResource("12_jmes4")]
 
 [node name="Coins" type="Node2D" parent="." unique_id=358639287]
 

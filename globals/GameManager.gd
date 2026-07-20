@@ -7,6 +7,8 @@ enum GameState {
 	GAME_OVER
 }
 
+signal coins_updated(new_total: int)
+
 var current_state: GameState = GameState.MENU
 var selected_skin: int = -1
 var total_coins: int = 0
@@ -43,6 +45,7 @@ func get_selected_skin_index() -> int:
 
 func add_coin(amount: int = 1) -> void:
 	total_coins += amount
+	coins_updated.emit(total_coins)
 	# Save immediately to the file so it's not lost if the game crashes
 	SaveManager.save_coins(total_coins)
 	print("Total Coins: ", total_coins)

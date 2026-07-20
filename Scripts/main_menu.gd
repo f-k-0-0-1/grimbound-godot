@@ -73,21 +73,25 @@ func _apply_skin_to_preview(index: int) -> void:
 	player.refresh_skin()
 
 func _on_skin_pressed() -> void:
+	AudioManager.play_sfx("button_click")
 	character_popup.visible = true
 
 func _on_skin_1_pressed() -> void:
+	AudioManager.play_sfx("button_click")
 	GameManager.set_selected_skin(0)
 	_apply_skin_to_preview(0)
 	character_popup.visible = false
 	_show_tutorial_label()
 
 func _on_skin_2_pressed() -> void:
+	AudioManager.play_sfx("button_click")
 	GameManager.set_selected_skin(1)
 	_apply_skin_to_preview(1)
 	character_popup.visible = false
 	_show_tutorial_label()
 
 func _on_skin_3_pressed() -> void:
+	AudioManager.play_sfx("button_click")
 	GameManager.set_selected_skin(2)
 	_apply_skin_to_preview(2)
 	character_popup.visible = false
@@ -130,7 +134,7 @@ func _on_player_swipe(direction: String) -> void:
 		_hide_tutorial_label()
 
 func _on_play_pressed() -> void:
-	# 1. Smoothly fade out the menu music over 0.5 seconds instead of a hard cut
+	AudioManager.play_sfx("button_click")
 	AudioManager.stop_music(0.5)
 	# 2. Trigger the visual button pop
 	_animate_button(play_button)
@@ -145,7 +149,7 @@ func _on_play_pressed() -> void:
 		get_tree().change_scene_to_packed(level_01)
 
 func _on_settings_pressed() -> void:
-	
+	AudioManager.play_sfx("button_click")
 	await get_tree().create_timer(0.2).timeout
 	SceneManager.go_to_settings()
 

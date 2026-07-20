@@ -32,6 +32,7 @@ func _on_sfx_slider_changed(value: float) -> void:
 	AudioServer.set_bus_volume_db(sfx_bus_index, linear_to_db(value * value))
 	
 func _on_back_button_pressed() -> void :
+	AudioManager.play_sfx("button_click")
 	SceneManager.go_to_menu()
 
 func _exit_tree() -> void:
