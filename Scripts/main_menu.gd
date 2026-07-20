@@ -5,6 +5,7 @@ extends CanvasLayer
 @onready var play_button: Button = $Buttons/VBoxContainer/PlayButton
 @onready var quit_button: Button = $Buttons/VBoxContainer/QuitButton
 @onready var skin_button: Button = $Buttons/VBoxContainer/SkinButton
+@onready var settings_button: Button = $Buttons/VBoxContainer/SettingsButton
 @onready var character_popup: Control = $character_select_popup
 @onready var player: CharacterBody2D = $MenuPlayer
 
@@ -24,10 +25,12 @@ var _skin_cache: Dictionary = {}
 var _tutorial_tween: Tween = null
 
 func _ready() -> void:
+	AudioManager.play_music("bg_music_1")
 	# Connect buttons
 	play_button.pressed.connect(_on_play_pressed)
 	quit_button.pressed.connect(_on_quit_pressed)
 	skin_button.pressed.connect(_on_skin_pressed)
+	settings_button.pressed.connect(_on_settings_pressed)
 	
 	skin_button_1.pressed.connect(_on_skin_1_pressed)
 	skin_button_2.pressed.connect(_on_skin_2_pressed)
@@ -127,11 +130,24 @@ func _on_player_swipe(direction: String) -> void:
 		_hide_tutorial_label()
 
 func _on_play_pressed() -> void:
+	# 1. Smoothly fade out the menu music over 0.5 seconds instead of a hard cut
+	AudioManager.stop_music(0.5)
+	# 2. Trigger the visual button pop
 	_animate_button(play_button)
+	
+	# 3. Pause this specific function for 0.2 seconds to let the tween finish
+	await get_tree().create_timer(0.2).timeout
+	
+	# 4. Safely hand off to your Async SceneManager to flush the RAM
 	if SceneManager:
 		SceneManager.go_to_level_01()
 	else:
 		get_tree().change_scene_to_packed(level_01)
+
+func _on_settings_pressed() -> void:
+	
+	await get_tree().create_timer(0.2).timeout
+	SceneManager.go_to_settings()
 
 func _on_quit_pressed() -> void:
 	_animate_button(quit_button)

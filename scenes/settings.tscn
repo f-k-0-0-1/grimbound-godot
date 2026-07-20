@@ -1,0 +1,158 @@
+[gd_scene format=3 uid="uid://cdsh8mel61wg1"]
+
+[ext_resource type="Texture2D" uid="uid://b1246cjwv5ro" path="res://assets/forest_bg/Default.png" id="1_5p8wc"]
+[ext_resource type="Script" uid="uid://b7jxmr37xoiue" path="res://scripts/Settings.gd" id="1_f4mfi"]
+[ext_resource type="Texture2D" uid="uid://cako755tdp1qg" path="res://assets/sprites/level_gui/Icon/SoundOn.png" id="2_6wm04"]
+[ext_resource type="Texture2D" uid="uid://dkcxxx8q7hqdx" path="res://assets/sprites/level_gui/Icon/music.png" id="3_f4mfi"]
+[ext_resource type="Texture2D" uid="uid://cf1y3h02y4bv8" path="res://assets/sprites/ui_buttons/Icon/Back/A_Back3.png" id="5_es4n0"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5p8wc"]
+bg_color = Color(0.34509805, 0.18039216, 0.14901961, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.212172, 0.095977, 0.09006039, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+corner_detail = 20
+
+[node name="Settings" type="Control" unique_id=1277572933]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_f4mfi")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=633411510]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_5p8wc")
+expand_mode = 5
+stretch_mode = 4
+
+[node name="Panel" type="Panel" parent="." unique_id=1678614478]
+modulate = Color(1, 1, 1, 0.93333334)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -176.0
+offset_top = -132.0
+offset_right = 174.0
+offset_bottom = 118.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_5p8wc")
+
+[node name="Label" type="Label" parent="." unique_id=1145726400]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -57.0
+offset_top = -117.0
+offset_right = 57.0
+offset_bottom = -94.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 22
+text = "SETTINGS"
+
+[node name="SfxSlider" type="HSlider" parent="." unique_id=808452848]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -45.0
+offset_top = -63.0
+offset_right = 130.0
+offset_bottom = -43.0
+grow_horizontal = 2
+grow_vertical = 2
+max_value = 1.0
+step = 0.01
+value = 1.0
+
+[node name="MusicSlider" type="HSlider" parent="." unique_id=2022135429]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -45.0
+offset_top = -20.0
+offset_right = 130.0
+grow_horizontal = 2
+grow_vertical = 2
+max_value = 1.0
+step = 0.01
+value = 1.0
+
+[node name="Control" type="Control" parent="." unique_id=1991602187]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="sfx_label" type="Label" parent="Control" unique_id=1782389660]
+layout_mode = 0
+offset_left = -89.0
+offset_top = -42.0
+offset_right = -49.0
+offset_bottom = -25.0
+text = "sfx"
+
+[node name="music_label" type="Label" parent="Control" unique_id=2005326908]
+layout_mode = 0
+offset_left = -90.0
+offset_top = 1.0
+offset_right = -39.0
+offset_bottom = 18.0
+text = "music"
+
+[node name="SoundOn" type="Sprite2D" parent="Control" unique_id=849961213]
+self_modulate = Color(0, 0, 0, 1)
+texture_filter = 2
+position = Vector2(-115.000015, -33.000023)
+scale = Vector2(0.5357142, 0.5357142)
+texture = ExtResource("2_6wm04")
+
+[node name="Music" type="Sprite2D" parent="Control" unique_id=1706317396]
+texture_filter = 2
+position = Vector2(-120, 11)
+scale = Vector2(0.05083334, 0.05083334)
+texture = ExtResource("3_f4mfi")
+
+[node name="BackButton" type="TextureButton" parent="." unique_id=54970838]
+layout_mode = 0
+offset_left = 15.0
+offset_top = 14.0
+offset_right = 35.0
+offset_bottom = 34.0
+scale = Vector2(2, 2)
+texture_normal = ExtResource("5_es4n0")
+texture_pressed = ExtResource("5_es4n0")
+texture_hover = ExtResource("5_es4n0")

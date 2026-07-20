@@ -63,6 +63,9 @@ offset_top = 2.0
 offset_right = 48.0
 offset_bottom = 19.0
 grow_horizontal = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
 theme_override_fonts/font = ExtResource("3_1ehe0")
 theme_override_font_sizes/font_size = 40
 text = "GRIM BOUND"
@@ -125,17 +128,21 @@ text = "PLAY"
 [node name="MarginContainer" type="MarginContainer" parent="Buttons/VBoxContainer" unique_id=857856753]
 layout_mode = 2
 
-[node name="MarginContainer3" type="MarginContainer" parent="Buttons/VBoxContainer" unique_id=1577103407]
-layout_mode = 2
-
 [node name="SkinButton" type="Button" parent="Buttons/VBoxContainer" unique_id=1660154191]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("3_1ehe0")
-text = "PLAYER SKINS
-"
+theme_override_font_sizes/font_size = 25
+text = "HERO"
 
 [node name="MarginContainer2" type="MarginContainer" parent="Buttons/VBoxContainer" unique_id=1943286014]
 layout_mode = 2
+
+[node name="SettingsButton" type="Button" parent="Buttons/VBoxContainer" unique_id=178790807]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_1ehe0")
+theme_override_font_sizes/font_size = 22
+text = "SETTINGS
+"
 
 [node name="MarginContainer4" type="MarginContainer" parent="Buttons/VBoxContainer" unique_id=1489514892]
 layout_mode = 2

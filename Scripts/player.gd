@@ -108,6 +108,7 @@ func _handle_jump() -> void:
 		if current_jumps < max_jumps:
 			velocity.y = jump_force
 			current_jumps += 1
+			AudioManager.play_sfx("jump")
 			
 			# Visual Polish: Restart the jump animation if it's a mid-air double jump
 			if current_jumps > 1 and sprite and sprite.sprite_frames:

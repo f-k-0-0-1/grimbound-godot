@@ -2,9 +2,11 @@
 extends Node2D
 
 @onready var player: CharacterBody2D = $Player
-@onready var mobile_controls: Control = $VirtualJoystick
+@onready var mobile_controls: CanvasLayer = $MobileControls
+@onready var signboard = $Signboard
 
 func _ready() -> void:
+	AudioManager.play_music("bg_music_2", 2.5)
 	print("Level_01: _ready START")
 	
 	# Make sure player is ready

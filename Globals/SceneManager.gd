@@ -1,14 +1,19 @@
-## SceneManager - Handles all scene transitions and flow
+## SceneManager - Handles all scene transitions and flow (Async Architecture)
 extends Node
 
 # Scene constants
 const SCENE_SPLASH: String = "res://scenes/Splash_Screen.tscn"
 const SCENE_MENU: String = "res://scenes/main_menu.tscn"
 const SCENE_LEVEL_01: String = "res://scenes/levels/level_01.tscn"
+const SCENE_LOADING: String = "res://scenes/loading_screen.tscn"
+const SCENE_SETTINGS: String = "res://scenes/settings.tscn"
 
 # Current scene reference
 var current_scene: Node = null
 var is_transitioning: bool = false
+
+# NEW: Holds the path for the loading screen to pick up and process in the background
+var target_level_path: String = "" 
 
 func _ready() -> void:
 	var root = get_tree().root
@@ -20,7 +25,7 @@ func load_scene(scene_path: String) -> void:
 		return
 	
 	is_transitioning = true
-	print("SceneManager: Loading scene:", scene_path)
+	print("SceneManager: Preparing async load for:", scene_path)
 	
 	# Check if file exists
 	if not ResourceLoader.exists(scene_path):
@@ -28,16 +33,21 @@ func load_scene(scene_path: String) -> void:
 		is_transitioning = false
 		return
 	
-	var error = get_tree().change_scene_to_file(scene_path)
+	# 1. Store the target path globally so the loading screen can access it
+	target_level_path = scene_path
+	
+	# 2. Instantly switch to the lightweight loading screen to flush heavy assets from RAM
+	var error = get_tree().change_scene_to_file(SCENE_LOADING)
+	
 	if error != OK:
-		push_error("SceneManager: Failed to load scene:", scene_path)
+		push_error("SceneManager: Failed to load loading screen scene!")
 		is_transitioning = false
 		return
 	
 	await get_tree().process_frame
 	current_scene = get_tree().current_scene
 	is_transitioning = false
-	print("SceneManager: Scene loaded successfully")
+	print("SceneManager: Successfully transitioned to loading screen.")
 
 func go_to_splash() -> void:
 	load_scene(SCENE_SPLASH)
@@ -47,6 +57,9 @@ func go_to_menu() -> void:
 
 func go_to_level_01() -> void:
 	load_scene(SCENE_LEVEL_01)
+
+func go_to_settings() -> void:
+	load_scene(SCENE_SETTINGS)
 
 func go_to_level(level_name: String) -> void:
 	var level_path = "res://scenes/levels/" + level_name + ".tscn"

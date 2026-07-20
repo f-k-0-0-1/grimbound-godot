@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://d14ew5tidory1"
+path="res://.godot/imported/pickup sound effect.ogg-f03e4e765488ab1ebf936e66f61b3ed7.oggvorbisstr"
+
+[deps]
+
+source_file="res://audio/sfx/pickup sound effect.ogg"
+dest_files=["res://.godot/imported/pickup sound effect.ogg-f03e4e765488ab1ebf936e66f61b3ed7.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

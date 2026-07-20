@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://ctpl1c0uynfr7" path="res://assets/sprites/medivial_ruins/Environment/Sign_06.png" id="1_fcafi"]
 [ext_resource type="Script" uid="uid://2kmo5xnsgjco" path="res://scripts/signboard.gd" id="1_i1r8r"]
+[ext_resource type="FontFile" uid="uid://btxv8pw11ftag" path="res://fonts/EightBitDragon-anqx.ttf" id="2_6uydl"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_i1r8r"]
 size = Vector2(56, 85)
@@ -20,6 +21,7 @@ theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/shadow_offset_x = 2
 theme_override_constants/shadow_offset_y = 2
 theme_override_constants/outline_size = 5
+theme_override_fonts/font = ExtResource("2_6uydl")
 theme_override_font_sizes/font_size = 22
 text = "Use Double Jump!!"
 horizontal_alignment = 1
