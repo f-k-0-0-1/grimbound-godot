@@ -3,12 +3,14 @@ extends Node
 # --- MUSIC DICTIONARY ---
 var bgm_tracks = {
 	"bg_music_1": preload("res://audio/bg_music/bg_music_1.ogg"),
+	"song_1": preload("res://audio/bg_music/song_1.mp3"),
 	"bg_music_2": preload("res://audio/bg_music/bg_music_2.ogg")
 }
 
 # --- SFX DICTIONARY ---
 var sfx_tracks = {
 	"button_click": preload("res://audio/sfx/button_click.ogg"),
+	"npc_voice": preload("res://audio/sfx/npc_voice.mp3"),
 	"coin": preload("res://audio/sfx/coin_sfx.ogg"),
 	"enemy_death": preload("res://audio/sfx/enemy_death.ogg"),
 	"fireball": preload("res://audio/sfx/fireball.ogg"),

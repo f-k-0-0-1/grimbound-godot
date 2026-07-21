@@ -1,4 +1,4 @@
-## Player - Clean player controller with smooth movement, respawn, and alternating footsteps
+## Player - Clean player controller with smooth movement, respawn, alternating footsteps, combat components, and death handling
 extends CharacterBody2D
 
 @export var move_speed: float = 550.0
@@ -23,7 +23,16 @@ var footstep_timer: float = 0.0
 @export var footstep_interval: float = 0.35 # Time in seconds between steps
 var footstep_toggle: bool = false # Flips back and forth to alternate sounds
 
+# --- Combat Variables ---
+@export var max_health: int = 100
+var current_health: int
+var is_attacking: bool = false
+var is_dead: bool = false
+
 @onready var sprite: AnimatedSprite2D = $AnimatedSprite2D
+@onready var hurt_box: HurtBox = $HurtBox
+@onready var sword_hitbox: HitBox = $HitBox
+@onready var sword_collider: CollisionShape2D = $HitBox/CollisionShape2D
 
 var current_direction: int = 1
 
@@ -31,6 +40,20 @@ func _ready() -> void:
 	call_deferred("_apply_skin_deferred")
 	if spawn_position == Vector2.ZERO:
 		spawn_position = global_position
+		
+	current_health = max_health
+	
+	# Connect HurtBox signal to handle incoming damage and knockback from enemies
+	if hurt_box:
+		hurt_box.took_damage.connect(_on_took_damage)
+		
+	# Ensure sword hitbox starts disabled
+	if sword_collider:
+		sword_collider.disabled = true
+		
+	# Listen for animation finish to reset attack state
+	if sprite:
+		sprite.animation_finished.connect(_on_animation_finished)
 
 func refresh_skin() -> void:
 	if is_inside_tree():
@@ -57,6 +80,9 @@ func _apply_skin() -> void:
 			sprite.play("Idle")
 
 func _physics_process(delta: float) -> void:
+	if is_dead:
+		return
+
 	if ladder_cooldown > 0:
 		ladder_cooldown -= delta
 		
@@ -69,9 +95,16 @@ func _physics_process(delta: float) -> void:
 			current_jumps = 1
 			
 		_apply_gravity(delta)
-		_handle_jump()
-		_handle_movement(delta)
 		
+		# Only process movement, jumping, and attacks if not currently swinging
+		if not is_attacking:
+			_handle_jump()
+			_handle_movement(delta)
+			_handle_attack()
+		else:
+			# Manage hitbox activation based on attack animation frames
+			_check_attack_frame()
+			
 	_update_animation()
 	
 	if abs(velocity.x) < 1.0:
@@ -113,8 +146,12 @@ func _handle_movement(delta: float) -> void:
 	
 	if direction != 0:
 		velocity.x = lerp(velocity.x, direction * move_speed, (1.0 - acceleration) * 60.0 * delta)
-		current_direction = sign(direction)
+		current_direction = int(sign(direction))
 		sprite.flip_h = direction < 0
+		
+		# Mirror the sword hitbox position horizontally depending on facing direction
+		if sword_hitbox:
+			sword_hitbox.position.x = abs(sword_hitbox.position.x) * current_direction
 		
 		# --- Alternating Footstep Logic ---
 		if is_on_floor():
@@ -130,9 +167,39 @@ func _handle_movement(delta: float) -> void:
 	else:
 		velocity.x = lerp(velocity.x, 0.0, (1.0 - friction) * 60.0 * delta)
 		footstep_timer = 0.0
+
+func _handle_attack() -> void:
+	if Input.is_action_just_pressed("attack") and is_on_floor():
+		is_attacking = true
+		velocity.x = 0.0 # Plant feet firmly while striking
 		
+		if sprite and sprite.sprite_frames.has_animation("Slashing"):
+			sprite.play("Slashing")
+			sprite.frame = 0
+
+func _check_attack_frame() -> void:
+	if sprite and sprite.animation == "Slashing":
+		# Enable hitbox only on active swing frames (e.g., frames 2 through 4)
+		var current_frame = sprite.frame
+		if current_frame >= 2 and current_frame <= 9:
+			if sword_collider:
+				sword_collider.disabled = false
+		else:
+			if sword_collider:
+				sword_collider.disabled = true
+
+func _on_animation_finished() -> void:
+	if sprite and sprite.animation == "Slashing":
+		is_attacking = false
+		if sword_collider:
+			sword_collider.disabled = true
+
 func _update_animation() -> void:
 	if not sprite or not sprite.sprite_frames:
+		return
+	
+	# Skip standard loop updates while the attack animation is playing
+	if is_attacking:
 		return
 	
 	var anim = "Idle"
@@ -147,12 +214,52 @@ func _update_animation() -> void:
 	if sprite.sprite_frames.has_animation(anim) and sprite.animation != anim:
 		sprite.play(anim)
 
+func _on_took_damage(amount: int, knockback: Vector2) -> void:
+	if is_dead:
+		return
+
+	current_health -= amount
+	print("Player took damage! Health: " + str(current_health))
+	
+	# Apply physical knockback received from enemy hitboxes
+	velocity = knockback
+	
+	if current_health <= 0:
+		die()
+
+func die() -> void:
+	if is_dead:
+		return
+		
+	is_dead = true
+	is_attacking = false
+	velocity = Vector2.ZERO
+	
+	if sword_collider:
+		sword_collider.disabled = true
+		
+	print("Player has died!")
+	
+	# Play death animation if available, otherwise respawn immediately
+	if sprite and sprite.sprite_frames and sprite.sprite_frames.has_animation("death"):
+		sprite.play("death")
+		await sprite.animation_finished
+		
+	respawn()
+
 func _check_fall() -> void:
-	if global_position.y > fall_threshold:
+	if global_position.y > fall_threshold and not is_dead:
 		respawn()
 
 func respawn() -> void:
 	global_position = spawn_position
 	velocity = Vector2.ZERO
+	current_health = max_health
+	is_attacking = false
+	is_dead = false
+	
+	if sword_collider:
+		sword_collider.disabled = true
+		
 	if sprite and sprite.sprite_frames and sprite.sprite_frames.has_animation("Idle"):
 		sprite.play("Idle")

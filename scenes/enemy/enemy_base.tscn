@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://berkd7lyi0dhy"]
+
+[ext_resource type="PackedScene" uid="uid://c2iy6yeondpbc" path="res://scenes/enemy/hit_box.tscn" id="1_qsge8"]
+[ext_resource type="Script" uid="uid://ccwbo6mnhq64x" path="res://scripts/enemy/enemy_base.gd" id="1_r4ukv"]
+[ext_resource type="PackedScene" uid="uid://cv4i6xkcvbswt" path="res://scenes/enemy/hurt_box.tscn" id="2_r4ukv"]
+[ext_resource type="Script" uid="uid://rmt8vspug6pu" path="res://scripts/enemy/state_machine.gd" id="5_hm7nd"]
+[ext_resource type="Script" uid="uid://duncs6x52vsa1" path="res://scripts/enemy/states/patrol_state.gd" id="6_3ms46"]
+
+[node name="EnemyBase" type="CharacterBody2D" unique_id=511190009]
+script = ExtResource("1_r4ukv")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=942105224]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=426978816]
+
+[node name="HitBox" parent="." unique_id=1711105650 instance=ExtResource("1_qsge8")]
+
+[node name="HurtBox" parent="." unique_id=703896507 instance=ExtResource("2_r4ukv")]
+
+[node name="StateMachine" type="Node" parent="." unique_id=441309144]
+script = ExtResource("5_hm7nd")
+
+[node name="PatrolState" type="Node" parent="StateMachine" unique_id=847020631]
+script = ExtResource("6_3ms46")
+
+[node name="WallRay" type="RayCast2D" parent="." unique_id=327884221]
+
+[node name="GroundRay" type="RayCast2D" parent="." unique_id=19553702]

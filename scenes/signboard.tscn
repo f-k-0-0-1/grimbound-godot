@@ -9,7 +9,8 @@ size = Vector2(56, 85)
 
 [node name="Signboard" type="Area2D" unique_id=593309785]
 script = ExtResource("1_i1r8r")
-message = "Use Double Jump!!"
+message = "Double swipe to
+Use Double Jump!!"
 
 [node name="Label" type="Label" parent="." unique_id=1036256453]
 offset_left = -127.0
@@ -23,7 +24,8 @@ theme_override_constants/shadow_offset_y = 2
 theme_override_constants/outline_size = 5
 theme_override_fonts/font = ExtResource("2_6uydl")
 theme_override_font_sizes/font_size = 22
-text = "Use Double Jump!!"
+text = "Double swipe to
+Use Double Jump!!"
 horizontal_alignment = 1
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=735978799]

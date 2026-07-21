@@ -9,6 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://bl2jctuvkqm7" path="res://scenes/ladder.tscn" id="6_kfebt"]
 [ext_resource type="PackedScene" uid="uid://dgb5ffj3mf41w" path="res://scenes/coin.tscn" id="10_r72dd"]
 [ext_resource type="PackedScene" uid="uid://2ea7ga67fmih" path="res://scenes/ui/hud.tscn" id="11_ijn0p"]
+[ext_resource type="PackedScene" uid="uid://cu63xv3rdk8wl" path="res://scenes/enemy/goblin.tscn" id="11_jmes4"]
 [ext_resource type="PackedScene" uid="uid://dfxn150xbg8gv" path="res://scenes/signboard.tscn" id="30_e5bmj"]
 
 [node name="Level_01" type="Node2D" unique_id=592318608]
@@ -169,3 +170,6 @@ position = Vector2(-2065, 231.00002)
 scale = Vector2(1.2, 1.2)
 
 [node name="HUD" parent="." unique_id=7372671 instance=ExtResource("11_ijn0p")]
+
+[node name="Goblin" parent="." unique_id=511190009 instance=ExtResource("11_jmes4")]
+position = Vector2(-2916, 203)

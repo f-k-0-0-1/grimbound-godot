@@ -1,0 +1,70 @@
+[gd_scene format=3 uid="uid://bcffnxnbwwe3o"]
+
+[ext_resource type="Script" uid="uid://2bknl3tq2j7" path="res://scripts/a_npc.gd" id="1_40tug"]
+[ext_resource type="Texture2D" uid="uid://bm1ju64tebeyl" path="res://assets/sprites/A_char/sprite (1).png" id="1_gtvvm"]
+[ext_resource type="Texture2D" uid="uid://dyxw36c1cxqqx" path="res://assets/sprites/A_char/sprite.png" id="2_40tug"]
+[ext_resource type="Texture2D" uid="uid://hr1asvbe02g1" path="res://assets/sprites/A_char/sprite (2).png" id="3_7fi2p"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u4x8l"]
+atlas = ExtResource("3_7fi2p")
+region = Rect2(0, 0, 294, 743)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_gi4a3"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_gtvvm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_40tug")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u4x8l")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 4.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_v3i8q"]
+radius = 88.0
+height = 716.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_40tug"]
+size = Vector2(1211, 691)
+
+[node name="A_char" type="CharacterBody2D" unique_id=432915129]
+script = ExtResource("1_40tug")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=572126047]
+position = Vector2(13.499996, -189.48994)
+scale = Vector2(1.8892858, 1.5244957)
+sprite_frames = SubResource("SpriteFrames_gi4a3")
+animation = &"Idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=499558085]
+shape = SubResource("CapsuleShape2D_v3i8q")
+
+[node name="InteractionZone" type="Area2D" parent="." unique_id=544088904]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteractionZone" unique_id=2052357157]
+position = Vector2(-601.5, 4.5)
+shape = SubResource("RectangleShape2D_40tug")
+
+[node name="Panel" type="Panel" parent="." unique_id=516304593]
+self_modulate = Color(0, 0, 0, 1)
+offset_left = -757.0
+offset_top = -1126.0
+offset_right = 986.0
+offset_bottom = -817.0
+
+[node name="Label" type="Label" parent="Panel" unique_id=1398204155]
+layout_mode = 0
+offset_left = 23.0
+offset_top = 53.0
+offset_right = 1220.0
+offset_bottom = 203.0
+theme_override_constants/line_spacing = 10
+theme_override_font_sizes/font_size = 100
+text = "Hiii, i am Haji mohd. Amir
+i want to sing a song for you!"

@@ -69,4 +69,5 @@ offset_left = -214.0
 offset_top = -8.354004
 offset_right = -58.0
 offset_bottom = 8.645996
+theme_override_constants/outline_size = 4
 text = "SWIPE UP TO JUMP"

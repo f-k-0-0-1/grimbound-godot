@@ -2,10 +2,20 @@
 
 [ext_resource type="Script" uid="uid://qqmobiclsmsu" path="res://scripts/player.gd" id="1_g2els"]
 [ext_resource type="SpriteFrames" uid="uid://b3i3s1brdd62h" path="res://resources/player_skins/Reaper_1.tres" id="2_qhqgy"]
+[ext_resource type="PackedScene" uid="uid://c2iy6yeondpbc" path="res://scenes/enemy/hit_box.tscn" id="3_dqkch"]
+[ext_resource type="PackedScene" uid="uid://cv4i6xkcvbswt" path="res://scenes/enemy/hurt_box.tscn" id="4_qlg0r"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_dbq10"]
 radius = 28.0
 height = 138.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_tuyoq"]
+radius = 16.0
+height = 124.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_fjrip"]
+radius = 30.0
+height = 150.0
 
 [node name="Player" type="CharacterBody2D" unique_id=28132837 groups=["Player"]]
 script = ExtResource("1_g2els")
@@ -13,7 +23,9 @@ script = ExtResource("1_g2els")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=2114595249]
 texture_filter = 2
 sprite_frames = ExtResource("2_qhqgy")
-animation = &"Dying"
+animation = &"Slashing"
+frame = 11
+frame_progress = 1.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1395951671]
 position = Vector2(0, 6)
@@ -31,3 +43,18 @@ drag_left_margin = 0.0
 drag_top_margin = 0.0
 drag_right_margin = 0.0
 drag_bottom_margin = 0.0
+
+[node name="HitBox" parent="." unique_id=1711105650 instance=ExtResource("3_dqkch")]
+collision_layer = 16
+collision_mask = 32
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HitBox" unique_id=1228702587]
+position = Vector2(34, 38)
+rotation = 1.5707964
+shape = SubResource("CapsuleShape2D_tuyoq")
+disabled = true
+
+[node name="HurtBox" parent="." unique_id=703896507 instance=ExtResource("4_qlg0r")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HurtBox" unique_id=867172704]
+shape = SubResource("CapsuleShape2D_fjrip")
