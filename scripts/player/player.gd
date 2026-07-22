@@ -24,8 +24,8 @@ var footstep_timer: float = 0.0
 var footstep_toggle: bool = false # Flips back and forth to alternate sounds
 
 # --- Combat Variables ---
-@export var max_health: int = 100
-var current_health: int
+@export var max_health: float = 100.0
+var current_health: float
 var is_attacking: bool = false
 var is_dead: bool = false
 
@@ -42,6 +42,9 @@ func _ready() -> void:
 		spawn_position = global_position
 		
 	current_health = max_health
+	
+	# Initialize health in GameManager so the HUD reflects it instantly on load
+	GameManager.set_player_health(current_health, max_health)
 	
 	# Connect HurtBox signal to handle incoming damage and knockback from enemies
 	if hurt_box:
@@ -221,11 +224,13 @@ func _update_animation() -> void:
 	if sprite.sprite_frames.has_animation(anim) and sprite.animation != anim:
 		sprite.play(anim)
 
-func _on_took_damage(amount: int, knockback: Vector2) -> void:
+func _on_took_damage(amount: float, knockback: Vector2) -> void:
 	if is_dead:
 		return
 
-	current_health -= amount
+	# Route damage through GameManager to automatically broadcast via signal to HUD
+	GameManager.apply_damage(amount)
+	current_health = GameManager.current_health
 	print("Player took damage! Health: " + str(current_health))
 	
 	# Apply physical knockback received from enemy hitboxes
@@ -266,6 +271,10 @@ func respawn() -> void:
 	global_position = spawn_position
 	velocity = Vector2.ZERO
 	current_health = max_health
+	
+	# Reset health in GameManager and update HUD bar back to full
+	GameManager.set_player_health(current_health, max_health)
+	
 	is_attacking = false
 	is_dead = false
 	

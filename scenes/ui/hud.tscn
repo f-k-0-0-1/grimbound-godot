@@ -4,6 +4,8 @@
 [ext_resource type="Texture2D" uid="uid://c5pel2hqijv0y" path="res://assets/sprites/level_gui/Counter/Icon/dollar_icon.png" id="2_oo0fn"]
 [ext_resource type="Texture2D" uid="uid://cd7kugg4jpqse" path="res://assets/sprites/ui_buttons/Icon/Back/B_Button55.png" id="3_6fi6k"]
 [ext_resource type="Texture2D" uid="uid://s8xwg55p7vul" path="res://assets/sprites/ui_buttons/Icon/Back/B_Button56.png" id="4_uo2fv"]
+[ext_resource type="Texture2D" uid="uid://b11n8jur2ei5x" path="res://assets/sprites/level_gui/Bar/Background.png" id="5_oj5la"]
+[ext_resource type="Texture2D" uid="uid://cxfbdq83q1ipq" path="res://assets/sprites/level_gui/Bar/Line.png" id="6_gss2c"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_oo0fn"]
 bg_color = Color(0, 0, 0, 0.4862745)
@@ -75,3 +77,24 @@ layout_mode = 2
 texture_normal = ExtResource("3_6fi6k")
 texture_pressed = ExtResource("4_uo2fv")
 stretch_mode = 5
+
+[node name="MarginContainer3" type="MarginContainer" parent="Control" unique_id=1007075064]
+custom_minimum_size = Vector2(50, 0)
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -73.80003
+offset_right = 422.19995
+offset_bottom = 102.0
+grow_horizontal = 2
+scale = Vector2(0.3, 0.3)
+theme_override_constants/margin_top = 50
+
+[node name="PlayerHealthBar" type="TextureProgressBar" parent="Control/MarginContainer3" unique_id=846428523]
+custom_minimum_size = Vector2(50, 20)
+layout_mode = 2
+value = 75.0
+texture_under = ExtResource("5_oj5la")
+texture_progress = ExtResource("6_gss2c")
+texture_progress_offset = Vector2(8, 8)

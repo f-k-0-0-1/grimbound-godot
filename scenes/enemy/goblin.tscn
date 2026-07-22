@@ -93,6 +93,83 @@
 animations = [{
 "frames": [{
 "duration": 1.0,
+"texture": ExtResource("20_cdi25")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_y20jj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_kemgq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_c3ryr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_umwqn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_5rhva")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_7cijj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_qf0vt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_smi66")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_jgiq0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_whdjd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_joswp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_gnf0k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_dq4e5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_aj4lr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_64hsj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_juo0p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_c0eat")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_rc42l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_ovanw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_ccnxm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_d5f3h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_2mxi4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_tkwvk")
+}],
+"loop": true,
+"name": &"chase",
+"speed": 60.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": ExtResource("3_tkwvk")
 }, {
 "duration": 1.0,
@@ -380,9 +457,8 @@ stats = ExtResource("2_3kduw")
 
 [node name="AnimatedSprite2D" parent="." index="0" unique_id=942105224]
 sprite_frames = SubResource("SpriteFrames_5amrt")
-animation = &"slashing"
-frame = 11
-frame_progress = 1.0
+animation = &"chase"
+frame_progress = 0.09197019
 
 [node name="CollisionShape2D" parent="." index="1" unique_id=426978816]
 position = Vector2(0, 9)
@@ -421,6 +497,7 @@ script = ExtResource("86_7k0oa")
 
 [node name="ChaseState" type="Node" parent="StateMachine" index="4" unique_id=994843413]
 script = ExtResource("87_7qbj8")
+chase_speed_multiplier = 3.0
 
 [node name="DeathState" type="Node" parent="StateMachine" index="5" unique_id=1997430393]
 script = ExtResource("88_ws8e0")

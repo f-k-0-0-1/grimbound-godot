@@ -16,8 +16,8 @@ func enter() -> void:
 	if players.size() > 0:
 		player = players[0]
 	
-	if enemy.sprite and enemy.sprite.sprite_frames.has_animation("walk"):
-		enemy.sprite.play("walk")
+	if enemy.sprite and enemy.sprite.sprite_frames.has_animation("chase"):
+		enemy.sprite.play("chase")
 
 func physics_update(_delta: float) -> void:
 	if not enemy or not enemy.stats or not player:

@@ -8,10 +8,15 @@ enum GameState {
 }
 
 signal coins_updated(new_total: int)
+signal player_health_updated(current_health: float, max_health: float)
 
 var current_state: GameState = GameState.MENU
 var selected_skin: int = -1
 var total_coins: int = 0
+
+# Player Health State
+var max_health: float = 100.0
+var current_health: float = 100.0
 
 func _ready() -> void:
 	# Load Skin
@@ -56,3 +61,13 @@ func get_coins() -> int:
 func reset_coins() -> void:
 	total_coins = 0
 	SaveManager.save_coins(total_coins)
+
+func set_player_health(current: float, max_val: float) -> void:
+	current_health = current
+	max_health = max_val
+	player_health_updated.emit(current_health, max_health)
+
+func apply_damage(amount: float) -> void:
+	current_health -= amount
+	current_health = clamp(current_health, 0.0, max_health)
+	player_health_updated.emit(current_health, max_health)
