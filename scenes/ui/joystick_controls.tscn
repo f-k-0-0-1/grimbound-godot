@@ -3,6 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://l4goywyhnlaq" path="res://assets/sprites/VirtualJoystickPack/Joystick.png" id="1_fh201"]
 [ext_resource type="Script" uid="uid://d110e1g1revqd" path="res://scripts/ui/virtual_joystick.gd" id="2_t6lej"]
 [ext_resource type="Texture2D" uid="uid://cvgcnj5ygjhdf" path="res://assets/sprites/VirtualJoystickPack/SmallHandleFilled.png" id="3_m4cqf"]
+[ext_resource type="Texture2D" uid="uid://bgtg5p7aarknc" path="res://assets/sprites/ui_buttons/Icon/Attack/attack_icon.png" id="4_f27wk"]
 
 [node name="JoystickControl" type="CanvasLayer" unique_id=249377758]
 script = ExtResource("2_t6lej")
@@ -20,12 +21,12 @@ grow_vertical = 0
 custom_minimum_size = Vector2(100, 100)
 layout_mode = 1
 anchors_preset = -1
-anchor_top = 0.5
-anchor_bottom = 0.514
-offset_left = 52.0
-offset_top = -46.99997
-offset_right = 152.0
-offset_bottom = 50.00403
+anchor_top = 0.42100003
+anchor_bottom = 0.42100003
+offset_left = 97.0
+offset_top = -50.09398
+offset_right = 197.0
+offset_bottom = 49.90602
 texture = ExtResource("1_fh201")
 expand_mode = 1
 stretch_mode = 5
@@ -62,12 +63,46 @@ visible = false
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 1.0
-anchor_top = 0.578
+anchor_top = 0.48000002
 anchor_right = 1.0
-anchor_bottom = 0.578
-offset_left = -214.0
-offset_top = -8.354004
-offset_right = -58.0
-offset_bottom = 8.645996
+anchor_bottom = 0.48000002
+offset_left = -203.0
+offset_top = -8.639999
+offset_right = -47.0
+offset_bottom = 8.360001
 theme_override_constants/outline_size = 4
 text = "SWIPE UP TO JUMP"
+
+[node name="Control" type="Control" parent="." unique_id=1189223659]
+layout_mode = 3
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -151.0
+offset_top = -139.0
+offset_right = -102.0
+offset_bottom = -94.0
+grow_horizontal = 0
+grow_vertical = 0
+
+[node name="AttackButton" type="TextureButton" parent="Control" unique_id=745799991]
+z_index = 2
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 3.0200002
+anchor_top = 0.5
+anchor_right = 3.042
+anchor_bottom = 0.50200003
+offset_left = -149.98001
+offset_top = -25.500002
+offset_right = 360.94202
+offset_bottom = 486.41
+grow_horizontal = 0
+grow_vertical = 0
+scale = Vector2(0.1, 0.1)
+texture_normal = ExtResource("4_f27wk")
+texture_pressed = ExtResource("4_f27wk")
+texture_hover = ExtResource("4_f27wk")

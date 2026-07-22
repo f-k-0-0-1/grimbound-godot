@@ -8,6 +8,7 @@ extends CanvasLayer
 
 # --- RIGHT JUMP ZONE NODES ---
 @onready var right_zone: Control = $RightJumpZone
+@onready var attack_button: TextureButton = $Control/AttackButton
 
 # --- LEFT STICK VARIABLES ---
 var max_radius: float = 0.0
@@ -29,6 +30,11 @@ func _ready() -> void:
 	max_radius = base.size.x / 2.0
 	_reset_joystick()
 
+	if attack_button:
+		# Use button_down and button_up for responsive mobile touch actions
+		attack_button.button_down.connect(_on_attack_button_down)
+		attack_button.button_up.connect(_on_attack_button_up)
+
 func _input(event: InputEvent) -> void:
 	if event is InputEventScreenTouch:
 		if event.pressed:
@@ -38,8 +44,11 @@ func _input(event: InputEvent) -> void:
 				move_touch_index = event.index
 				_update_joystick(event.position)
 				
-			# 2. RIGHT THUMB (Jumping)
+			# 2. RIGHT THUMB (Jumping - only if not tapping directly on the attack button)
 			elif right_zone.get_global_rect().has_point(event.position) and jump_touch_index == -1:
+				if attack_button and attack_button.get_global_rect().has_point(event.position):
+					return # Let the AttackButton handle its own touch events
+					
 				jump_touch_index = event.index
 				jump_start_y = event.position.y
 				jump_state = 0 # Reset jump state machine
@@ -65,10 +74,19 @@ func _input(event: InputEvent) -> void:
 		elif event.index == jump_touch_index:
 			_handle_jump_swipe(event.position.y)
 
+func _on_attack_button_down() -> void:
+	# Actually trigger the attack action when pressed
+	Input.action_press("attack")
+
+func _on_attack_button_up() -> void:
+	# Release the attack action when let go
+	Input.action_release("attack")
+
 # --- RIGHT ZONE JUMP LOGIC ---
 func _handle_jump_swipe(current_y: float) -> void:
 	var distance_swiped_up = jump_start_y - current_y # Positive means moving UP
 	swipe_tutorial.visible = false
+	
 	# STATE 0: Waiting for the first jump
 	if jump_state == 0 and distance_swiped_up > swipe_jump_threshold:
 		Input.action_press("jump")
@@ -77,33 +95,28 @@ func _handle_jump_swipe(current_y: float) -> void:
 		
 	# STATE 1: Waiting for player to pull thumb down slightly to reset mechanism
 	elif jump_state == 1:
-		# Track highest point reached
 		if current_y < jump_peak_y:
 			jump_peak_y = current_y 
 			
-		# If thumb pulls down past the reset threshold, release the virtual jump button
 		if current_y > jump_peak_y + swipe_reset_threshold:
 			Input.action_release("jump") 
 			jump_state = 2
-			jump_start_y = current_y # Lock in a new starting position for the 2nd flick
+			jump_start_y = current_y 
 			
 	# STATE 2: Waiting for the second upward flick (Double Jump)
 	elif jump_state == 2 and (jump_start_y - current_y) > swipe_jump_threshold:
 		Input.action_press("jump")
-		jump_state = 3 # Jump exhausted until they completely lift their finger off the screen
+		jump_state = 3 
 
 # --- LEFT ZONE MOVEMENT LOGIC ---
 func _update_joystick(touch_pos: Vector2) -> void:
 	var center_of_base = base.global_position + (base.size / 2.0)
 	var direction = touch_pos - center_of_base
 	
-	# --- NEW: 4-WAY CROSS LOGIC ---
-	# Check which way the player is dragging harder (Horizontal or Vertical)
 	if abs(direction.x) > abs(direction.y):
-		direction.y = 0.0 # Force Y to zero (Lock to Left/Right)
+		direction.y = 0.0 
 	else:
-		direction.x = 0.0 # Force X to zero (Lock to Up/Down)
-	# ------------------------------
+		direction.x = 0.0 
 	
 	if direction.length() > max_radius:
 		direction = direction.normalized() * max_radius

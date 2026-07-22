@@ -242,14 +242,18 @@ func die() -> void:
 	is_attacking = false
 	velocity = Vector2.ZERO
 	
+	print("Player has died!")
+	
+	# Use call_deferred to safely handle physics shape modifications after the physics query finishes
+	call_deferred("_disable_player_collisions_and_respawn")
+
+func _disable_player_collisions_and_respawn() -> void:
 	if sword_collider:
 		sword_collider.disabled = true
 		
-	print("Player has died!")
-	
 	# Play death animation if available, otherwise respawn immediately
-	if sprite and sprite.sprite_frames and sprite.sprite_frames.has_animation("Dying"):
-		sprite.play("Dying")
+	if sprite and sprite.sprite_frames and sprite.sprite_frames.has_animation("death"):
+		sprite.play("death")
 		await sprite.animation_finished
 		
 	respawn()

@@ -6,6 +6,7 @@ extends CanvasLayer
 @onready var up_button: TouchScreenButton = $UpContainer/UpButton
 @onready var down_button: TouchScreenButton = $DownContainer/DowntButton
 @onready var jump_button: TouchScreenButton = $JumpContainer/JumpButton
+@onready var attack_button: TouchScreenButton = $AttackContainer/AttackButton
 
 func _ready() -> void:
 	# Connect movement buttons
@@ -24,6 +25,8 @@ func _ready() -> void:
 	jump_button.pressed.connect(_on_jump_pressed)
 	jump_button.released.connect(_on_jump_released)
 	
+	attack_button.pressed.connect(_on_attack_pressed)
+	attack_button.pressed.connect(_on_attack_released)
 
 # Left Button
 func _on_left_pressed() -> void:
@@ -59,3 +62,10 @@ func _on_jump_pressed() -> void:
 
 func _on_jump_released() -> void:
 	Input.action_release("jump")
+
+# Attack Button
+func _on_attack_pressed() -> void:
+	Input.action_press("attack")
+
+func _on_attack_released() -> void:
+	Input.action_release("attack")

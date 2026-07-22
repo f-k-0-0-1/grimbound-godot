@@ -9,6 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://bheka8vtheev8" path="res://assets/sprites/ui_buttons/Icon/Up/A_Up2.png" id="7_saaj3"]
 [ext_resource type="Texture2D" uid="uid://c2326aa0n330a" path="res://assets/sprites/ui_buttons/Icon/Down/A_.Down1.png" id="8_cnqve"]
 [ext_resource type="Texture2D" uid="uid://bunet2a132obi" path="res://assets/sprites/ui_buttons/Icon/Down/A_.Down2.png" id="9_kffq0"]
+[ext_resource type="Texture2D" uid="uid://bgtg5p7aarknc" path="res://assets/sprites/ui_buttons/Icon/Attack/attack_icon.png" id="10_nuxg7"]
 
 [node name="ButtonControls" type="CanvasLayer" unique_id=499995920]
 script = ExtResource("1_kth8y")
@@ -87,9 +88,9 @@ anchor_left = 1.0
 anchor_top = 0.69200003
 anchor_right = 1.0
 anchor_bottom = 0.69200003
-offset_left = -80.0
+offset_left = -123.0
 offset_top = -20.12001
-offset_right = -40.0
+offset_right = -64.0
 offset_bottom = 19.87999
 grow_horizontal = 0
 grow_vertical = 0
@@ -102,3 +103,21 @@ texture_normal = ExtResource("6_ilxsp")
 texture_pressed = ExtResource("7_saaj3")
 passby_press = true
 action = "jump"
+
+[node name="AttackContainer" type="Control" parent="." unique_id=362690064]
+layout_mode = 3
+anchor_left = 1.0
+anchor_top = 0.568
+anchor_right = 1.0
+anchor_bottom = 0.568
+offset_left = -192.0
+offset_top = -25.480011
+offset_right = -144.0
+offset_bottom = 25.519989
+grow_horizontal = 0
+grow_vertical = 0
+
+[node name="AttackButton" type="TouchScreenButton" parent="AttackContainer" unique_id=1310774568]
+scale = Vector2(0.1, 0.1)
+texture_normal = ExtResource("10_nuxg7")
+texture_pressed = ExtResource("10_nuxg7")
