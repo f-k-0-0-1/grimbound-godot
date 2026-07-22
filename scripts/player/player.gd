@@ -173,6 +173,9 @@ func _handle_attack() -> void:
 		is_attacking = true
 		velocity.x = 0.0 # Plant feet firmly while striking
 		
+		# --- BUMP Z-INDEX UP ON ATTACK ---
+		z_index = 8 # Force player to render on top of enemies and foreground elements
+		
 		if sprite and sprite.sprite_frames.has_animation("Slashing"):
 			sprite.play("Slashing")
 			sprite.frame = 0
@@ -191,6 +194,10 @@ func _check_attack_frame() -> void:
 func _on_animation_finished() -> void:
 	if sprite and sprite.animation == "Slashing":
 		is_attacking = false
+		
+		# --- RESET Z-INDEX BACK TO NORMAL WHEN ATTACK ENDS ---
+		z_index = 0 
+		
 		if sword_collider:
 			sword_collider.disabled = true
 

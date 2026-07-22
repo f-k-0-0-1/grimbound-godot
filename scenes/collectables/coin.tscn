@@ -82,10 +82,18 @@ animations = [{
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_vgc30"]
-radius = 36.05551
+radius = 9.003616
 
-[node name="Coin" type="Area2D" unique_id=1862024736]
+[sub_resource type="CircleShape2D" id="CircleShape2D_q6t3q"]
+radius = 46.948296
+
+[node name="Coin" type="RigidBody2D" unique_id=1886053865]
 scale = Vector2(1.3, 1.3)
+mass = 0.118
+gravity_scale = 0.0
+lock_rotation = true
+contact_monitor = true
+max_contacts_reported = 3
 script = ExtResource("1_jgi06")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1756179894]
@@ -96,3 +104,9 @@ animation = &"play"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1083464067]
 shape = SubResource("CircleShape2D_vgc30")
+
+[node name="CollectionArea" type="Area2D" parent="." unique_id=1949226422]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CollectionArea" unique_id=610023118]
+rotation = 1.5707964
+shape = SubResource("CircleShape2D_q6t3q")

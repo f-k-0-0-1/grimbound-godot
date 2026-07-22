@@ -158,12 +158,12 @@ position = Vector2(-532, 295)
 scale = Vector2(0.8, 0.8)
 
 [node name="Coin18" parent="Coins" unique_id=882173329 instance=ExtResource("10_r72dd")]
-position = Vector2(-532, 295)
+position = Vector2(-518, 400)
 scale = Vector2(0.8, 0.8)
 
 [node name="Player" parent="." unique_id=28132837 instance=ExtResource("4_wf6s8")]
 z_index = 4
-position = Vector2(-5484, 402)
+position = Vector2(-1127, -88)
 
 [node name="Signboard" parent="." unique_id=593309785 instance=ExtResource("30_e5bmj")]
 position = Vector2(-2065, 231.00002)
@@ -173,3 +173,6 @@ scale = Vector2(1.2, 1.2)
 
 [node name="Goblin" parent="." unique_id=511190009 instance=ExtResource("11_jmes4")]
 position = Vector2(-2916, 203)
+
+[node name="Goblin2" parent="." unique_id=1996232244 instance=ExtResource("11_jmes4")]
+position = Vector2(-4782, 396)

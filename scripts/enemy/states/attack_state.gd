@@ -8,6 +8,7 @@ var attack_timer: float = 0.0
 func enter() -> void:
 	enemy = owner as EnemyBase
 	enemy.velocity.x = 0.0 # Plant feet firmly
+	enemy.z_index = 7 # Bring goblin forward during combat/chasing
 	
 	# Find the hit box collider safely
 	if enemy.has_node("HitBox/CollisionShape2D"):
