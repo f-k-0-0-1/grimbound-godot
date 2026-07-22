@@ -17,8 +17,9 @@ extends CanvasLayer
 # Tutorial label – adjust path if needed
 @onready var tutorial_label: Label = $TutorialOverlay
 
-# Preload level
+# Preload scenes
 var level_01: PackedScene = preload("res://scenes/levels/level_01.tscn")
+const SETTINGS_SCENE = preload("res://scenes/ui/settings.tscn")
 
 # Skin cache
 var _skin_cache: Dictionary = {}
@@ -39,9 +40,6 @@ func _ready() -> void:
 	# Connect player swipe signal
 	if player and player.has_signal("swipe_detected"):
 		player.swipe_detected.connect(_on_player_swipe)
-	else:
-		# If signal missing, fallback: hide label on any input (optional)
-		pass
 	
 	# Load saved skin
 	_load_saved_skin()
@@ -101,7 +99,6 @@ func _show_tutorial_label() -> void:
 	if not tutorial_label:
 		return
 	
-	# Reset
 	tutorial_label.visible = true
 	tutorial_label.modulate = Color(1, 1, 1, 1)
 	tutorial_label.scale = Vector2.ONE
@@ -124,7 +121,6 @@ func _hide_tutorial_label() -> void:
 	if _tutorial_tween and _tutorial_tween.is_valid():
 		_tutorial_tween.kill()
 	
-	# Fade out and hide
 	var tween = create_tween()
 	tween.tween_property(tutorial_label, "modulate:a", 0.0, 0.3)
 	tween.tween_callback(func(): tutorial_label.visible = false)
@@ -136,13 +132,10 @@ func _on_player_swipe(direction: String) -> void:
 func _on_play_pressed() -> void:
 	AudioManager.play_sfx("button_click")
 	AudioManager.stop_music(0.5)
-	# 2. Trigger the visual button pop
 	_animate_button(play_button)
 	
-	# 3. Pause this specific function for 0.2 seconds to let the tween finish
 	await get_tree().create_timer(0.2).timeout
 	
-	# 4. Safely hand off to your Async SceneManager to flush the RAM
 	if SceneManager:
 		SceneManager.go_to_level_01()
 	else:
@@ -150,15 +143,31 @@ func _on_play_pressed() -> void:
 
 func _on_settings_pressed() -> void:
 	AudioManager.play_sfx("button_click")
-	await get_tree().create_timer(0.2).timeout
-	SceneManager.go_to_settings()
+	_animate_button(settings_button)
+	
+	# Option 1: If using SceneManager
+	if SceneManager:
+		SceneManager.go_to_settings()
+	else:
+		# Option 2: If instancing dynamically like pause menu
+		var settings_instance = SETTINGS_SCENE.instantiate()
+		if settings_instance.has_method("set_background_visible"):
+			settings_instance.set_background_visible(true) # Keep background visible in main menu!
+		get_tree().root.add_child(settings_instance)
+		$Buttons.hide()
+		
+		if settings_instance.has_signal("settings_closed"):
+			settings_instance.settings_closed.connect(func():
+				$Buttons.show()
+				settings_instance.queue_free()
+			)
 
 func _on_quit_pressed() -> void:
+	AudioManager.play_sfx("button_click")
 	_animate_button(quit_button)
 	get_tree().quit()
 
 func _animate_button(button: Button) -> void:
-	# Ensure button is not null
 	if not button:
 		return
 	var tween = create_tween()

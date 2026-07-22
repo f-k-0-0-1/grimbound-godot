@@ -1,0 +1,162 @@
+[gd_scene format=3 uid="uid://dsnptnqkqbr6s"]
+
+[ext_resource type="Script" uid="uid://b4ogfmcesfq6a" path="res://scripts/ui/pause_menu.gd" id="1_8uki6"]
+[ext_resource type="Shader" uid="uid://djrwcmfnkinl7" path="res://resources/shader/blurr.gdshader" id="1_f6eus"]
+[ext_resource type="Texture2D" uid="uid://dxjtu502jg6r1" path="res://assets/sprites/level_gui/Button/Rect/Fill/Default.png" id="2_8uki6"]
+[ext_resource type="Texture2D" uid="uid://c4hg0oxfyhhy7" path="res://assets/sprites/level_gui/Button/Rect/Fill/Hover.png" id="3_0bnpd"]
+[ext_resource type="PackedScene" uid="uid://cdsh8mel61wg1" path="res://scenes/ui/settings.tscn" id="5_0bnpd"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_4inpj"]
+shader = ExtResource("1_f6eus")
+shader_parameter/blur_amount = 3.0
+
+[node name="PauseMenu" type="Control" unique_id=1132795821]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+script = ExtResource("1_8uki6")
+
+[node name="Panel" type="Panel" parent="." unique_id=892184344]
+material = SubResource("ShaderMaterial_4inpj")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=393296731]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -20.0
+offset_right = 20.0
+offset_bottom = 40.0
+grow_horizontal = 2
+theme_override_constants/margin_top = 15
+
+[node name="Label" type="Label" parent="MarginContainer" unique_id=1321275197]
+layout_mode = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+text = "PAUSE MENU"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1194931889]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -77.000015
+offset_top = -117.0
+offset_right = 154.33337
+offset_bottom = 241.57141
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.7, 0.7)
+
+[node name="ResumeButton" type="TextureButton" parent="VBoxContainer" unique_id=1448091493]
+texture_filter = 2
+layout_mode = 2
+texture_normal = ExtResource("2_8uki6")
+texture_pressed = ExtResource("3_0bnpd")
+stretch_mode = 5
+
+[node name="Label" type="Label" parent="VBoxContainer/ResumeButton" unique_id=990512553]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.45200002
+anchor_right = 0.5
+anchor_bottom = 0.45200002
+offset_left = -42.0
+offset_top = -14.968002
+offset_right = 42.0
+offset_bottom = 15.031998
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.3950949, 0.18395537, 0.049996532, 1)
+theme_override_font_sizes/font_size = 30
+text = "RESUME"
+
+[node name="RestartButton" type="TextureButton" parent="VBoxContainer" unique_id=1580280294]
+texture_filter = 2
+layout_mode = 2
+texture_normal = ExtResource("2_8uki6")
+texture_pressed = ExtResource("3_0bnpd")
+stretch_mode = 5
+
+[node name="Label" type="Label" parent="VBoxContainer/RestartButton" unique_id=654941478]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.45200002
+anchor_right = 0.5
+anchor_bottom = 0.45200002
+offset_left = -42.0
+offset_top = -14.968002
+offset_right = 42.0
+offset_bottom = 15.031998
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.3950949, 0.18395537, 0.049996532, 1)
+theme_override_font_sizes/font_size = 30
+text = "RESTART"
+
+[node name="SettingsButton" type="TextureButton" parent="VBoxContainer" unique_id=1229849368]
+texture_filter = 2
+layout_mode = 2
+texture_normal = ExtResource("2_8uki6")
+texture_pressed = ExtResource("3_0bnpd")
+stretch_mode = 5
+
+[node name="Label" type="Label" parent="VBoxContainer/SettingsButton" unique_id=882563225]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.45200002
+anchor_right = 0.5
+anchor_bottom = 0.45200002
+offset_left = -42.0
+offset_top = -14.968002
+offset_right = 42.0
+offset_bottom = 15.031998
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.3950949, 0.18395537, 0.049996532, 1)
+theme_override_font_sizes/font_size = 30
+text = "SETTINGS"
+
+[node name="QuitButton" type="TextureButton" parent="VBoxContainer" unique_id=1424425980]
+texture_filter = 2
+layout_mode = 2
+texture_normal = ExtResource("2_8uki6")
+texture_pressed = ExtResource("3_0bnpd")
+stretch_mode = 5
+
+[node name="Label" type="Label" parent="VBoxContainer/QuitButton" unique_id=1324187559]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.45200002
+anchor_right = 0.5
+anchor_bottom = 0.45200002
+offset_left = -42.0
+offset_top = -14.968002
+offset_right = 42.0
+offset_bottom = 15.031998
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.3950949, 0.18395537, 0.049996532, 1)
+theme_override_font_sizes/font_size = 30
+text = "QUIT"
+
+[node name="Settings" parent="." unique_id=1277572933 instance=ExtResource("5_0bnpd")]
+layout_mode = 1

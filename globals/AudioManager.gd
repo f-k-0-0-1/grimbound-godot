@@ -65,7 +65,9 @@ func play_music(track_name: String, fade_duration: float = 0.0) -> void:
 	# 1. Safely kill any existing fade tweens so they don't fight each other
 	if _music_tween and _music_tween.is_valid():
 		_music_tween.kill()
-		
+	
+	music_player.process_mode = Node.PROCESS_MODE_ALWAYS
+	
 	# 2. Set the track and start playing
 	music_player.stream = bgm_tracks[track_name]
 	music_player.play()

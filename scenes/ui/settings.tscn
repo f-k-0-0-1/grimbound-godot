@@ -6,6 +6,11 @@
 [ext_resource type="Shader" uid="uid://clr1auwo8711m" path="res://resources/shader/blurr_settings.gdshader" id="3_jw8st"]
 [ext_resource type="Texture2D" uid="uid://dkcxxx8q7hqdx" path="res://assets/sprites/level_gui/Icon/music.png" id="4_jw8st"]
 [ext_resource type="Texture2D" uid="uid://cf1y3h02y4bv8" path="res://assets/sprites/ui_buttons/Icon/Back/A_Back3.png" id="5_d4m38"]
+[ext_resource type="Shader" uid="uid://djrwcmfnkinl7" path="res://resources/shader/blurr.gdshader" id="7_4xk3x"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_jw8st"]
+shader = ExtResource("7_4xk3x")
+shader_parameter/blur_amount = 3.0
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_mn4ci"]
 shader = ExtResource("3_jw8st")
@@ -52,7 +57,7 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_ncfhn")
 
-[node name="TextureRect" type="TextureRect" parent="." unique_id=633411510]
+[node name="BackGround" type="TextureRect" parent="." unique_id=633411510]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -62,6 +67,15 @@ grow_vertical = 2
 texture = ExtResource("2_ob3hf")
 expand_mode = 5
 stretch_mode = 4
+
+[node name="BG_Blur_Panel" type="Panel" parent="BackGround" unique_id=1068752827]
+material = SubResource("ShaderMaterial_jw8st")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 
 [node name="BG_Panel_1" type="Panel" parent="." unique_id=1678614478]
 material = SubResource("ShaderMaterial_mn4ci")
@@ -201,7 +215,6 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_jw8st")
 text = "CREDITS"
 
 [node name="GameAudio" type="Control" parent="." unique_id=1991602187]
-visible = false
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5

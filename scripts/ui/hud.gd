@@ -1,16 +1,19 @@
 extends CanvasLayer
 
 @onready var coin_label: Label = $Control/MarginContainer/HBoxContainer/Label
-@onready var back_button: TextureButton = $Control/MarginContainer2/BackButton
 @onready var player_health_bar: TextureProgressBar = $Control/MarginContainer3/PlayerHealthBar
-
+@onready var pause_button: TextureButton = $Control/MarginContainer2/PauseButton
+@onready var pause_menu: Control = $PauseMenu
 
 func _ready() -> void:
+	# Ensure the pause menu starts hidden
+	pause_menu.visible = false
+	
 	# 1. Update the UI immediately when the level loads to show saved coins and health
 	_update_coin_display(GameManager.total_coins)
 	_update_health_display(GameManager.current_health, GameManager.max_health)
 	
-	back_button.pressed.connect(_on_back_pressed)
+	pause_button.pressed.connect(_on_pause_pressed)
 
 	# 2. Tell the HUD to listen to the GameManager's signals
 	GameManager.coins_updated.connect(_on_coins_updated)
@@ -33,12 +36,19 @@ func _update_health_display(current: float, maximum: float) -> void:
 	player_health_bar.value = current
 
 
-# --- BACK BUTTON ---
-func _on_back_pressed() -> void:
+# --- PAUSE BUTTON ---
+func _on_pause_pressed() -> void:
 	AudioManager.play_sfx("button_click")
-	# Go back to main menu
-	if SceneManager and SceneManager.has_method("go_to_menu"):
-		SceneManager.go_to_menu()
-	else:
-		# Fallback: direct load
-		get_tree().change_scene_to_file("res://scenes/ui/main_menu.tscn")
+	
+	# Toggle the game tree pause state
+	var is_paused = not get_tree().paused
+	get_tree().paused = is_paused
+	
+	# Show or hide the pause menu based on the new pause state
+	pause_menu.visible = is_paused
+	
+	# Optional: Grab focus on the resume button so keyboard/controllers work immediately
+	if is_paused:
+		var resume_btn = pause_menu.get_node_or_null("MarginContainer/VBoxContainer/ResumeButton")
+		if resume_btn:
+			resume_btn.grab_focus()

@@ -1,12 +1,14 @@
 extends Control
 
+# --- SIGNALS ---
+signal settings_closed
+
 # --- UI REFERENCES ---
 @onready var music_slider: HSlider = $GameAudio/MusicSlider
 @onready var sfx_slider: HSlider = $GameAudio/SfxSlider
 @onready var back_button: TextureButton = $BackButton
 
-# --- NEW: CONTROL CHECK BUTTON REFERENCES ---
-# Adjust these node paths if your CheckButtons are nested under containers
+# --- CONTROL CHECK BUTTON REFERENCES ---
 @onready var joystick_button: CheckButton = $GameControls/VBoxContainer/HBoxContainer2/JoystickControls
 @onready var button_control: CheckButton = $GameControls/VBoxContainer/HBoxContainer/ButtonControls
 
@@ -21,6 +23,7 @@ extends Control
 @onready var game_credits: Control = $GameCredits
 @onready var game_audio: Control = $GameAudio
 
+@onready var back_ground: TextureRect = $BackGround
 
 # --- BUS INDICES ---
 var music_bus_index: int
@@ -45,7 +48,7 @@ func _ready() -> void:
 	controls_button.pressed.connect(_on_game_controls_button_pressed)
 	credits_button.pressed.connect(_on_game_credits_button_pressed)
 
-	# --- NEW: LOAD AND CONNECT CONTROL SCHEME PREFERENCES ---
+	# --- LOAD AND CONNECT CONTROL SCHEME PREFERENCES ---
 	var current_scheme = SaveManager.load_control_scheme() # Defaults to "joystick"
 	if current_scheme == "joystick":
 		joystick_button.button_pressed = true
@@ -62,6 +65,10 @@ func _ready() -> void:
 	game_credits.visible = false
 	game_audio.visible = true
 
+func set_background_visible(is_visible: bool) -> void:
+	if back_ground:
+		back_ground.visible = is_visible
+
 func _on_music_slider_changed(value: float) -> void:
 	AudioServer.set_bus_volume_db(music_bus_index, linear_to_db(value * value))
 
@@ -70,43 +77,52 @@ func _on_sfx_slider_changed(value: float) -> void:
 	
 func _on_back_button_pressed() -> void:
 	AudioManager.play_sfx("button_click")
-	SceneManager.go_to_menu()
+	settings_closed.emit()
+	
+	if get_parent() == get_tree().root:
+		SceneManager.go_to_menu()
+	else:
+		hide()
 
 # --- LEFT PANEL BUTTONS
 func _on_game_audio_button_pressed() -> void:
+	AudioManager.play_sfx("button_click")
 	game_controls.visible = false
 	game_graphics.visible = false
 	game_credits.visible = false
 	game_audio.visible = true
 	
 func _on_game_controls_button_pressed() -> void:
+	AudioManager.play_sfx("button_click")
 	game_controls.visible = true
 	game_graphics.visible = false
 	game_credits.visible = false
 	game_audio.visible = false
 	
 func _on_game_graphics_button_pressed() -> void:
+	AudioManager.play_sfx("button_click")
 	game_controls.visible = false
 	game_graphics.visible = true
 	game_credits.visible = false
 	game_audio.visible = false
 	
 func _on_game_credits_button_pressed() -> void:
+	AudioManager.play_sfx("button_click")
 	game_controls.visible = false
 	game_graphics.visible = false
 	game_credits.visible = true
 	game_audio.visible = false
 
-# --- NEW: CONTROL TOGGLE HANDLERS (Mutually Exclusive) ---
+# --- CONTROL TOGGLE HANDLERS (Mutually Exclusive) ---
 func _on_joystick_control_toggled(toggled_on: bool) -> void:
 	AudioManager.play_sfx("button_click")
 	if toggled_on:
-		button_control.button_pressed = false # Uncheck buttons if joystick is selected
+		button_control.button_pressed = false
 
 func _on_button_control_toggled(toggled_on: bool) -> void:
 	AudioManager.play_sfx("button_click")
 	if toggled_on:
-		joystick_button.button_pressed = false # Uncheck joystick if buttons are selected
+		joystick_button.button_pressed = false
 
 func _exit_tree() -> void:
 	# 1. Save audio settings
