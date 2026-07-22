@@ -72,7 +72,7 @@ tile_map_data = PackedByteArray("AADg////GgAAAAAAAADg/wAAGgAAAAAAAADg/wEAGgAAAAA
 tile_set = ExtResource("5_t0hvh")
 
 [node name="Ladders" type="Node2D" parent="." unique_id=1790332661]
-z_index = 2
+z_index = 4
 position = Vector2(-460, -100)
 
 [node name="Ladder" parent="Ladders" unique_id=876198596 instance=ExtResource("6_kfebt")]
@@ -162,7 +162,7 @@ position = Vector2(-518, 400)
 scale = Vector2(0.8, 0.8)
 
 [node name="Player" parent="." unique_id=28132837 instance=ExtResource("4_wf6s8")]
-z_index = 4
+z_index = 2
 position = Vector2(-1127, -88)
 
 [node name="Signboard" parent="." unique_id=593309785 instance=ExtResource("30_e5bmj")]

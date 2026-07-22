@@ -196,7 +196,7 @@ func _on_animation_finished() -> void:
 		is_attacking = false
 		
 		# --- RESET Z-INDEX BACK TO NORMAL WHEN ATTACK ENDS ---
-		z_index = 0 
+		z_index = 2
 		
 		if sword_collider:
 			sword_collider.disabled = true
