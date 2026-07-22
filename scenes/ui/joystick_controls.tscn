@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://ga4bqhwsj0jc"]
 
 [ext_resource type="Texture2D" uid="uid://l4goywyhnlaq" path="res://assets/sprites/VirtualJoystickPack/Joystick.png" id="1_fh201"]
-[ext_resource type="Script" uid="uid://d110e1g1revqd" path="res://scripts/virtual_joystick.gd" id="2_t6lej"]
+[ext_resource type="Script" uid="uid://d110e1g1revqd" path="res://scripts/ui/virtual_joystick.gd" id="2_t6lej"]
 [ext_resource type="Texture2D" uid="uid://cvgcnj5ygjhdf" path="res://assets/sprites/VirtualJoystickPack/SmallHandleFilled.png" id="3_m4cqf"]
 
 [node name="JoystickControl" type="CanvasLayer" unique_id=249377758]

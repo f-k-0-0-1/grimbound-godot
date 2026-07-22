@@ -2,11 +2,11 @@
 extends Node
 
 # Scene constants
-const SCENE_SPLASH: String = "res://scenes/Splash_Screen.tscn"
-const SCENE_MENU: String = "res://scenes/main_menu.tscn"
+const SCENE_SPLASH: String = "res://scenes/ui/Splash_Screen.tscn"
+const SCENE_MENU: String = "res://scenes/ui/main_menu.tscn"
 const SCENE_LEVEL_01: String = "res://scenes/levels/level_01.tscn"
-const SCENE_LOADING: String = "res://scenes/loading_screen.tscn"
-const SCENE_SETTINGS: String = "res://scenes/settings.tscn"
+const SCENE_LOADING: String = "res://scenes/ui/loading_screen.tscn"
+const SCENE_SETTINGS: String = "res://scenes/ui/settings.tscn"
 
 # Current scene reference
 var current_scene: Node = null

@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://bg3wek7lpkk87"]
 
 [ext_resource type="SpriteFrames" uid="uid://b3i3s1brdd62h" path="res://resources/player_skins/Reaper_1.tres" id="1_eqesl"]
-[ext_resource type="Script" uid="uid://lox8xwtdgev3" path="res://scripts/menu_player.gd" id="1_kvvui"]
+[ext_resource type="Script" uid="uid://lox8xwtdgev3" path="res://scripts/player/menu_player.gd" id="1_kvvui"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_kvvui"]
 radius = 26.0

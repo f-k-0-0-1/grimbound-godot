@@ -149,9 +149,9 @@ func _handle_movement(delta: float) -> void:
 		current_direction = int(sign(direction))
 		sprite.flip_h = direction < 0
 		
-		# Mirror the sword hitbox position horizontally depending on facing direction
-		if sword_hitbox:
-			sword_hitbox.position.x = abs(sword_hitbox.position.x) * current_direction
+		# Automatically update the HitBox position/facing direction using our component method
+		if sword_hitbox and sword_hitbox.has_method("update_facing_direction"):
+			sword_hitbox.update_facing_direction(current_direction)
 		
 		# --- Alternating Footstep Logic ---
 		if is_on_floor():
@@ -179,9 +179,9 @@ func _handle_attack() -> void:
 
 func _check_attack_frame() -> void:
 	if sprite and sprite.animation == "Slashing":
-		# Enable hitbox only on active swing frames (e.g., frames 2 through 4)
+		# Enable hitbox on active strike frames (adjust range as needed for your sheet)
 		var current_frame = sprite.frame
-		if current_frame >= 2 and current_frame <= 9:
+		if current_frame >= 2 and current_frame <= 10:
 			if sword_collider:
 				sword_collider.disabled = false
 		else:
@@ -241,8 +241,8 @@ func die() -> void:
 	print("Player has died!")
 	
 	# Play death animation if available, otherwise respawn immediately
-	if sprite and sprite.sprite_frames and sprite.sprite_frames.has_animation("death"):
-		sprite.play("death")
+	if sprite and sprite.sprite_frames and sprite.sprite_frames.has_animation("Dying"):
+		sprite.play("Dying")
 		await sprite.animation_finished
 		
 	respawn()

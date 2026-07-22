@@ -1,16 +1,16 @@
 [gd_scene format=3 uid="uid://cihkd4fr21nah"]
 
-[ext_resource type="Script" uid="uid://qqmobiclsmsu" path="res://scripts/player.gd" id="1_g2els"]
+[ext_resource type="Script" uid="uid://qqmobiclsmsu" path="res://scripts/player/player.gd" id="1_g2els"]
 [ext_resource type="SpriteFrames" uid="uid://b3i3s1brdd62h" path="res://resources/player_skins/Reaper_1.tres" id="2_qhqgy"]
-[ext_resource type="PackedScene" uid="uid://c2iy6yeondpbc" path="res://scenes/enemy/hit_box.tscn" id="3_dqkch"]
-[ext_resource type="PackedScene" uid="uid://cv4i6xkcvbswt" path="res://scenes/enemy/hurt_box.tscn" id="4_qlg0r"]
+[ext_resource type="PackedScene" uid="uid://c2iy6yeondpbc" path="res://scenes/enemy/components/hit_box.tscn" id="3_dqkch"]
+[ext_resource type="PackedScene" uid="uid://cv4i6xkcvbswt" path="res://scenes/enemy/components/hurt_box.tscn" id="4_qlg0r"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_dbq10"]
 radius = 28.0
 height = 138.0
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_tuyoq"]
-radius = 16.0
+radius = 9.0
 height = 124.0
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_fjrip"]
@@ -45,11 +45,12 @@ drag_right_margin = 0.0
 drag_bottom_margin = 0.0
 
 [node name="HitBox" parent="." unique_id=1711105650 instance=ExtResource("3_dqkch")]
+position = Vector2(40, 40)
 collision_layer = 16
 collision_mask = 32
+knockback_force = 75.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="HitBox" unique_id=1228702587]
-position = Vector2(34, 38)
 rotation = 1.5707964
 shape = SubResource("CapsuleShape2D_tuyoq")
 disabled = true

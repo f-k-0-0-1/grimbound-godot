@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://hnl8dychaa7l"]
 
-[ext_resource type="Script" uid="uid://ddrvix7ixut0n" path="res://scripts/splash_screen.gd" id="1_p4tth"]
+[ext_resource type="Script" uid="uid://ddrvix7ixut0n" path="res://scripts/ui/splash_screen.gd" id="1_p4tth"]
 [ext_resource type="FontFile" uid="uid://btxv8pw11ftag" path="res://fonts/EightBitDragon-anqx.ttf" id="2_t7vb6"]
 
 [node name="Root" type="Control" unique_id=832887764]
