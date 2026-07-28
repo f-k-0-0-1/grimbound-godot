@@ -176,6 +176,8 @@ func _handle_attack() -> void:
 		is_attacking = true
 		velocity.x = 0.0 # Plant feet firmly while striking
 		
+		AudioManager.play_sfx("sword_swing", 0.0, 10.0)
+		
 		# --- BUMP Z-INDEX UP ON ATTACK ---
 		z_index = 8 # Force player to render on top of enemies and foreground elements
 		
@@ -268,18 +270,13 @@ func _check_fall() -> void:
 		respawn()
 
 func respawn() -> void:
-	global_position = spawn_position
-	velocity = Vector2.ZERO
-	current_health = max_health
-	
-	# Reset health in GameManager and update HUD bar back to full
-	GameManager.set_player_health(current_health, max_health)
-	
-	is_attacking = false
-	is_dead = false
-	
-	if sword_collider:
-		sword_collider.disabled = true
+	# Check if a checkpoint has been reached; otherwise, fallback to initial spawn_position
+	if GameManager.current_checkpoint_position != Vector2.ZERO:
+		global_position = GameManager.current_checkpoint_position
+	else:
+		global_position = spawn_position
 		
+	velocity = Vector2.ZERO
+	
 	if sprite and sprite.sprite_frames and sprite.sprite_frames.has_animation("Idle"):
 		sprite.play("Idle")

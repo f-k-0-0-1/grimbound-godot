@@ -1,6 +1,5 @@
 extends Control
 
-# References to the buttons based on your node structure
 @onready var resume_button: TextureButton = $VBoxContainer/ResumeButton
 @onready var restart_button: TextureButton = $VBoxContainer/RestartButton
 @onready var settings_button: TextureButton = $VBoxContainer/SettingsButton
@@ -9,11 +8,9 @@ extends Control
 
 
 func _ready() -> void:
-	# Ensure process mode runs even when the game tree is paused
 	process_mode = Node.PROCESS_MODE_WHEN_PAUSED
 	settings.visible = false
 	
-	# Connect button signals via code
 	resume_button.pressed.connect(_on_resume_button_pressed)
 	settings_button.pressed.connect(_on_settings_button_pressed)
 	restart_button.pressed.connect(_on_restart_button_pressed)
@@ -30,11 +27,8 @@ func _toggle_pause() -> void:
 	if get_tree().paused:
 		show()
 		resume_button.grab_focus() 
-		# (Music left untouched so level track continues playing seamlessly)
 	else:
 		hide()
-
-# --- Button Signal Handlers ---
 
 func _on_resume_button_pressed() -> void:
 	AudioManager.play_sfx("button_click")

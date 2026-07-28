@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://devbxhgdw136m"]
+
+[ext_resource type="Script" uid="uid://biu2d7uj5xje0" path="res://scripts/enviroment/checkpoint.gd" id="1_1pyiu"]
+[ext_resource type="Texture2D" uid="uid://cdkg8yfvyvqpv" path="res://assets/sprites/level_assets/Collectable Object/Diamond.png" id="1_nusr4"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_1pyiu"]
+radius = 43.104523
+
+[node name="Checkpoint" type="Area2D" unique_id=1864633800]
+script = ExtResource("1_1pyiu")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=134079090]
+texture = ExtResource("1_nusr4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=240393552]
+position = Vector2(0, -7)
+shape = SubResource("CircleShape2D_1pyiu")

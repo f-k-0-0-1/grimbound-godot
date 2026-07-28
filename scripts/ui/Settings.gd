@@ -33,8 +33,6 @@ func _ready() -> void:
 	music_bus_index = AudioServer.get_bus_index("Music")
 	sfx_bus_index = AudioServer.get_bus_index("SFX")
 	
-	# Load the volume, convert to linear, and apply the square root 
-	# so the UI slider perfectly matches the exponential curve
 	music_slider.value = sqrt(db_to_linear(AudioServer.get_bus_volume_db(music_bus_index)))
 	sfx_slider.value = sqrt(db_to_linear(AudioServer.get_bus_volume_db(sfx_bus_index)))
 	
@@ -49,7 +47,7 @@ func _ready() -> void:
 	credits_button.pressed.connect(_on_game_credits_button_pressed)
 
 	# --- LOAD AND CONNECT CONTROL SCHEME PREFERENCES ---
-	var current_scheme = SaveManager.load_control_scheme() # Defaults to "joystick"
+	var current_scheme = SaveManager.load_control_scheme()
 	if current_scheme == "joystick":
 		joystick_button.button_pressed = true
 		button_control.button_pressed = false
@@ -113,21 +111,30 @@ func _on_game_credits_button_pressed() -> void:
 	game_credits.visible = true
 	game_audio.visible = false
 
-# --- CONTROL TOGGLE HANDLERS (Mutually Exclusive) ---
+# --- INSTANT REFRESH & CONTROL TOGGLE HANDLERS ---
+# Inside your settings.gd script, update your toggle handlers:
+
 func _on_joystick_control_toggled(toggled_on: bool) -> void:
 	AudioManager.play_sfx("button_click")
 	if toggled_on:
 		button_control.button_pressed = false
+		_apply_and_save_controls("joystick")
 
 func _on_button_control_toggled(toggled_on: bool) -> void:
 	AudioManager.play_sfx("button_click")
 	if toggled_on:
 		joystick_button.button_pressed = false
+		_apply_and_save_controls("buttons")
+
+func _apply_and_save_controls(scheme: String) -> void:
+	# 1. Save immediately via SaveManager
+	SaveManager.save_control_scheme(scheme)
+	
+	# 2. Instantly broadcast the change globally to everything listening
+	if GameManager.has_signal("control_scheme_changed"):
+		GameManager.emit_signal("control_scheme_changed", scheme)
 
 func _exit_tree() -> void:
-	# 1. Save audio settings
 	SaveManager.save_audio_settings(music_slider.value, sfx_slider.value)
-	
-	# 2. Save active control scheme
 	var chosen_scheme = "joystick" if joystick_button.button_pressed else "buttons"
 	SaveManager.save_control_scheme(chosen_scheme)

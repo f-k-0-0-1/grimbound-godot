@@ -32,7 +32,7 @@ var _music_tween: Tween
 
 var music_player: AudioStreamPlayer
 var sfx_pool: Array[AudioStreamPlayer] = []
-@export var sfx_pool_size: int = 8
+@export var sfx_pool_size: int = 99
 
 var saved_vols = SaveManager.load_audio_settings()
 var music_bus = AudioServer.get_bus_index("Music")

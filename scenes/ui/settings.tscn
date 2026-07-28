@@ -17,7 +17,7 @@ shader = ExtResource("3_jw8st")
 shader_parameter/blur_amount = 3.0
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5p8wc"]
-bg_color = Color(1, 1, 1, 1)
+bg_color = Color(0, 0, 0, 1)
 corner_radius_top_left = 20
 corner_radius_top_right = 20
 corner_radius_bottom_right = 20

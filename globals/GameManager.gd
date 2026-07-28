@@ -9,6 +9,7 @@ enum GameState {
 
 signal coins_updated(new_total: int)
 signal player_health_updated(current_health: float, max_health: float)
+signal control_scheme_changed(new_scheme: String)
 
 var current_state: GameState = GameState.MENU
 var selected_skin: int = -1
@@ -17,6 +18,8 @@ var total_coins: int = 0
 # Player Health State
 var max_health: float = 100.0
 var current_health: float = 100.0
+
+var current_checkpoint_position: Vector2 = Vector2.ZERO
 
 func _ready() -> void:
 	# Load Skin

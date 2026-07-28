@@ -10,6 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://dgb5ffj3mf41w" path="res://scenes/collectables/coin.tscn" id="10_r72dd"]
 [ext_resource type="PackedScene" uid="uid://2ea7ga67fmih" path="res://scenes/ui/hud.tscn" id="11_ijn0p"]
 [ext_resource type="PackedScene" uid="uid://cu63xv3rdk8wl" path="res://scenes/enemy/goblin.tscn" id="11_jmes4"]
+[ext_resource type="PackedScene" uid="uid://devbxhgdw136m" path="res://scenes/enviroment/checkpoint.tscn" id="12_jmes4"]
 [ext_resource type="PackedScene" uid="uid://dfxn150xbg8gv" path="res://scenes/enviroment/signboard.tscn" id="30_e5bmj"]
 
 [node name="Level_01" type="Node2D" unique_id=592318608]
@@ -122,19 +123,19 @@ position = Vector2(-1611.0001, 225.00002)
 scale = Vector2(0.8, 0.8)
 
 [node name="Coin9" parent="Coins" unique_id=541283462 instance=ExtResource("10_r72dd")]
-position = Vector2(-1546.0001, -62.999973)
+position = Vector2(-2596, -118.99999)
 scale = Vector2(0.8, 0.8)
 
 [node name="Coin10" parent="Coins" unique_id=160550022 instance=ExtResource("10_r72dd")]
-position = Vector2(-1458.0001, -62.999973)
+position = Vector2(-2942, 82.999985)
 scale = Vector2(0.8, 0.8)
 
 [node name="Coin11" parent="Coins" unique_id=117849066 instance=ExtResource("10_r72dd")]
-position = Vector2(-1370.0001, -62.999973)
+position = Vector2(-3036, 83.999985)
 scale = Vector2(0.8, 0.8)
 
 [node name="Coin12" parent="Coins" unique_id=1832096104 instance=ExtResource("10_r72dd")]
-position = Vector2(-1282, -62.99997)
+position = Vector2(-2523, -114)
 scale = Vector2(0.8, 0.8)
 
 [node name="Coin13" parent="Coins" unique_id=550783638 instance=ExtResource("10_r72dd")]
@@ -163,7 +164,7 @@ scale = Vector2(0.8, 0.8)
 
 [node name="Player" parent="." unique_id=28132837 instance=ExtResource("4_wf6s8")]
 z_index = 2
-position = Vector2(-1127, -88)
+position = Vector2(-4286, 191)
 
 [node name="Signboard" parent="." unique_id=593309785 instance=ExtResource("30_e5bmj")]
 position = Vector2(-2065, 231.00002)
@@ -175,4 +176,8 @@ scale = Vector2(1.2, 1.2)
 position = Vector2(-2916, 203)
 
 [node name="Goblin2" parent="." unique_id=1996232244 instance=ExtResource("11_jmes4")]
-position = Vector2(-4782, 396)
+position = Vector2(-1242, -82)
+
+[node name="Checkpoint" parent="." unique_id=1864633800 instance=ExtResource("12_jmes4")]
+position = Vector2(-1526, -93)
+scale = Vector2(0.5, 0.5)
