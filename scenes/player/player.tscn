@@ -59,3 +59,6 @@ disabled = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="HurtBox" unique_id=867172704]
 shape = SubResource("CapsuleShape2D_fjrip")
+
+[node name="FirePoint" type="Marker2D" parent="." unique_id=737595222]
+position = Vector2(0, 31)

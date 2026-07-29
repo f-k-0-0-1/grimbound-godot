@@ -34,6 +34,9 @@ var is_dead: bool = false
 @onready var sword_hitbox: HitBox = $HitBox
 @onready var sword_collider: CollisionShape2D = $HitBox/CollisionShape2D
 
+var fireball_scene: PackedScene = preload("res://scenes/temp/fireball.tscn") # Adjust path if needed!
+@onready var fire_point: Marker2D = $FirePoint # Make sure your Marker2D node inside player is named "FirePoint"
+
 var current_direction: int = 1
 
 func _ready() -> void:
@@ -103,6 +106,7 @@ func _physics_process(delta: float) -> void:
 		if not is_attacking:
 			_handle_jump()
 			_handle_movement(delta)
+			_handle_shooting()
 			_handle_attack()
 		else:
 			# Manage hitbox activation based on attack animation frames
@@ -115,6 +119,25 @@ func _physics_process(delta: float) -> void:
 		
 	move_and_slide()
 	_check_fall()
+
+func _handle_shooting() -> void:
+	# Trigger when the shoot action is pressed
+	if Input.is_action_just_pressed("fireball"):
+		shoot_fireball()
+
+func shoot_fireball() -> void:
+	# Instantly create an instance of your fireball scene
+	var fireball = fireball_scene.instantiate()
+	
+	# Determine facing direction based on current_direction (1 for right, -1 for left)
+	var shoot_dir = Vector2(current_direction, 0)
+	fireball.direction = shoot_dir
+	
+	# Position the fireball at your Marker2D global position
+	fireball.global_position = fire_point.global_position
+	
+	# Add the fireball to the main game tree root (so it flies independently of the player)
+	get_tree().current_scene.add_child(fireball)
 
 func _handle_climbing() -> void:
 	var direction_y := Input.get_axis("move_up", "move_down")

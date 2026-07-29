@@ -452,7 +452,7 @@ height = 130.0
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_0jclb"]
 height = 392.0
 
-[node name="Goblin" unique_id=511190009 instance=ExtResource("1_8jtwt")]
+[node name="Goblin" unique_id=511190009 groups=["enemies"] instance=ExtResource("1_8jtwt")]
 stats = ExtResource("2_3kduw")
 
 [node name="AnimatedSprite2D" parent="." index="0" unique_id=942105224]

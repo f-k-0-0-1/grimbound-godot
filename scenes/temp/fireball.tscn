@@ -1,0 +1,60 @@
+[gd_scene format=3 uid="uid://cgv2rrpqekawp"]
+
+[ext_resource type="Script" uid="uid://dxjsxxxjamlmj" path="res://scripts/temp/fireball.gd" id="1_64dg7"]
+[ext_resource type="Texture2D" uid="uid://ecdcvdhctyvn" path="res://assets/Fireball/FB001.png" id="2_wmxv2"]
+[ext_resource type="Texture2D" uid="uid://cpvfrkmrsch55" path="res://assets/Fireball/FB002.png" id="3_kb5gr"]
+[ext_resource type="Texture2D" uid="uid://ctqes7kbrvjot" path="res://assets/Fireball/FB003.png" id="4_m31eb"]
+[ext_resource type="Texture2D" uid="uid://u2bn203ohbcg" path="res://assets/Fireball/FB004.png" id="5_6ciiy"]
+[ext_resource type="Texture2D" uid="uid://tnf65ij751gk" path="res://assets/Fireball/FB005.png" id="6_tpllj"]
+[ext_resource type="AudioStream" uid="uid://yqhoh6xtmic5" path="res://audio/sfx/fireball.ogg" id="7_jsbbf"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ax5s0"]
+radius = 24.0
+height = 83.99997
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_k03ot"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_wmxv2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_kb5gr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_m31eb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_6ciiy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_tpllj")
+}],
+"loop": true,
+"name": &"fly",
+"speed": 12.0
+}]
+
+[node name="Fireball" type="Area2D" unique_id=134836261]
+z_index = 1
+script = ExtResource("1_64dg7")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1929503027]
+position = Vector2(149, -7)
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_ax5s0")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=667225939]
+position = Vector2(116, -1)
+scale = Vector2(3.5, 3.377)
+sprite_frames = SubResource("SpriteFrames_k03ot")
+animation = &"fly"
+
+[node name="Timer" type="Timer" parent="." unique_id=66304424]
+one_shot = true
+
+[node name="ShootSound" type="AudioStreamPlayer" parent="." unique_id=2019248740]
+stream = ExtResource("7_jsbbf")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
