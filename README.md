@@ -163,32 +163,32 @@ Every major gameplay system is designed to be reusable and extensible.
 
 ## Phase 1
 
-- [*] Project setup
-- [*] Folder structure
-- [*] Base architecture
-- [*] Player movement
-- [*] Camera system
-- [*] Mobile controls
+- [x] Project setup
+- [x] Folder structure
+- [x] Base architecture
+- [x] Player movement
+- [x] Camera system
+- [x] Mobile controls
 
 ## Phase 2
 
-- [*] Combat system
-- [*] Enemy AI
-- [*] Pickups
-- [*] Checkpoints
-- [*] Save system
+- [x] Combat system
+- [x] Enemy AI
+- [x] Pickups
+- [x] Checkpoints
+- [x] Save system
 
 ## Phase 3
 
-- [*] UI
-- [*] Audio
+- [x] UI
+- [x] Audio
 - [ ] Level progression
 - [ ] Boss fights
-- [*] Settings
+- [x] Settings
 
 ## Phase 4
 
-- [*] Android optimization
+- [x] Android optimization
 - [ ] Achievements
 - [ ] Polish
 - [ ] Play Store release
