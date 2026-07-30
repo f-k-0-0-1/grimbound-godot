@@ -178,6 +178,12 @@ position = Vector2(-2916, 203)
 [node name="Goblin2" parent="." unique_id=1996232244 instance=ExtResource("11_jmes4")]
 position = Vector2(-1242, -82)
 
+[node name="Goblin3" parent="." unique_id=896127116 instance=ExtResource("11_jmes4")]
+position = Vector2(685, 206)
+
+[node name="Goblin4" parent="." unique_id=651507554 instance=ExtResource("11_jmes4")]
+position = Vector2(-192, 401)
+
 [node name="Checkpoint" parent="." unique_id=1864633800 instance=ExtResource("12_jmes4")]
 position = Vector2(-1526, -93)
 scale = Vector2(0.5, 0.5)

@@ -9,7 +9,9 @@
 [ext_resource type="Texture2D" uid="uid://bheka8vtheev8" path="res://assets/sprites/ui_buttons/Icon/Up/A_Up2.png" id="7_saaj3"]
 [ext_resource type="Texture2D" uid="uid://c2326aa0n330a" path="res://assets/sprites/ui_buttons/Icon/Down/A_.Down1.png" id="8_cnqve"]
 [ext_resource type="Texture2D" uid="uid://bunet2a132obi" path="res://assets/sprites/ui_buttons/Icon/Down/A_.Down2.png" id="9_kffq0"]
-[ext_resource type="Texture2D" uid="uid://bgtg5p7aarknc" path="res://assets/sprites/ui_buttons/Icon/Attack/attack_icon.png" id="10_nuxg7"]
+[ext_resource type="Texture2D" uid="uid://bpsuhfwfc3gul" path="res://assets/sprites/buttons/attack_button.png" id="10_m53a3"]
+[ext_resource type="Texture2D" uid="uid://cxdx4oovkxwys" path="res://assets/sprites/buttons/empty_button.png" id="11_ffqou"]
+[ext_resource type="Texture2D" uid="uid://ecdcvdhctyvn" path="res://assets/Fireball/FB001.png" id="12_5uf5q"]
 
 [node name="ButtonControls" type="CanvasLayer" unique_id=499995920]
 script = ExtResource("1_kth8y")
@@ -110,14 +112,39 @@ anchor_left = 1.0
 anchor_top = 0.568
 anchor_right = 1.0
 anchor_bottom = 0.568
-offset_left = -192.0
-offset_top = -25.480011
-offset_right = -144.0
-offset_bottom = 25.519989
+offset_left = -205.0
+offset_top = 20.519989
+offset_right = -157.0
+offset_bottom = 71.51999
 grow_horizontal = 0
 grow_vertical = 0
 
 [node name="AttackButton" type="TouchScreenButton" parent="AttackContainer" unique_id=1310774568]
-scale = Vector2(0.1, 0.1)
-texture_normal = ExtResource("10_nuxg7")
-texture_pressed = ExtResource("10_nuxg7")
+position = Vector2(-3.999998, -17)
+scale = Vector2(0.6, 0.6)
+texture_normal = ExtResource("10_m53a3")
+texture_pressed = ExtResource("10_m53a3")
+action = "attack"
+
+[node name="FireballContainer" type="Control" parent="." unique_id=358394763]
+layout_mode = 3
+anchor_left = 1.0
+anchor_top = 0.568
+anchor_right = 1.0
+anchor_bottom = 0.568
+offset_left = -133.0
+offset_top = -66.48001
+offset_right = -85.0
+offset_bottom = -14.480011
+grow_horizontal = 0
+grow_vertical = 0
+
+[node name="FireballButton" type="TouchScreenButton" parent="FireballContainer" unique_id=922771598]
+position = Vector2(-5.000004, 16.999996)
+scale = Vector2(0.6, 0.6)
+texture_normal = ExtResource("11_ffqou")
+texture_pressed = ExtResource("11_ffqou")
+
+[node name="Sprite2D" type="Sprite2D" parent="FireballContainer" unique_id=1420260427]
+position = Vector2(15, 44)
+texture = ExtResource("12_5uf5q")

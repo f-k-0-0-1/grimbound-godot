@@ -6,9 +6,10 @@ extends CanvasLayer
 @onready var tip: TextureRect = $LeftTouchZone/Base/Tip
 @onready var swipe_tutorial: Label = $RightJumpZone/SwipeTutorial
 
-# --- RIGHT JUMP ZONE NODES ---
+# --- RIGHT ZONE NODES ---
 @onready var right_zone: Control = $RightJumpZone
-@onready var attack_button: TextureButton = $Control/AttackButton
+@onready var attack_button: TouchScreenButton = $Control/AttackButton
+@onready var fireball_button: TouchScreenButton = $Control2/FireballButton
 
 # --- LEFT STICK VARIABLES ---
 var max_radius: float = 0.0
@@ -26,29 +27,32 @@ var jump_state: int = 0 # 0=Idle, 1=Resetting, 2=Ready for Jump 2, 3=Exhausted
 @export var swipe_reset_threshold: float = 20.0 # Pixels you must pull DOWN to reset for double jump
 
 func _ready() -> void:
-	swipe_tutorial.visible = true
-	max_radius = base.size.x / 2.0
+	if swipe_tutorial:
+		swipe_tutorial.visible = true
+	if base:
+		max_radius = base.size.x / 2.0
 	_reset_joystick()
 
+	# Connect TouchScreenButton signals safely
 	if attack_button:
-		# Use button_down and button_up for responsive mobile touch actions
-		attack_button.button_down.connect(_on_attack_button_down)
-		attack_button.button_up.connect(_on_attack_button_up)
+		attack_button.pressed.connect(_on_attack_pressed)
+		attack_button.released.connect(_on_attack_released)
+
+	if fireball_button:
+		fireball_button.pressed.connect(_on_fireball_pressed)
+		fireball_button.released.connect(_on_fireball_released)
 
 func _input(event: InputEvent) -> void:
 	if event is InputEventScreenTouch:
 		if event.pressed:
 			# 1. LEFT THUMB (Movement & Climbing)
-			if left_zone.get_global_rect().has_point(event.position) and not is_dragging_stick:
+			if left_zone and left_zone.get_global_rect().has_point(event.position) and not is_dragging_stick:
 				is_dragging_stick = true
 				move_touch_index = event.index
 				_update_joystick(event.position)
 				
-			# 2. RIGHT THUMB (Jumping - only if not tapping directly on the attack button)
-			elif right_zone.get_global_rect().has_point(event.position) and jump_touch_index == -1:
-				if attack_button and attack_button.get_global_rect().has_point(event.position):
-					return # Let the AttackButton handle its own touch events
-					
+			# 2. RIGHT THUMB (Jumping - swipe zone)
+			elif right_zone and right_zone.get_global_rect().has_point(event.position) and jump_touch_index == -1:
 				jump_touch_index = event.index
 				jump_start_y = event.position.y
 				jump_state = 0 # Reset jump state machine
@@ -74,18 +78,25 @@ func _input(event: InputEvent) -> void:
 		elif event.index == jump_touch_index:
 			_handle_jump_swipe(event.position.y)
 
-func _on_attack_button_down() -> void:
-	# Actually trigger the attack action when pressed
+# --- ATTACK BUTTON HANDLERS ---
+func _on_attack_pressed() -> void:
 	Input.action_press("attack")
 
-func _on_attack_button_up() -> void:
-	# Release the attack action when let go
+func _on_attack_released() -> void:
 	Input.action_release("attack")
+
+# --- FIREBALL BUTTON HANDLERS ---
+func _on_fireball_pressed() -> void:
+	Input.action_press("fireball") # Make sure "fireball" or "shoot" matches your Input Map
+
+func _on_fireball_released() -> void:
+	Input.action_release("fireball")
 
 # --- RIGHT ZONE JUMP LOGIC ---
 func _handle_jump_swipe(current_y: float) -> void:
 	var distance_swiped_up = jump_start_y - current_y # Positive means moving UP
-	swipe_tutorial.visible = false
+	if swipe_tutorial:
+		swipe_tutorial.visible = false
 	
 	# STATE 0: Waiting for the first jump
 	if jump_state == 0 and distance_swiped_up > swipe_jump_threshold:
@@ -110,6 +121,7 @@ func _handle_jump_swipe(current_y: float) -> void:
 
 # --- LEFT ZONE MOVEMENT LOGIC ---
 func _update_joystick(touch_pos: Vector2) -> void:
+	if not base or not tip: return
 	var center_of_base = base.global_position + (base.size / 2.0)
 	var direction = touch_pos - center_of_base
 	
@@ -147,8 +159,9 @@ func _update_joystick(touch_pos: Vector2) -> void:
 		Input.action_release("move_down")
 
 func _reset_joystick() -> void:
-	var center_of_base = base.global_position + (base.size / 2.0)
-	tip.global_position = center_of_base - (tip.size / 2.0)
+	if base and tip:
+		var center_of_base = base.global_position + (base.size / 2.0)
+		tip.global_position = center_of_base - (tip.size / 2.0)
 	output_vector = Vector2.ZERO
 	
 	Input.action_release("move_right")

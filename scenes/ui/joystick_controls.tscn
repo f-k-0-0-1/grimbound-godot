@@ -3,7 +3,9 @@
 [ext_resource type="Texture2D" uid="uid://l4goywyhnlaq" path="res://assets/sprites/VirtualJoystickPack/Joystick.png" id="1_fh201"]
 [ext_resource type="Script" uid="uid://d110e1g1revqd" path="res://scripts/ui/virtual_joystick.gd" id="2_t6lej"]
 [ext_resource type="Texture2D" uid="uid://cvgcnj5ygjhdf" path="res://assets/sprites/VirtualJoystickPack/SmallHandleFilled.png" id="3_m4cqf"]
-[ext_resource type="Texture2D" uid="uid://bgtg5p7aarknc" path="res://assets/sprites/ui_buttons/Icon/Attack/attack_icon.png" id="4_f27wk"]
+[ext_resource type="Texture2D" uid="uid://bpsuhfwfc3gul" path="res://assets/sprites/buttons/attack_button.png" id="4_eldaj"]
+[ext_resource type="Texture2D" uid="uid://ecdcvdhctyvn" path="res://assets/Fireball/FB001.png" id="5_0bw5x"]
+[ext_resource type="Texture2D" uid="uid://cxdx4oovkxwys" path="res://assets/sprites/buttons/empty_button.png" id="6_kvwy2"]
 
 [node name="JoystickControl" type="CanvasLayer" unique_id=249377758]
 script = ExtResource("2_t6lej")
@@ -46,6 +48,56 @@ texture = ExtResource("3_m4cqf")
 expand_mode = 1
 stretch_mode = 5
 
+[node name="Control" type="Control" parent="." unique_id=1189223659]
+z_index = 3
+layout_mode = 3
+anchor_left = 1.0
+anchor_top = 0.67600006
+anchor_right = 1.0
+anchor_bottom = 0.67600006
+offset_left = -151.0
+offset_top = -22.360016
+offset_right = -108.0
+offset_bottom = 20.639984
+grow_horizontal = 0
+grow_vertical = 0
+mouse_filter = 1
+
+[node name="AttackButton" type="TouchScreenButton" parent="Control" unique_id=1703406023]
+z_index = 6
+position = Vector2(0, -47)
+scale = Vector2(0.7, 0.7)
+texture_normal = ExtResource("4_eldaj")
+texture_pressed = ExtResource("4_eldaj")
+
+[node name="Control2" type="Control" parent="." unique_id=1637231961]
+z_index = 3
+layout_mode = 3
+anchor_left = 1.0
+anchor_top = 0.799
+anchor_right = 1.0
+anchor_bottom = 0.799
+offset_left = -199.0
+offset_top = -20.640015
+offset_right = -161.0
+offset_bottom = 20.359985
+grow_horizontal = 0
+grow_vertical = 0
+mouse_filter = 1
+
+[node name="Sprite2D" type="Sprite2D" parent="Control2" unique_id=70916360]
+z_index = 7
+position = Vector2(13.999977, 8.000013)
+scale = Vector2(1.0625001, 1.1875002)
+texture = ExtResource("5_0bw5x")
+
+[node name="FireballButton" type="TouchScreenButton" parent="Control2" unique_id=925376196]
+z_index = 6
+position = Vector2(-11, -26.999985)
+scale = Vector2(0.7, 0.7)
+texture_normal = ExtResource("6_kvwy2")
+texture_pressed = ExtResource("6_kvwy2")
+
 [node name="RightJumpZone" type="Control" parent="." unique_id=1786097973]
 layout_mode = 3
 anchor_left = 1.0
@@ -74,37 +126,3 @@ offset_bottom = 8.360001
 mouse_filter = 1
 theme_override_constants/outline_size = 4
 text = "SWIPE UP TO JUMP"
-
-[node name="Control" type="Control" parent="." unique_id=1189223659]
-layout_mode = 3
-anchor_left = 1.0
-anchor_top = 0.67600006
-anchor_right = 1.0
-anchor_bottom = 0.67600006
-offset_left = -151.0
-offset_top = -22.360016
-offset_right = -102.0
-offset_bottom = 22.639984
-grow_horizontal = 0
-grow_vertical = 0
-mouse_filter = 1
-
-[node name="AttackButton" type="TextureButton" parent="Control" unique_id=745799991]
-z_index = 2
-custom_minimum_size = Vector2(50, 50)
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 3.0200002
-anchor_top = 0.5
-anchor_right = 3.042
-anchor_bottom = 0.50200003
-offset_left = -149.98001
-offset_top = -25.500002
-offset_right = 360.94202
-offset_bottom = 486.41
-grow_horizontal = 0
-grow_vertical = 0
-scale = Vector2(0.1, 0.1)
-texture_normal = ExtResource("4_f27wk")
-texture_pressed = ExtResource("4_f27wk")
-texture_hover = ExtResource("4_f27wk")

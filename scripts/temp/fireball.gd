@@ -9,13 +9,11 @@ var direction: Vector2 = Vector2.RIGHT
 
 @onready var sprite: AnimatedSprite2D = $AnimatedSprite2D
 @onready var timer: Timer = $Timer  
-@onready var shoot_sound: AudioStreamPlayer = $ShootSound
 
 func _ready() -> void:
 	sprite.flip_h = direction.x < 0
 	sprite.play("fly")
-	if shoot_sound:
-		shoot_sound.play()
+	AudioManager.play_sfx("fireball")
 	timer.wait_time = lifetime
 	timer.one_shot = true
 	timer.start()
